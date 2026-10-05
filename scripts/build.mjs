@@ -7,6 +7,7 @@ import { writeFileSync, mkdirSync, rmSync, copyFileSync, existsSync } from "node
 import { join } from "node:path";
 import { variantParts, partsToSvgInner } from "../lib/variants.js";
 import { lintAll } from "../lib/lint.js";
+import { animationCss, animatedSvg } from "../lib/animate.js";
 import { ROOT, config as loadConfig, loadIcons } from "./load.mjs";
 
 const config = loadConfig();
@@ -59,10 +60,25 @@ for (const corner of corners)
 mkdirSync(join(OUT, "json"), { recursive: true });
 writeFileSync(
   join(OUT, "json", "dope-icons.json"),
-  JSON.stringify({ version: 2, grid: g, baseStroke: config.baseStroke, weights: config.weights, corners, styles: config.styles, icons: data })
+  JSON.stringify({ version: 2, grid: g, baseStroke: config.baseStroke, weights: config.weights, corners, styles: config.styles, icons: data, animations: Object.fromEntries(icons.filter((i) => i.animations).map((i) => [i.name, i.animations])) })
 );
 
-// 4. React
+// 4. Animations: one CSS file for apps, plus a self-playing SVG per animation (outline / round / regular).
+const css = ["/* Dope Icons animations. Add class dope-play-<animation> (plays on load) or dope-hover-<animation> (plays on hover) to the icon's <svg>. */"];
+let animCount = 0;
+mkdirSync(join(OUT, "animated"), { recursive: true });
+mkdirSync(join(OUT, "css"), { recursive: true });
+for (const icon of icons) {
+  for (const [name, anim] of Object.entries(icon.animations || {})) {
+    css.push(animationCss(icon.name, name, anim, `.dope-icon-${icon.name}.dope-play-${name}`));
+    css.push(animationCss(icon.name, name, anim, `.dope-icon-${icon.name}.dope-hover-${name}:hover`));
+    writeFileSync(join(OUT, "animated", `${icon.name}-${name}.svg`), animatedSvg(icon, config, { style: "outline", corner: config.defaults.corner, weight: "regular" }, name));
+    animCount++;
+  }
+}
+writeFileSync(join(OUT, "css", "dope-animations.css"), css.join("\n") + "\n");
+
+// 5. React
 const reactDir = join(OUT, "react");
 mkdirSync(join(reactDir, "icons"), { recursive: true });
 writeFileSync(
@@ -74,7 +90,7 @@ const BASE = ${config.baseStroke};
 
 export function createIcon(displayName, data) {
   const Icon = forwardRef(function DopeIcon(
-    { variant = "${config.defaults.style}", corner = "${config.defaults.corner}", weight = "${config.defaults.weight}", size = ${g}, color = "currentColor", strokeWidth, title, className, ...rest },
+    { variant = "${config.defaults.style}", corner = "${config.defaults.corner}", weight = "${config.defaults.weight}", size = ${g}, color = "currentColor", strokeWidth, title, className, animate, animateOn = "load", ...rest },
     ref
   ) {
     const parts = data[variant][corner];
@@ -94,6 +110,7 @@ export function createIcon(displayName, data) {
             strokeWidth: p.stroke ? +(p.strokeWidth * k).toFixed(3) : undefined,
             strokeLinecap: p.stroke ? p.cap : undefined,
             strokeLinejoin: p.stroke ? p.join : undefined,
+            pathLength: animate && p.stroke ? 1 : undefined,
           })
         )
       )
@@ -111,7 +128,8 @@ export function createIcon(displayName, data) {
         color,
         role: title ? "img" : undefined,
         "aria-hidden": title ? undefined : true,
-        className: ["dope-icon", "dope-icon-" + displayName, className].filter(Boolean).join(" "),
+        // Animations need dope-animations.css (dist/css). animateOn: "load" plays once mounted, "hover" on hover.
+        className: ["dope-icon", "dope-icon-" + displayName, animate && "dope-" + (animateOn === "hover" ? "hover" : "play") + "-" + animate, className].filter(Boolean).join(" "),
         ...rest,
       },
       children
@@ -148,6 +166,10 @@ export interface DopeIconProps extends Omit<SVGProps<SVGSVGElement>, "ref"> {
   color?: string;
   strokeWidth?: number;
   title?: string;
+  /** Name of one of the icon's animations, e.g. "ring". Needs dope-animations.css. */
+  animate?: string;
+  /** "load" plays when shown (default), "hover" plays on hover. */
+  animateOn?: "load" | "hover";
 }
 
 export type DopeIcon = ForwardRefExoticComponent<DopeIconProps & RefAttributes<SVGSVGElement>>;
@@ -159,4 +181,4 @@ ${dts.join("\n")}
 // Package files
 for (const f of ["package.json", "README.md"]) if (existsSync(join(ROOT, "package", f))) copyFileSync(join(ROOT, "package", f), join(OUT, f));
 
-console.log(`Built ${icons.length} icons → ${count} SVG files, ${corners.length * config.styles.length} sprites, ${icons.length} React components in dist/.`);
+console.log(`Built ${icons.length} icons → ${count} SVG files, ${corners.length * config.styles.length} sprites, ${icons.length} React components, ${animCount} animations in dist/.`);

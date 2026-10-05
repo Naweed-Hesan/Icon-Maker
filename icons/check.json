@@ -39,5 +39,27 @@
         ]
       }
     ]
+  },
+  "animations": {
+    "draw": {
+      "duration": 600,
+      "easing": "ease-out",
+      "iterations": 1,
+      "parts": {
+        "mark": {
+          "delay": 0,
+          "keyframes": [
+            {
+              "t": 0,
+              "draw": 0
+            },
+            {
+              "t": 1,
+              "draw": 1
+            }
+          ]
+        }
+      }
+    }
   }
 }

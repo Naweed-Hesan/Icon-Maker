@@ -39,8 +39,8 @@
     <div class="drawer-head"><h2>Claude requests</h2><button class="btn icon" id="drawerClose">✕</button></div>
     <p class="hint">Write what you want changed. Then, in a Claude Code session on this repo, say <b>“process the studio requests”</b>. Claude edits the icons, runs the checks, and marks each request done with a note. This page updates live.</p>
     <form id="reqForm" class="req-form">
-      <input name="icon" placeholder="Icon (optional), e.g. bell" list="iconNames" />
-      <select name="type"><option value="fix">Fix</option><option value="edit">Change</option><option value="new">New icon</option><option value="review">Review / opinion</option></select>
+      <input name="icon" placeholder="Icon(s), optional — e.g. bell or bell, alarm" list="iconNames" />
+      <select name="type"><option value="fix">Fix</option><option value="edit">Change</option><option value="new">New icon</option><option value="animate">Animate</option><option value="review">Review / opinion</option></select>
       <textarea name="text" rows="3" placeholder="e.g. Clapper looks too small next to the body — make it match other icons." required></textarea>
       <button class="btn primary">Add request</button>
     </form>
@@ -50,10 +50,11 @@
   <dialog id="dlgNew">
     <form method="dialog" id="newForm">
       <h2>New icon</h2>
-      <label>Name (kebab-case) <input name="name" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="e.g. rocket" list="iconNames" /></label>
-      <label class="radio"><input type="radio" name="mode" value="claude" checked /> Ask Claude to design it</label>
+      <label class="radio"><input type="radio" name="mode" value="claude" checked /> Ask Claude to design one icon</label>
+      <label class="radio"><input type="radio" name="mode" value="several" /> Ask Claude to design several (one per line below: <code>name: what it shows</code>)</label>
       <label class="radio"><input type="radio" name="mode" value="blank" /> Start a blank master I'll edit myself</label>
-      <label>What should it show? <textarea name="text" rows="3" placeholder="e.g. A rocket launching diagonally up-right, with a small flame. Should match the plane and send icons."></textarea></label>
+      <label>Name (kebab-case, not needed for several) <input name="name" placeholder="e.g. rocket" list="iconNames" /></label>
+      <label>What should it show? <textarea name="text" rows="5" placeholder="One icon: A rocket launching diagonally up-right, with a small flame.&#10;&#10;Several:&#10;rocket: a rocket launching up-right with a small flame&#10;planet: a planet with a tilted ring&#10;satellite: a satellite with two solar panels"></textarea></label>
       <p class="error" id="newError"></p>
       <div class="row"><button class="btn" value="cancel" formnovalidate>Cancel</button><button class="btn primary" value="ok">Create</button></div>
     </form>

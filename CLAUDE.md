@@ -20,6 +20,8 @@ npm run lint [-- name …] [--rule id] [--all]   # check; exits 1 on errors
 npm run fix  [-- name …] [--dry]               # safe mechanical fixes
 npm run build                                  # dist/ (refuses on lint errors)
 npm run sheet -- name …                        # sheet.html: every variant, 24px + 96px, light + dark
+npm run sheet -- name … --anim <name|all>      # sheet.html: 12-frame filmstrip of each animation + live copy
+npm run batch -- <op> [--arg v …] <names… | --all | --where rule:<id> | --where warn> [--dry]
 npm run new  -- name                           # blank master
 npm run studio                                 # http://localhost:4321 (owner's UI, live-reloads on file changes)
 ```
@@ -67,11 +69,44 @@ number, continuing across subpaths (the studio's "Master nodes" overlay shows th
   icons have no tint.
 - Names: lowercase kebab-case, one word per concept across the set (don't mix chat/comment, close/x).
 
+## Batch work
+
+Use `npm run batch` for anything that touches several icons; always run it with `--dry` first and read
+the per-icon check summary (it lists what each change fixes and any NEW issues). Operations live in
+`lib/batch.js` (shared with the studio's batch panel): `move`, `scale`, `recenter`, `fit`, `radius`,
+`tag`, `ignore`, `animate`, `unanimate`. If a batch op can't express the change, edit the master files
+directly with a small script, then lint and render every touched icon.
+
+Don't blindly "fix" a warning across the set: some are intentional (volume-low is off-centre to line
+up with volume). Mark those with `lintIgnore` and a reason instead.
+
+## Animation
+
+Animations live in the master under `"animations"` (format at the top of `lib/animate.js`). They animate
+named **parts**, so give parts meaningful names before animating, and pick the origin deliberately
+(a bell swings from its top, a gear spins on its hub, a check draws from its first stroke).
+
+Standard for UI icon motion:
+- 200–800ms for one-shot feedback; loops (spin, pulse) only for ongoing states like loading or live.
+- Small amplitudes: 1–3px moves, ≤15° swings, scale 0.8–1.12. Motion supports the meaning, never decorates.
+- Nothing may leave the 24×24 canvas at any frame (`anim-clipped`). Presets shrink or limit movement to stay inside.
+- Every animation respects `prefers-reduced-motion` (the generated CSS does this; don't remove it).
+- Check every style: parts merged in solid won't move there (`anim-style-gap`). Say so to the owner if it matters.
+
+Start from a preset (`npm run batch -- animate --preset wiggle --name ring bell`), then hand-tune the
+keyframes in the master when the motion should have character (e.g. the clapper lags the bell).
+Verify with `npm run sheet -- <icon> --anim <name>` and look at the filmstrip before calling it done.
+
+Build output: `dist/css/dope-animations.css` (classes `dope-play-<anim>` / `dope-hover-<anim>` on the
+icon's svg), `dist/animated/<icon>-<anim>.svg` (self-playing), React `animate="ring" animateOn="hover"`.
+
 ## Processing studio requests
 
 When the owner says "process the studio requests" (or similar):
 
-1. Read `requests.json`. Work through every item with `"status": "open"`.
+1. Read `requests.json`. Work through every item with `"status": "open"`. An item targets one icon
+   (`icon`), several (`icons`, a batch request), or none (general / new icon). Types: fix, edit,
+   new, animate, review. Batch new-icon requests arrive as one `new` item per icon.
 2. Do the work in `icons/`, then lint and render what you changed.
 3. Update the item: `"status": "done"` and a short, honest `"note"` (what changed, anything you
    disagreed with). If you need a decision first, set `"status": "question"` and ask in the note.

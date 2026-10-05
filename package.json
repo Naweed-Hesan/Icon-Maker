@@ -8,6 +8,7 @@
     "fix": "node scripts/fix.mjs",
     "build": "node scripts/build.mjs",
     "new": "node scripts/new-icon.mjs",
-    "sheet": "node scripts/sheet.mjs"
+    "sheet": "node scripts/sheet.mjs",
+    "batch": "node scripts/batch.mjs"
   }
 }

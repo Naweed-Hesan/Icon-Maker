@@ -79,5 +79,40 @@
         ]
       }
     ]
+  },
+  "animations": {
+    "draw": {
+      "duration": 600,
+      "easing": "ease-out",
+      "iterations": 1,
+      "parts": {
+        "circle": {
+          "delay": 0,
+          "keyframes": [
+            {
+              "t": 0,
+              "draw": 0
+            },
+            {
+              "t": 1,
+              "draw": 1
+            }
+          ]
+        },
+        "check": {
+          "delay": 120,
+          "keyframes": [
+            {
+              "t": 0,
+              "draw": 0
+            },
+            {
+              "t": 1,
+              "draw": 1
+            }
+          ]
+        }
+      }
+    }
   }
 }

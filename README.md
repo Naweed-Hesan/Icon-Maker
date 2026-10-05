@@ -17,8 +17,15 @@ Open http://localhost:4321. Needs Node 18+, no installs.
   dark), the full variant grid, the icon next to others for size comparison, and its issues with how
   to fix them.
 - **Edit:** path data, stroke/fill, corner rounding per path or per corner. Preview and checks update as you type.
+- **Animate:** play an icon's animations, step through a frame strip, edit keyframes, or add one from
+  a preset (draw, pop, wiggle, bounce, spin, pulse, nudge, fade). Clipping and other problems are flagged.
+- **Batch:** Shift/⌘-click icons (or "Select shown" after filtering), then apply one change to all of
+  them: re-centre, fit inside the padding, move, scale, corner rounding, tags, animation presets.
+  You see a before/after table with what each change fixes or breaks before anything is saved.
 - **Corners:** tune the radius of each corner set and see it on sample icons.
-- **Claude requests:** write what you want ("bell clapper looks too small", "new icon: rocket").
+- **Claude requests:** write what you want ("bell clapper looks too small", "make the arrows nudge on
+  hover"). Requests can target one icon, a whole selection, or several new icons at once (New icon →
+  "several", one `name: description` per line).
   Then in Claude Code say **"process the studio requests"**. Claude edits the icons, checks them and
   replies on each request. The studio reloads by itself.
 
@@ -29,10 +36,23 @@ Open http://localhost:4321. Needs Node 18+, no installs.
 | `npm run lint` | Check every icon (add names to check only those, `--all` to include info) |
 | `npm run fix` | Apply safe automatic fixes (`--dry` to preview) |
 | `npm run build` | Write the package to `dist/` (svg, sprite, json, react) |
-| `npm run sheet -- bell` | Visual sheet of an icon in every variant |
+| `npm run batch -- fit --where rule:padding --dry` | One change across many icons (`--dry` to preview) |
+| `npm run sheet -- bell` | Visual sheet of an icon in every variant (`--anim all` for animation frame strips) |
 | `npm run new -- name` | Blank icon |
 
-`CLAUDE.md` has the drawing standard and the format of the master files.
+`CLAUDE.md` has the drawing and animation standards and the format of the master files.
+
+## Animations in your app
+
+```jsx
+import "dope-icons/css/dope-animations.css";
+<IconBell animate="ring" animateOn="hover" />
+```
+
+Plain SVG: add `class="dope-icon-bell dope-hover-ring"` to the inline `<svg>` (or `dope-play-ring` to play once shown).
+Self-playing files are in `dist/animated/`. Starter animations: bell, bell-ring and alarm ring;
+loader, refresh and settings spin; heart, star and thumbs-up pop; check and check-circle draw;
+the four arrows and send nudge. All respect reduced-motion settings.
 
 ## What changed from the v0.1 export
 

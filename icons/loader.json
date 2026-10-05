@@ -236,5 +236,142 @@
         ]
       }
     ]
+  },
+  "animations": {
+    "spin": {
+      "duration": 1000,
+      "easing": "linear",
+      "iterations": "infinite",
+      "parts": {
+        "ray-1": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 1,
+              "rotate": 360
+            }
+          ]
+        },
+        "ray-2": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 1,
+              "rotate": 360
+            }
+          ]
+        },
+        "ray-3": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 1,
+              "rotate": 360
+            }
+          ]
+        },
+        "ray-4": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 1,
+              "rotate": 360
+            }
+          ]
+        },
+        "ray-5": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 1,
+              "rotate": 360
+            }
+          ]
+        },
+        "ray-6": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 1,
+              "rotate": 360
+            }
+          ]
+        },
+        "ray-7": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 1,
+              "rotate": 360
+            }
+          ]
+        },
+        "ray-8": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 1,
+              "rotate": 360
+            }
+          ]
+        }
+      }
+    }
   }
 }

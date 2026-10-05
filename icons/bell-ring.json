@@ -164,5 +164,142 @@
         ]
       }
     ]
+  },
+  "animations": {
+    "ring": {
+      "duration": 700,
+      "easing": "ease-in-out",
+      "iterations": 1,
+      "parts": {
+        "body": {
+          "origin": [
+            12,
+            3.251
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 0.2,
+              "rotate": 12
+            },
+            {
+              "t": 0.4,
+              "rotate": -10
+            },
+            {
+              "t": 0.6,
+              "rotate": 6
+            },
+            {
+              "t": 0.8,
+              "rotate": -3
+            },
+            {
+              "t": 1,
+              "rotate": 0
+            }
+          ]
+        },
+        "clapper": {
+          "origin": [
+            12,
+            3.251
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 0.2,
+              "rotate": 12
+            },
+            {
+              "t": 0.4,
+              "rotate": -10
+            },
+            {
+              "t": 0.6,
+              "rotate": 6
+            },
+            {
+              "t": 0.8,
+              "rotate": -3
+            },
+            {
+              "t": 1,
+              "rotate": 0
+            }
+          ]
+        },
+        "wave-left": {
+          "origin": [
+            12,
+            3.251
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 0.2,
+              "rotate": 12
+            },
+            {
+              "t": 0.4,
+              "rotate": -10
+            },
+            {
+              "t": 0.6,
+              "rotate": 6
+            },
+            {
+              "t": 0.8,
+              "rotate": -3
+            },
+            {
+              "t": 1,
+              "rotate": 0
+            }
+          ]
+        },
+        "wave-right": {
+          "origin": [
+            12,
+            3.251
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 0.2,
+              "rotate": 12
+            },
+            {
+              "t": 0.4,
+              "rotate": -10
+            },
+            {
+              "t": 0.6,
+              "rotate": 6
+            },
+            {
+              "t": 0.8,
+              "rotate": -3
+            },
+            {
+              "t": 1,
+              "rotate": 0
+            }
+          ]
+        }
+      }
+    }
   }
 }

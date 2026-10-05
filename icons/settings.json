@@ -144,5 +144,46 @@
         ]
       }
     ]
+  },
+  "animations": {
+    "spin": {
+      "duration": 1000,
+      "easing": "linear",
+      "iterations": "infinite",
+      "parts": {
+        "gear": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 1,
+              "rotate": 360
+            }
+          ]
+        },
+        "hub": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 1,
+              "rotate": 360
+            }
+          ]
+        }
+      }
+    }
   }
 }

@@ -108,5 +108,88 @@
         ]
       }
     ]
+  },
+  "animations": {
+    "ring": {
+      "duration": 800,
+      "easing": "ease-in-out",
+      "iterations": 1,
+      "parts": {
+        "body": {
+          "origin": [
+            12,
+            3.5
+          ],
+          "delay": 0,
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 0.15,
+              "rotate": 14
+            },
+            {
+              "t": 0.32,
+              "rotate": -11.9
+            },
+            {
+              "t": 0.5,
+              "rotate": 7.700000000000001
+            },
+            {
+              "t": 0.68,
+              "rotate": -4.2
+            },
+            {
+              "t": 0.84,
+              "rotate": 1.68
+            },
+            {
+              "t": 1,
+              "rotate": 0
+            }
+          ]
+        },
+        "clapper": {
+          "origin": [
+            12,
+            3.5
+          ],
+          "delay": 60,
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0
+            },
+            {
+              "t": 0.15,
+              "rotate": 20
+            },
+            {
+              "t": 0.32,
+              "rotate": -17
+            },
+            {
+              "t": 0.5,
+              "rotate": 11
+            },
+            {
+              "t": 0.68,
+              "rotate": -6
+            },
+            {
+              "t": 0.84,
+              "rotate": 2.4
+            },
+            {
+              "t": 1,
+              "rotate": 0
+            }
+          ]
+        }
+      }
+    }
   }
 }

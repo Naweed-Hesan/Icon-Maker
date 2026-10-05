@@ -116,5 +116,62 @@
         ]
       }
     ]
+  },
+  "animations": {
+    "pop": {
+      "duration": 450,
+      "easing": "ease-out",
+      "iterations": 1,
+      "parts": {
+        "hand": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "scale": 1
+            },
+            {
+              "t": 0.35,
+              "scale": 0.82
+            },
+            {
+              "t": 0.7,
+              "scale": 1.1
+            },
+            {
+              "t": 1,
+              "scale": 1
+            }
+          ]
+        },
+        "cuff": {
+          "origin": [
+            12,
+            12
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "scale": 1
+            },
+            {
+              "t": 0.35,
+              "scale": 0.82
+            },
+            {
+              "t": 0.7,
+              "scale": 1.1
+            },
+            {
+              "t": 1,
+              "scale": 1
+            }
+          ]
+        }
+      }
+    }
   }
 }

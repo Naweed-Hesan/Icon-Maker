@@ -67,5 +67,46 @@
         ]
       }
     ]
+  },
+  "animations": {
+    "nudge": {
+      "duration": 500,
+      "easing": "ease-in-out",
+      "iterations": 1,
+      "parts": {
+        "shaft": {
+          "keyframes": [
+            {
+              "t": 0,
+              "y": 0
+            },
+            {
+              "t": 0.45,
+              "y": -2.5
+            },
+            {
+              "t": 1,
+              "y": 0
+            }
+          ]
+        },
+        "head": {
+          "keyframes": [
+            {
+              "t": 0,
+              "y": 0
+            },
+            {
+              "t": 0.45,
+              "y": -2.5
+            },
+            {
+              "t": 1,
+              "y": 0
+            }
+          ]
+        }
+      }
+    }
   }
 }

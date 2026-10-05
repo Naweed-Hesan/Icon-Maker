@@ -67,5 +67,50 @@
         ]
       }
     ]
+  },
+  "animations": {
+    "spin": {
+      "duration": 1000,
+      "easing": "linear",
+      "iterations": "infinite",
+      "parts": {
+        "arc": {
+          "origin": [
+            11.625,
+            11.749
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0,
+              "scale": 0.949
+            },
+            {
+              "t": 1,
+              "rotate": 360,
+              "scale": 0.949
+            }
+          ]
+        },
+        "head": {
+          "origin": [
+            11.625,
+            11.749
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotate": 0,
+              "scale": 0.949
+            },
+            {
+              "t": 1,
+              "rotate": 360,
+              "scale": 0.949
+            }
+          ]
+        }
+      }
+    }
   }
 }

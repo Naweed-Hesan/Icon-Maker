@@ -1,6 +1,8 @@
 import { variantParts, partsToSvgInner, toSvg } from "/lib/variants.js";
 import { lintAll, lintIcon, RULES } from "/lib/lint.js";
 import { parse, nodes, inkBounds, normalize } from "/lib/path.js";
+import { OPS, runOp } from "/lib/batch.js";
+import { PRESETS, presetAnimation, animatedSvg, frameInner, totalDuration } from "/lib/animate.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -18,6 +20,8 @@ const savePrefs = () => { try { localStorage.setItem("studio.prefs", JSON.string
 
 let config, icons = [], requests = [], lint = {}, legacy = null;
 let draft = null, dirty = false, pendingReload = false;
+const selection = new Set(); // multi-select for batch work
+let batchPreview = null;
 
 // ---------- Data ----------
 async function load() {
@@ -36,7 +40,7 @@ async function api(path, method, body) {
 }
 const current = () => (view.selected && draft) || null;
 const worst = (list) => list.filter((i) => !i.ignored).reduce((m, i) => Math.max(m, SEV[i.severity]), 0);
-const openReq = (name) => requests.some((r) => r.status !== "done" && r.icon === name);
+const openReq = (name) => requests.some((r) => r.status !== "done" && (r.icon === name || (r.icons || []).includes(name)));
 
 // ---------- Rendering helpers ----------
 const svgCache = new Map();
@@ -96,13 +100,13 @@ function renderList() {
   const n = (s) => all.filter((i) => i.severity === s).length;
   const iconsWith = (s) => Object.values(lint).filter((l) => worst(l) === SEV[s]).length;
   const vis = visibleIcons();
-  $("#summary").innerHTML = `<span><b>${icons.length}</b> icons</span><span style="color:var(--error)"><b>${n("error")}</b> errors</span><span style="color:var(--warn)"><b>${n("warn")}</b> warnings (${iconsWith("warn")} icons)</span><span><b>${n("info")}</b> info</span>${vis.length !== icons.length ? `<span>showing <b>${vis.length}</b></span>` : ""}`;
+  $("#summary").innerHTML = `<span><b>${icons.length}</b> icons</span><span style="color:var(--error)"><b>${n("error")}</b> errors</span><span style="color:var(--warn)"><b>${n("warn")}</b> warnings (${iconsWith("warn")} icons)</span><span><b>${n("info")}</b> info</span>${vis.length !== icons.length ? `<span>showing <b>${vis.length}</b></span>` : ""}<span class="spacer"></span><button class="btn small" id="selAll" title="Select every icon in this list for batch changes">Select shown</button>${selection.size ? `<button class="btn small" id="selClear">Clear selection (${selection.size})</button>` : ""}`;
   $("#tiles").innerHTML = vis
     .map((icon) => {
       const w = worst(lint[icon.name] || []);
       const sev = w === 3 ? "error" : w === 2 ? "warn" : w === 1 ? "info" : "";
       const shown = icon.name === view.selected && draft ? draft : icon;
-      return `<button class="tile ${icon.name === view.selected ? "on" : ""}" data-name="${icon.name}" title="${esc(icon.name)}">
+      return `<button class="tile ${icon.name === view.selected && selection.size < 2 ? "on" : ""} ${selection.has(icon.name) ? "sel" : ""}" data-name="${icon.name}" title="${esc(icon.name)} — Shift/⌘-click to multi-select">
         ${sev ? `<i class="dot ${sev}"></i>` : ""}${openReq(icon.name) ? `<i class="dot req" title="Open Claude request"></i>` : ""}
         ${iconSvg(shown)}<span>${esc(icon.name)}</span></button>`;
     })
@@ -254,17 +258,174 @@ function renderEdit(icon) {
 
 function renderDetail() {
   const el = $("#detail");
+  if (selection.size > 1) { el.innerHTML = renderBatch(); return; }
   const icon = current();
   if (!icon) { el.innerHTML = `<div class="empty">Select an icon on the left, or create a new one.</div>`; return; }
   el.innerHTML = `<div class="d-head">
       <h1>${esc(icon.name)}${dirty ? " •" : ""}</h1>
-      <div class="tabs" id="tabs"><button data-t="inspect" class="${view.tab === "inspect" ? "on" : ""}">Inspect</button><button data-t="edit" class="${view.tab === "edit" ? "on" : ""}">Edit</button></div>
+      <div class="tabs" id="tabs"><button data-t="inspect" class="${view.tab === "inspect" ? "on" : ""}">Inspect</button><button data-t="edit" class="${view.tab === "edit" ? "on" : ""}">Edit</button><button data-t="animate" class="${view.tab === "animate" ? "on" : ""}">Animate${icon.animations ? ` (${Object.keys(icon.animations).length})` : ""}</button></div>
       <span class="spacer"></span>
       <button class="btn" id="dAsk">Ask Claude about this icon</button>
       <button class="btn" id="dCopy">Copy SVG</button>
       <button class="btn" id="dDownload">Download SVG</button>
     </div>
-    ${view.tab === "edit" ? renderEdit(icon) : renderInspect(icon)}`;
+    ${view.tab === "edit" ? renderEdit(icon) : view.tab === "animate" ? renderAnimate(icon) : renderInspect(icon)}`;
+}
+
+// ---------- Animate ----------
+const DIRECTIONS = ["auto", "up", "down", "left", "right", "up-right", "up-left", "down-right", "down-left"];
+const variantNow = () => ({ style: view.style, corner: view.corner, weight: view.weight });
+
+function animPreviewHtml(icon, name) {
+  const anim = icon.animations?.[name];
+  if (!anim) return "";
+  const copy = view.animLoop ? { ...icon, animations: { ...icon.animations, [name]: { ...anim, iterations: "infinite" } } } : icon;
+  try { return animatedSvg(copy, config, variantNow(), name).replace(/width="\d+" height="\d+"/, 'width="220" height="220"'); }
+  catch (e) { return `<div class="err">${esc(e.message)}</div>`; }
+}
+function animStripHtml(icon, name) {
+  const anim = icon.animations?.[name];
+  if (!anim) return "";
+  const total = totalDuration(anim), n = 10;
+  try {
+    return Array.from({ length: n }, (_, i) => {
+      const ms = Math.round((total * i) / (n - 1));
+      return `<figure><svg viewBox="0 0 ${config.grid} ${config.grid}" fill="none">${frameInner(icon, config, variantNow(), name, ms)}</svg><figcaption>${ms}</figcaption></figure>`;
+    }).join("");
+  } catch (e) { return `<div class="err">${esc(e.message)}</div>`; }
+}
+function animIssues(icon) {
+  const list = lintIcon(icon, config).filter((i) => i.rule.startsWith("anim-"));
+  if (!list.length) return `<div class="ok-line">✓ No animation issues.</div>`;
+  return list.map((i) => `<div class="issue"><span class="sev ${i.severity}"></span><div><div class="t">${esc(i.title)} <span class="m">· ${esc(i.where || "")}</span></div>${i.message ? `<div class="m">${esc(i.message)}</div>` : ""}<div class="m">${esc(i.fix)}</div></div><div></div></div>`).join("");
+}
+
+function renderAnimate(icon) {
+  const anims = icon.animations || {};
+  const names = Object.keys(anims);
+  if (!anims[view.anim]) view.anim = names[0] || null;
+  const name = view.anim;
+  const parts = (icon.styles.outline || []).map((p) => p.name);
+  return `<div class="d-grid">
+    <div>
+      <div class="card">
+        ${name ? `<div class="anim-stage" id="aPreview" title="Click to replay">${animPreviewHtml(icon, name)}</div>
+        <div class="overlays"><button class="btn small" id="aPlay">▶ Replay</button><label><input type="checkbox" id="aLoop" ${view.animLoop ? "checked" : ""}/> Loop preview</label><span>${totalDuration(anims[name])}ms${anims[name].iterations === "infinite" ? " · loops" : ""} · ${view.style} / ${view.corner} / ${view.weight}</span></div>
+        <div class="strip" id="aStrip">${animStripHtml(icon, name)}</div>` : `<div class="empty">No animations yet. Add one from a preset →</div>`}
+      </div>
+      <div class="card"><h3>Animation checks</h3><div id="aIssues">${animIssues(icon)}</div></div>
+      ${name ? `<div class="card"><h3>Use it</h3><pre class="snippet">// React (import "dope-icons/css/dope-animations.css" once)
+&lt;Icon${esc(icon.name.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(""))} animate="${esc(name)}" animateOn="hover" /&gt;
+
+&lt;!-- Plain SVG: add the classes to the &lt;svg&gt; --&gt;
+&lt;svg class="dope-icon-${esc(icon.name)} dope-hover-${esc(name)}" …&gt;
+
+&lt;!-- Or a self-playing file --&gt;
+dist/animated/${esc(icon.name)}-${esc(name)}.svg</pre></div>` : ""}
+    </div>
+    <div>
+      <div class="card">
+        <h3>Animations</h3>
+        <div class="chips">${names.map((n) => `<button class="chip ${n === name ? "on" : ""}" data-anim="${esc(n)}">${esc(n)}</button>`).join("") || `<span class="hint">None</span>`}</div>
+        ${name ? `<label class="field">Keyframes (JSON) — props: t, x, y, rotate, scale, opacity, draw; origin is [x, y] on the 24px grid
+          <textarea class="code" id="aJson" rows="16" spellcheck="false">${esc(JSON.stringify(anims[name], null, 2))}</textarea></label>
+          <div class="err" id="aErr"></div>
+          <button class="btn small danger" id="aDelete">Delete “${esc(name)}”</button>` : ""}
+      </div>
+      <div class="card">
+        <h3>Add from a preset</h3>
+        <div class="preset-grid">
+          <label>Preset <select id="pPreset">${Object.entries(PRESETS).map(([k, v]) => `<option value="${k}" ${view.preset === k ? "selected" : ""}>${v.label}</option>`).join("")}</select></label>
+          <label>Name <input id="pName" placeholder="defaults to preset name"/></label>
+          <label>Direction <select id="pDir">${DIRECTIONS.map((d) => `<option>${d}</option>`).join("")}</select></label>
+        </div>
+        <p class="hint" id="pHint">${esc(PRESETS[view.preset || "draw"]?.hint || "")}</p>
+        <div class="chips" id="pParts">${parts.map((p) => `<label class="chip"><input type="checkbox" value="${esc(p)}" checked/> ${esc(p)}</label>`).join("")}</div>
+        <button class="btn" id="pAdd">Add to ${esc(icon.name)}</button>
+        <p class="hint">Want something custom (e.g. “the clapper swings after the bell”)? Use <b>Ask Claude about this icon</b>.</p>
+      </div>
+      <div class="edit-foot">
+        <button class="btn primary" id="eSave" ${dirty ? "" : "disabled"}>Save</button>
+        <button class="btn" id="eRevert" ${dirty ? "" : "disabled"}>Revert</button>
+      </div>
+    </div>
+  </div>`;
+}
+function refreshAnim() {
+  const icon = current();
+  if ($("#aPreview")) $("#aPreview").innerHTML = animPreviewHtml(icon, view.anim);
+  if ($("#aStrip")) $("#aStrip").innerHTML = animStripHtml(icon, view.anim);
+  if ($("#aIssues")) $("#aIssues").innerHTML = animIssues(icon);
+}
+
+// ---------- Batch ----------
+function opArgs(op) {
+  const args = OPS[op].args;
+  return Object.entries(args).map(([k, v]) => {
+    if (op === "animate" && k === "preset") return `<label>preset <select data-arg="preset">${Object.entries(PRESETS).map(([p, x]) => `<option value="${p}">${x.label}</option>`).join("")}</select></label>`;
+    if (op === "animate" && k === "direction") return `<label>direction <select data-arg="direction">${DIRECTIONS.map((d) => `<option value="${d === "auto" ? "" : d}">${d}</option>`).join("")}</select></label>`;
+    if (op === "ignore" && k === "rule") return `<label>check <select data-arg="rule">${Object.entries(RULES).map(([r, x]) => `<option value="${r}">${esc(x.title)}</option>`).join("")}</select></label>`;
+    const ph = { parts: "all parts (or e.g. body,clapper)", name: "defaults to preset", add: "e.g. weather", remove: "", reason: "why it's intentional" }[k] ?? "";
+    return `<label>${k} <input data-arg="${k}" value="${typeof v === "number" ? v : ""}" placeholder="${esc(ph)}" ${typeof v === "number" ? 'type="number" step="0.25"' : ""}/></label>`;
+  }).join("");
+}
+function renderBatch() {
+  const list = [...selection].map((n) => icons.find((i) => i.name === n)).filter(Boolean);
+  const op = view.batchOp && OPS[view.batchOp] ? view.batchOp : "recenter";
+  const res = batchPreview;
+  const changed = res ? res.filter((r) => r.changed) : [];
+  return `<div class="d-head"><h1>${list.length} icons selected</h1><span class="spacer"></span>
+      <button class="btn" id="bClear">Clear selection</button></div>
+    <div class="card"><div class="sel-strip">${list.map((i) => `<button class="mini" data-goto="${i.name}" title="${i.name}">${iconSvg(i)}<span>${esc(i.name)}</span></button>`).join("")}</div></div>
+    <div class="card">
+      <h3>Change them all</h3>
+      <div class="preset-grid">
+        <label>Operation <select id="bOp">${Object.entries(OPS).map(([k, o]) => `<option value="${k}" ${k === op ? "selected" : ""}>${esc(o.label)}</option>`).join("")}</select></label>
+        ${opArgs(op)}
+      </div>
+      <div class="row" style="justify-content:flex-start"><button class="btn" id="bPreview">Preview</button>
+      ${res ? `<button class="btn primary" id="bApply" ${changed.length ? "" : "disabled"}>Apply to ${changed.length} icon${changed.length === 1 ? "" : "s"}</button>` : ""}</div>
+      ${res ? `<table class="batch-table"><tr><th>Icon</th><th>Before</th><th>After</th><th>Checks</th></tr>${res.map((r) => `<tr>
+          <td>${esc(r.name)}</td><td>${r.before}</td><td>${r.after || ""}</td>
+          <td>${r.err ? `<span class="err">${esc(r.err)}</span>` : !r.changed ? `<span class="m">no change</span>` : `${r.delta}`}</td></tr>`).join("")}</table>` : ""}
+    </div>
+    <div class="card">
+      <h3>Ask Claude about these ${list.length} icons</h3>
+      <form id="bAsk" class="req-form">
+        <select name="type"><option value="fix">Fix</option><option value="edit">Change</option><option value="animate">Animate</option><option value="review">Review / opinion</option></select>
+        <textarea name="text" rows="3" required placeholder="e.g. Make these weather icons share one cloud shape. / Give all arrows a hover nudge."></textarea>
+        <button class="btn primary">Add request</button>
+      </form>
+    </div>`;
+}
+function previewBatch() {
+  const op = view.batchOp || "recenter";
+  const args = {};
+  document.querySelectorAll("[data-arg]").forEach((el) => { if (el.value !== "") args[el.dataset.arg] = el.value; });
+  const active = (l) => l.filter((i) => !i.ignored && i.severity !== "info");
+  batchPreview = [...selection].map((name) => {
+    const icon = icons.find((i) => i.name === name);
+    const before = iconSvg(icon, {}, 'width="40" height="40"');
+    try {
+      const next = runOp(op, icon, config, args);
+      const changed = JSON.stringify(next) !== JSON.stringify(icon);
+      const b = active(lint[name] || []), a = active(lintIcon(next, config));
+      const fixed = [...new Set(b.filter((i) => !a.some((j) => j.rule === i.rule)).map((i) => i.rule))];
+      const added = [...new Set(a.filter((i) => !b.some((j) => j.rule === i.rule)).map((i) => i.rule))];
+      const animName = op === "animate" ? args.name || args.preset || "draw" : null;
+      const after = animName ? animatedSvg({ ...next, animations: { ...next.animations, [animName]: { ...next.animations[animName], iterations: "infinite" } } }, config, variantNow(), animName).replace(/width="\d+" height="\d+"/, 'width="40" height="40"') : iconSvg(next, {}, 'width="40" height="40"');
+      const delta = `${b.length} → ${a.length} warnings/errors${fixed.length ? ` · <span class="ok-line">fixed ${fixed.join(", ")}</span>` : ""}${added.length ? ` · <span class="err">new ${added.join(", ")}</span>` : ""}`;
+      return { name, next, changed, before, after, delta };
+    } catch (e) { return { name, before, err: e.message }; }
+  });
+  renderDetail();
+}
+async function applyBatch() {
+  const todo = batchPreview.filter((r) => r.changed);
+  for (const r of todo) await api(`/api/icons/${encodeURIComponent(r.name)}`, "PUT", r.next);
+  batchPreview = null;
+  await load(); renderAll();
+  toast(`Updated ${todo.length} icons`);
 }
 
 function renderAll() { renderHeader(); renderList(); renderDetail(); }
@@ -356,7 +517,7 @@ function renderRequests() {
   const list = [...requests].sort((a, b) => (a.status === "done") - (b.status === "done") || b.created.localeCompare(a.created));
   $("#reqList").innerHTML = list.length
     ? list.map((r) => `<div class="req ${r.status === "done" ? "done" : ""}" data-id="${r.id}">
-        <div class="meta"><span class="tag">${esc(r.type)}</span>${r.icon ? `<a href="#" data-goto="${esc(r.icon)}">${esc(r.icon)}</a>` : ""}<span>${new Date(r.created).toLocaleString()}</span><span>${r.status === "done" ? "✓ done" : r.status === "question" ? "❓ needs your answer" : "open"}</span></div>
+        <div class="meta"><span class="tag">${esc(r.type)}</span>${r.icon ? `<a href="#" data-goto="${esc(r.icon)}">${esc(r.icon)}</a>` : ""}${r.icons ? `<span title="${esc(r.icons.join(", "))}">${r.icons.length} icons: ${esc(r.icons.slice(0, 4).join(", "))}${r.icons.length > 4 ? "…" : ""}</span>` : ""}<span>${new Date(r.created).toLocaleString()}</span><span>${r.status === "done" ? "✓ done" : r.status === "question" ? "❓ needs your answer" : "open"}</span></div>
         <div>${esc(r.text)}</div>
         ${r.note ? `<div class="note"><b>Claude:</b> ${esc(r.note)}</div>` : ""}
         <div class="actions">${r.status === "done" ? `<button class="btn small" data-reopen>Reopen</button>` : `<button class="btn small" data-done>Mark done</button>`}<button class="btn small danger" data-del>Delete</button></div>
@@ -364,8 +525,12 @@ function renderRequests() {
     : `<p class="hint">No requests yet.</p>`;
 }
 async function saveRequests() { await api("/api/requests", "PUT", requests); renderRequests(); renderHeader(); renderList(); }
-async function addRequest(icon, type, text) {
-  requests.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), icon: icon || null, type, text, status: "open", created: new Date().toISOString() });
+async function addRequest(target, type, text) {
+  // target: one icon name, a comma list, or an array (batch request).
+  const list = (Array.isArray(target) ? target : String(target || "").split(",")).map((s) => s.trim()).filter(Boolean);
+  const r = { id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), type, text, status: "open", created: new Date().toISOString() };
+  if (list.length === 1) r.icon = list[0]; else if (list.length > 1) r.icons = list; else r.icon = null;
+  requests.push(r);
   await saveRequests();
   toast("Request added for Claude");
 }
@@ -387,9 +552,21 @@ function bind() {
     if (e.key === "/" && !/input|textarea|select/i.test(document.activeElement.tagName)) { e.preventDefault(); $("#q").focus(); }
     if ((e.metaKey || e.ctrlKey) && e.key === "s" && dirty) { e.preventDefault(); save(); }
   });
+  $("#summary").addEventListener("click", (e) => {
+    if (e.target.id === "selAll") { visibleIcons().forEach((i) => selection.add(i.name)); batchPreview = null; renderAll(); }
+    if (e.target.id === "selClear") { selection.clear(); batchPreview = null; renderAll(); }
+  });
   $("#tiles").addEventListener("click", (e) => {
     const t = e.target.closest(".tile");
     if (!t) return;
+    if (e.shiftKey || e.metaKey || e.ctrlKey) {
+      if (!selection.size && view.selected) selection.add(view.selected);
+      if (selection.has(t.dataset.name)) selection.delete(t.dataset.name); else selection.add(t.dataset.name);
+      batchPreview = null;
+      renderList(); renderDetail();
+      return;
+    }
+    selection.clear(); batchPreview = null;
     if (dirty && !confirm("Discard unsaved changes?")) return;
     dirty = false;
     view.selected = t.dataset.name;
@@ -397,8 +574,23 @@ function bind() {
     savePrefs(); renderAll();
   });
   const detail = $("#detail");
-  detail.addEventListener("input", (e) => { if (view.tab === "edit") onEditInput(e); });
+  detail.addEventListener("input", (e) => {
+    if (selection.size > 1) return;
+    if (view.tab === "edit") onEditInput(e);
+    if (e.target.id === "aJson") {
+      try {
+        const v = JSON.parse(e.target.value);
+        if (!v || typeof v !== "object" || !v.parts) throw new Error("Needs a parts object.");
+        current().animations[view.anim] = v;
+        $("#aErr").textContent = "";
+        markDirty(); refreshAnim();
+      } catch (err) { $("#aErr").textContent = err.message; }
+    }
+  });
   detail.addEventListener("change", (e) => {
+    if (e.target.id === "aLoop") { view.animLoop = e.target.checked; savePrefs(); refreshAnim(); return; }
+    if (e.target.id === "pPreset") { view.preset = e.target.value; $("#pHint").textContent = PRESETS[view.preset].hint; savePrefs(); return; }
+    if (e.target.id === "bOp") { view.batchOp = e.target.value; batchPreview = null; savePrefs(); renderDetail(); return; }
     const ov = e.target.dataset.ov;
     if (ov) {
       view.overlays[ov] = e.target.checked; savePrefs();
@@ -408,9 +600,40 @@ function bind() {
       renderDetail();
     }
   });
+  detail.addEventListener("submit", async (e) => {
+    if (e.target.id !== "bAsk") return;
+    e.preventDefault();
+    await addRequest([...selection], e.target.type.value, e.target.text.value.trim());
+    e.target.text.value = "";
+  });
   detail.addEventListener("click", async (e) => {
+    if (e.target.closest("#aPreview")) { refreshAnim(); return; }
     const b = e.target.closest("button, td");
     if (!b) return;
+    // Batch panel
+    if (b.id === "bClear") { selection.clear(); batchPreview = null; renderAll(); return; }
+    if (b.id === "bPreview") { previewBatch(); return; }
+    if (b.id === "bApply") { if (confirm(`Apply to ${batchPreview.filter((r) => r.changed).length} icons? This writes their master files.`)) await applyBatch(); return; }
+    if (b.dataset.goto && selection.size > 1) { selection.clear(); batchPreview = null; view.selected = b.dataset.goto; draft = clone(icons.find((i) => i.name === view.selected)); dirty = false; renderAll(); return; }
+    // Animate tab
+    if (b.dataset.anim) { view.anim = b.dataset.anim; renderDetail(); return; }
+    if (b.id === "aPlay") { refreshAnim(); return; }
+    if (b.id === "aDelete") {
+      if (!confirm(`Delete animation "${view.anim}"?`)) return;
+      const icon = current(); delete icon.animations[view.anim]; if (!Object.keys(icon.animations).length) delete icon.animations;
+      view.anim = null; markDirty(); renderDetail(); return;
+    }
+    if (b.id === "pAdd") {
+      const icon = current();
+      const preset = $("#pPreset").value, name = $("#pName").value.trim() || preset, dir = $("#pDir").value;
+      const parts = [...document.querySelectorAll("#pParts input:checked")].map((i) => i.value);
+      try {
+        const anim = presetAnimation(icon, config, preset, { parts, direction: dir === "auto" ? undefined : dir });
+        icon.animations = { ...(icon.animations || {}), [name]: anim };
+        view.anim = name; markDirty(); renderDetail();
+      } catch (err) { toast(err.message); }
+      return;
+    }
     if (b.closest("#tabs") && b.dataset.t) { view.tab = b.dataset.t; if (b.dataset.t === "edit") view.editStyle = view.style; savePrefs(); renderDetail(); return; }
     if (b.tagName === "TD") {
       if (b.dataset.style) { view.style = b.dataset.style; view.corner = b.dataset.corner; }
@@ -431,9 +654,9 @@ function bind() {
       return save();
     }
     if (b.dataset.unignore) { delete icon.lintIgnore[b.dataset.unignore]; if (!Object.keys(icon.lintIgnore).length) delete icon.lintIgnore; return save(); }
-    if (view.tab !== "edit") return;
     if (b.id === "eSave") return save();
     if (b.id === "eRevert") { dirty = false; draft = clone(icons.find((i) => i.name === view.selected)); renderAll(); return; }
+    if (view.tab !== "edit") return;
     if (b.id === "eFormat") {
       for (const parts of Object.values(icon.styles)) for (const part of parts) for (const p of part.paths) { try { p.d = normalize(p.d); } catch {} }
       markDirty(); renderAll(); return;
@@ -477,6 +700,18 @@ function bind() {
     if (e.submitter?.value !== "ok") return;
     e.preventDefault();
     const f = e.target, name = f.name.value.trim();
+    if (f.mode.value === "several") {
+      // One per line: "name: what it shows"
+      const lines = f.text.value.split("\n").map((l) => l.trim()).filter(Boolean);
+      const items = lines.map((l) => { const m = l.match(/^([a-z0-9]+(?:-[a-z0-9]+)*)\s*[:—–-]\s*(.+)$/); return m ? { name: m[1], text: m[2] } : { bad: l }; });
+      const bad = items.filter((i) => i.bad).map((i) => i.bad);
+      const dup = items.filter((i) => i.name && icons.some((x) => x.name === i.name)).map((i) => i.name);
+      if (!items.length || bad.length || dup.length) { $("#newError").textContent = !items.length ? "Add one icon per line." : bad.length ? `Use "name: description" on each line: ${bad[0]}` : `Already exist: ${dup.join(", ")}`; return; }
+      for (const it of items) requests.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), icon: it.name, type: "new", text: it.text, status: "open", created: new Date().toISOString() });
+      await saveRequests();
+      $("#dlgNew").close(); $("#drawer").hidden = false; renderRequests(); toast(`${items.length} new-icon requests added`); return;
+    }
+    if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(name)) { $("#newError").textContent = "Name must be kebab-case, e.g. rocket-launch."; return; }
     if (icons.some((i) => i.name === name)) { $("#newError").textContent = `${name} already exists.`; return; }
     if (f.mode.value === "claude") {
       if (!f.text.value.trim()) { $("#newError").textContent = "Describe what the icon should show."; return; }
