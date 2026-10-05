@@ -17,6 +17,7 @@
     <div class="seg" id="segWeight"></div>
     <div class="spacer"></div>
     <button class="btn" id="btnCorners" title="Tune corner radii">Corners</button>
+    <button class="btn" id="btnExport" title="Export animated icons">Export</button>
     <button class="btn" id="btnRequests">Claude requests <b id="reqCount">0</b></button>
     <button class="btn primary" id="btnNew">New icon</button>
     <button class="btn icon" id="btnTheme" title="Toggle theme">◐</button>
@@ -67,6 +68,32 @@
       <div class="corner-inputs" id="cornerInputs"></div>
       <div class="corner-preview" id="cornerPreview"></div>
       <div class="row"><button class="btn" value="cancel" formnovalidate>Cancel</button><button class="btn primary" value="ok">Save to config.json</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="dlgExport">
+    <form method="dialog" id="exportForm">
+      <h2>Export animations</h2>
+      <div class="ex-grid">
+        <fieldset><legend>Icons</legend><div id="exScope"></div>
+          <label>Only animations named <input name="only" placeholder="all — or e.g. default, ring"/></label></fieldset>
+        <fieldset><legend>Variants <span id="exVarCount"></span></legend><div id="exVariants"></div></fieldset>
+        <fieldset><legend>Formats</legend><div id="exFormats"></div></fieldset>
+        <fieldset><legend>Look</legend>
+          <label>Size (px, raster + Lottie) <input name="size" type="number" min="16" max="1024" value="128"/></label>
+          <label>Frame rate <select name="fps"><option>24</option><option selected>30</option><option>50</option><option>60</option></select></label>
+          <label>Icon colour <input name="color" type="color" value="#111111"/></label>
+          <label class="radio"><input type="checkbox" name="currentColor" checked/> SVG/React use currentColor</label>
+          <label class="radio"><input type="checkbox" name="transparent" checked/> Transparent background</label>
+          <label>Background / GIF matte <input name="background" type="color" value="#ffffff"/></label>
+          <label class="radio"><input type="checkbox" name="loop" checked/> Loop (GIF, APNG, WebP)</label>
+          <label>Pause between loops (ms, one-shot animations) <input name="pause" type="number" min="0" step="100" value="600"/></label>
+        </fieldset>
+      </div>
+      <p class="hint" id="exSummary"></p>
+      <div class="progress" id="exProgress" hidden><div></div><span></span></div>
+      <p class="error" id="exError"></p>
+      <div class="row"><button class="btn" value="cancel" formnovalidate>Close</button><button class="btn primary" value="ok" id="exGo">Export ZIP</button></div>
     </form>
   </dialog>
 

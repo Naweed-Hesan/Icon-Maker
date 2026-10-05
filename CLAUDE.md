@@ -93,12 +93,24 @@ Standard for UI icon motion:
 - Every animation respects `prefers-reduced-motion` (the generated CSS does this; don't remove it).
 - Check every style: parts merged in solid won't move there (`anim-style-gap`). Say so to the owner if it matters.
 
+Batch: `npm run batch -- animate --preset auto --all` gives every icon a motion that fits its name
+(bells ring, arrows nudge their way, loaders spin, likes pop, live/audio pulse, the rest draw in) under
+one shared name, `default`. Review the picks (`--dry` first, then filmstrips): the mapping is a heuristic
+in `autoPreset()` (lib/animate.js); fix wrong picks there or override per icon.
+
 Start from a preset (`npm run batch -- animate --preset wiggle --name ring bell`), then hand-tune the
 keyframes in the master when the motion should have character (e.g. the clapper lags the bell).
 Verify with `npm run sheet -- <icon> --anim <name>` and look at the filmstrip before calling it done.
 
-Build output: `dist/css/dope-animations.css` (classes `dope-play-<anim>` / `dope-hover-<anim>` on the
-icon's svg), `dist/animated/<icon>-<anim>.svg` (self-playing), React `animate="ring" animateOn="hover"`.
+Exports:
+- `npm run build`: `dist/css/dope-animations.css` (classes `dope-play-<anim>` / `dope-hover-<anim>`),
+  self-playing SVG and Lottie JSON for every variant (`dist/animated|lottie/{weight}/{corner}/{style}/`),
+  React `animate="ring" animateOn="hover"`.
+- Studio → Export: any icons × animations × variants × formats (SVG, React .jsx, CSS, Lottie, GIF, APNG,
+  WebP) as one ZIP. Raster formats are rendered in the browser, so they only exist there; to produce them
+  from Claude Code, run the studio and drive the Export dialog with Playwright.
+- Lottie is verified against lottie-web; check new animation features there too (draw = trim paths).
+- GIF has 1-bit transparency: tell the owner to set the matte to the page colour, or use APNG/WebP.
 
 ## Processing studio requests
 

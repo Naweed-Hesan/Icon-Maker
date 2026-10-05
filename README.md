@@ -20,8 +20,12 @@ Open http://localhost:4321. Needs Node 18+, no installs.
 - **Animate:** play an icon's animations, step through a frame strip, edit keyframes, or add one from
   a preset (draw, pop, wiggle, bounce, spin, pulse, nudge, fade). Clipping and other problems are flagged.
 - **Batch:** Shift/⌘-click icons (or "Select shown" after filtering), then apply one change to all of
-  them: re-centre, fit inside the padding, move, scale, corner rounding, tags, animation presets.
+  them: re-centre, fit inside the padding, move, scale, corner rounding, tags, animation presets
+  (including **Auto**, which picks a fitting motion per icon under the shared name `default`).
   You see a before/after table with what each change fixes or breaks before anything is saved.
+- **Export:** pick icons (one, a selection, or all animated), variants (style × corner × weight) and
+  formats, and download one ZIP: animated SVG, React components (.jsx), CSS, Lottie (.json), GIF,
+  APNG and animated WebP, at any size, colour and background.
 - **Corners:** tune the radius of each corner set and see it on sample icons.
 - **Claude requests:** write what you want ("bell clapper looks too small", "make the arrows nudge on
   hover"). Requests can target one icon, a whole selection, or several new icons at once (New icon →
@@ -50,7 +54,9 @@ import "dope-icons/css/dope-animations.css";
 ```
 
 Plain SVG: add `class="dope-icon-bell dope-hover-ring"` to the inline `<svg>` (or `dope-play-ring` to play once shown).
-Self-playing files are in `dist/animated/`. Starter animations: bell, bell-ring and alarm ring;
+`npm run build` also writes self-playing SVGs (`dist/animated/`) and Lottie files (`dist/lottie/`) for
+every variant. For GIF/APNG/WebP use the studio's Export. GIF can't do soft transparency: set its matte
+to your page colour, or use APNG/WebP. Starter animations: bell, bell-ring and alarm ring;
 loader, refresh and settings spin; heart, star and thumbs-up pop; check and check-circle draw;
 the four arrows and send nudge. All respect reduced-motion settings.
 

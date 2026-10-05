@@ -8,6 +8,7 @@ import { join } from "node:path";
 import { variantParts, partsToSvgInner } from "../lib/variants.js";
 import { lintAll } from "../lib/lint.js";
 import { animationCss, animatedSvg } from "../lib/animate.js";
+import { toLottie } from "../lib/lottie.js";
 import { ROOT, config as loadConfig, loadIcons } from "./load.mjs";
 
 const config = loadConfig();
@@ -63,7 +64,9 @@ writeFileSync(
   JSON.stringify({ version: 2, grid: g, baseStroke: config.baseStroke, weights: config.weights, corners, styles: config.styles, icons: data, animations: Object.fromEntries(icons.filter((i) => i.animations).map((i) => [i.name, i.animations])) })
 );
 
-// 4. Animations: one CSS file for apps, plus a self-playing SVG per animation (outline / round / regular).
+// 4. Animations: one CSS file for apps; self-playing SVG and Lottie JSON for every variant
+//    (animated/{weight}/{corner}/{style}/…, lottie/{weight}/{corner}/{style}/…), plus a flat
+//    animated/<icon>-<anim>.svg copy of the default variant for convenience.
 const css = ["/* Dope Icons animations. Add class dope-play-<animation> (plays on load) or dope-hover-<animation> (plays on hover) to the icon's <svg>. */"];
 let animCount = 0;
 mkdirSync(join(OUT, "animated"), { recursive: true });
@@ -72,7 +75,17 @@ for (const icon of icons) {
   for (const [name, anim] of Object.entries(icon.animations || {})) {
     css.push(animationCss(icon.name, name, anim, `.dope-icon-${icon.name}.dope-play-${name}`));
     css.push(animationCss(icon.name, name, anim, `.dope-icon-${icon.name}.dope-hover-${name}:hover`));
-    writeFileSync(join(OUT, "animated", `${icon.name}-${name}.svg`), animatedSvg(icon, config, { style: "outline", corner: config.defaults.corner, weight: "regular" }, name));
+    writeFileSync(join(OUT, "animated", `${icon.name}-${name}.svg`), animatedSvg(icon, config, { style: config.defaults.style, corner: config.defaults.corner, weight: config.defaults.weight }, name));
+    for (const weight of weights)
+      for (const corner of corners)
+        for (const style of config.styles) {
+          const v = { style, corner, weight };
+          const a = join(OUT, "animated", weight, corner, style), l = join(OUT, "lottie", weight, corner, style);
+          mkdirSync(a, { recursive: true });
+          mkdirSync(l, { recursive: true });
+          writeFileSync(join(a, `${icon.name}-${name}.svg`), animatedSvg(icon, config, v, name));
+          writeFileSync(join(l, `${icon.name}-${name}.json`), JSON.stringify(toLottie(icon, config, v, name, { size: g, fps: 60 })));
+        }
     animCount++;
   }
 }

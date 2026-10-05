@@ -3,6 +3,7 @@ import { lintAll, lintIcon, RULES } from "/lib/lint.js";
 import { parse, nodes, inkBounds, normalize } from "/lib/path.js";
 import { OPS, runOp } from "/lib/batch.js";
 import { PRESETS, presetAnimation, animatedSvg, frameInner, totalDuration } from "/lib/animate.js";
+import { FORMATS, buildExport } from "/studio/export.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -310,7 +311,7 @@ function renderAnimate(icon) {
     <div>
       <div class="card">
         ${name ? `<div class="anim-stage" id="aPreview" title="Click to replay">${animPreviewHtml(icon, name)}</div>
-        <div class="overlays"><button class="btn small" id="aPlay">▶ Replay</button><label><input type="checkbox" id="aLoop" ${view.animLoop ? "checked" : ""}/> Loop preview</label><span>${totalDuration(anims[name])}ms${anims[name].iterations === "infinite" ? " · loops" : ""} · ${view.style} / ${view.corner} / ${view.weight}</span></div>
+        <div class="overlays"><button class="btn small" id="aPlay">▶ Replay</button><button class="btn small" id="aExport">Export…</button><label><input type="checkbox" id="aLoop" ${view.animLoop ? "checked" : ""}/> Loop preview</label><span>${totalDuration(anims[name])}ms${anims[name].iterations === "infinite" ? " · loops" : ""} · ${view.style} / ${view.corner} / ${view.weight}</span></div>
         <div class="strip" id="aStrip">${animStripHtml(icon, name)}</div>` : `<div class="empty">No animations yet. Add one from a preset →</div>`}
       </div>
       <div class="card"><h3>Animation checks</h3><div id="aIssues">${animIssues(icon)}</div></div>
@@ -375,6 +376,7 @@ function renderBatch() {
   const res = batchPreview;
   const changed = res ? res.filter((r) => r.changed) : [];
   return `<div class="d-head"><h1>${list.length} icons selected</h1><span class="spacer"></span>
+      <button class="btn" id="bExport">Export animations…</button>
       <button class="btn" id="bClear">Clear selection</button></div>
     <div class="card"><div class="sel-strip">${list.map((i) => `<button class="mini" data-goto="${i.name}" title="${i.name}">${iconSvg(i)}<span>${esc(i.name)}</span></button>`).join("")}</div></div>
     <div class="card">
@@ -426,6 +428,56 @@ async function applyBatch() {
   batchPreview = null;
   await load(); renderAll();
   toast(`Updated ${todo.length} icons`);
+}
+
+// ---------- Export ----------
+const exState = { scope: "all", styles: new Set(["outline"]), corners: new Set(), weights: new Set(["regular"]), formats: new Set(["svg", "lottie", "gif"]) };
+function exJobs() {
+  const f = $("#exportForm");
+  const only = f.only.value.split(",").map((s) => s.trim()).filter(Boolean);
+  const pool = exState.scope === "selection" ? icons.filter((i) => selection.has(i.name)) : exState.scope === "current" ? icons.filter((i) => i.name === view.selected) : icons;
+  const jobs = [];
+  for (const icon of pool) {
+    // Export what's on screen for the current icon, including unsaved edits.
+    const src = icon.name === view.selected && draft ? draft : icon;
+    for (const anim of Object.keys(src.animations || {})) if (!only.length || only.includes(anim)) jobs.push({ icon: src, anim });
+  }
+  return { jobs, skipped: pool.filter((i) => !i.animations).length };
+}
+function exVariants() {
+  const out = [];
+  for (const style of exState.styles) for (const corner of exState.corners) for (const weight of exState.weights) out.push({ style, corner, weight });
+  return out;
+}
+function renderExport() {
+  const animatedCount = icons.filter((i) => i.animations).length;
+  const scopes = [["all", `All animated icons (${animatedCount})`]];
+  if (selection.size > 1) scopes.unshift(["selection", `Selected icons (${selection.size})`]);
+  if (view.selected && selection.size < 2) scopes.unshift(["current", `This icon (${view.selected})`]);
+  if (!scopes.some(([k]) => k === exState.scope)) exState.scope = scopes[0][0];
+  $("#exScope").innerHTML = scopes.map(([k, l]) => `<label class="radio"><input type="radio" name="scope" value="${k}" ${k === exState.scope ? "checked" : ""}/> ${esc(l)}</label>`).join("");
+  const group = (key, values) => `<div class="checks"><span class="k">${key}</span>${values.map((v) => `<label><input type="checkbox" data-ex="${key}" value="${v}" ${exState[key].has(v) ? "checked" : ""}/> ${v}</label>`).join("")}</div>`;
+  $("#exVariants").innerHTML = group("styles", config.styles) + group("corners", Object.keys(config.corners)) + group("weights", Object.keys(config.weights));
+  $("#exFormats").innerHTML = Object.entries(FORMATS).map(([k, f]) => `<label class="fmt"><input type="checkbox" data-ex="formats" value="${k}" ${exState.formats.has(k) ? "checked" : ""}/><span>${f.label}</span><small>${f.note}</small></label>`).join("");
+  updateExportSummary();
+}
+function updateExportSummary() {
+  const { jobs, skipped } = exJobs();
+  const variants = exVariants();
+  const perVariant = [...exState.formats].filter((f) => f !== "css").length;
+  $("#exVarCount").textContent = `(${variants.length})`;
+  $("#exSummary").textContent = jobs.length
+    ? `${jobs.length} animation${jobs.length === 1 ? "" : "s"} × ${variants.length} variant${variants.length === 1 ? "" : "s"} × ${perVariant} format${perVariant === 1 ? "" : "s"} = ${jobs.length * variants.length * perVariant} files${exState.formats.has("css") ? " + 1 CSS file" : ""}.${skipped ? ` ${skipped} icon${skipped === 1 ? " has" : "s have"} no animation and will be skipped.` : ""}`
+    : "Nothing to export: none of these icons has an animation yet. Add one (Animate tab, or batch → Add animation preset).";
+  $("#exGo").disabled = !jobs.length || !variants.length || !exState.formats.size;
+}
+function openExport(scope) {
+  if (!exState.corners.size) exState.corners.add(config.defaults.corner);
+  if (scope) exState.scope = scope;
+  $("#exError").textContent = "";
+  $("#exProgress").hidden = true;
+  renderExport();
+  $("#dlgExport").showModal();
 }
 
 function renderAll() { renderHeader(); renderList(); renderDetail(); }
@@ -612,6 +664,8 @@ function bind() {
     if (!b) return;
     // Batch panel
     if (b.id === "bClear") { selection.clear(); batchPreview = null; renderAll(); return; }
+    if (b.id === "bExport") { openExport("selection"); return; }
+    if (b.id === "aExport") { openExport("current"); return; }
     if (b.id === "bPreview") { previewBatch(); return; }
     if (b.id === "bApply") { if (confirm(`Apply to ${batchPreview.filter((r) => r.changed).length} icons? This writes their master files.`)) await applyBatch(); return; }
     if (b.dataset.goto && selection.size > 1) { selection.clear(); batchPreview = null; view.selected = b.dataset.goto; draft = clone(icons.find((i) => i.name === view.selected)); dirty = false; renderAll(); return; }
@@ -748,6 +802,35 @@ function bind() {
     const vals = Object.fromEntries([...$("#cornerInputs").querySelectorAll("input")].map((i) => [i.name, +i.value || 0]));
     await api("/api/config", "PUT", { ...config, corners: vals });
     toast("Corner radii saved");
+  });
+
+  // Export
+  $("#btnExport").onclick = () => openExport();
+  $("#exportForm").addEventListener("change", (e) => {
+    const t = e.target;
+    if (t.name === "scope") exState.scope = t.value;
+    if (t.dataset.ex) { if (t.checked) exState[t.dataset.ex].add(t.value); else exState[t.dataset.ex].delete(t.value); }
+    updateExportSummary();
+  });
+  $("#exportForm").addEventListener("input", (e) => { if (e.target.name === "only") updateExportSummary(); });
+  $("#exportForm").addEventListener("submit", async (e) => {
+    if (e.submitter?.value !== "ok") return;
+    e.preventDefault();
+    const f = e.target;
+    const { jobs } = exJobs();
+    const bar = $("#exProgress");
+    bar.hidden = false; $("#exGo").disabled = true; $("#exError").textContent = "";
+    try {
+      const bytes = await buildExport(jobs, config, {
+        variants: exVariants(), formats: exState.formats, size: Math.max(16, Math.min(1024, +f.size.value || 128)), fps: +f.fps.value,
+        color: f.color.value, currentColor: f.currentColor.checked, background: f.transparent.checked ? null : f.background.value,
+        loop: f.loop.checked, pauseMs: Math.max(0, +f.pause.value || 0),
+      }, (p, label) => { bar.firstElementChild.style.width = `${Math.round(p * 100)}%`; bar.lastElementChild.textContent = label; });
+      const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(new Blob([bytes], { type: "application/zip" })), download: `dope-icons-animations-${new Date().toISOString().slice(0, 10)}.zip` });
+      a.click();
+      bar.lastElementChild.textContent = `Done: ${(bytes.length / 1024).toFixed(0)} KB`;
+    } catch (err) { $("#exError").textContent = err.message; }
+    $("#exGo").disabled = false;
   });
 
   // Theme
