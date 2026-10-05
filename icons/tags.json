@@ -1,0 +1,355 @@
+{
+  "home": [
+    "house",
+    "start",
+    "main"
+  ],
+  "search": [
+    "find",
+    "magnifier",
+    "lookup"
+  ],
+  "sliders": [
+    "settings",
+    "controls",
+    "adjust",
+    "preferences"
+  ],
+  "menu": [
+    "hamburger",
+    "navigation"
+  ],
+  "close": [
+    "x",
+    "cancel",
+    "remove",
+    "dismiss"
+  ],
+  "check": [
+    "done",
+    "tick",
+    "ok",
+    "confirm"
+  ],
+  "edit": [
+    "pencil",
+    "write",
+    "modify"
+  ],
+  "trash": [
+    "delete",
+    "bin",
+    "remove"
+  ],
+  "copy": [
+    "duplicate",
+    "clone"
+  ],
+  "link": [
+    "chain",
+    "url"
+  ],
+  "heart": [
+    "like",
+    "love",
+    "favorite"
+  ],
+  "star": [
+    "favorite",
+    "rating"
+  ],
+  "bookmark": [
+    "save"
+  ],
+  "sparkle": [
+    "ai",
+    "magic",
+    "new"
+  ],
+  "eye": [
+    "view",
+    "show",
+    "visible"
+  ],
+  "eye-off": [
+    "hide",
+    "hidden",
+    "invisible"
+  ],
+  "refresh": [
+    "reload",
+    "sync"
+  ],
+  "log-out": [
+    "sign out",
+    "exit"
+  ],
+  "toggle": [
+    "switch"
+  ],
+  "mail": [
+    "email",
+    "envelope",
+    "message"
+  ],
+  "chat": [
+    "message",
+    "comment",
+    "bubble"
+  ],
+  "send": [
+    "paper plane",
+    "submit"
+  ],
+  "bell": [
+    "notification",
+    "alert"
+  ],
+  "user": [
+    "person",
+    "account",
+    "profile",
+    "avatar"
+  ],
+  "users": [
+    "people",
+    "team",
+    "group"
+  ],
+  "smile": [
+    "emoji",
+    "happy",
+    "face"
+  ],
+  "mic": [
+    "microphone",
+    "audio",
+    "record",
+    "voice"
+  ],
+  "globe": [
+    "world",
+    "web",
+    "internet",
+    "language"
+  ],
+  "play": [
+    "start",
+    "video"
+  ],
+  "pause": [
+    "stop"
+  ],
+  "music": [
+    "song",
+    "audio",
+    "note"
+  ],
+  "volume": [
+    "sound",
+    "speaker",
+    "audio"
+  ],
+  "image": [
+    "picture",
+    "photo"
+  ],
+  "camera": [
+    "photo"
+  ],
+  "layers": [
+    "stack"
+  ],
+  "file": [
+    "document",
+    "page"
+  ],
+  "file-text": [
+    "document",
+    "text"
+  ],
+  "calendar": [
+    "date",
+    "schedule",
+    "event"
+  ],
+  "clock": [
+    "time",
+    "history"
+  ],
+  "package": [
+    "box",
+    "shipping",
+    "delivery"
+  ],
+  "cart": [
+    "shopping",
+    "basket",
+    "buy"
+  ],
+  "bag": [
+    "shopping",
+    "store"
+  ],
+  "credit-card": [
+    "payment",
+    "card",
+    "money"
+  ],
+  "tag": [
+    "price",
+    "label"
+  ],
+  "gift": [
+    "present"
+  ],
+  "truck": [
+    "delivery",
+    "shipping"
+  ],
+  "briefcase": [
+    "work",
+    "job",
+    "business"
+  ],
+  "chart-bar": [
+    "analytics",
+    "stats",
+    "graph"
+  ],
+  "chart-line": [
+    "analytics",
+    "stats",
+    "graph"
+  ],
+  "chart-pie": [
+    "analytics",
+    "stats"
+  ],
+  "award": [
+    "badge",
+    "medal",
+    "prize"
+  ],
+  "target": [
+    "goal",
+    "aim"
+  ],
+  "rocket": [
+    "launch",
+    "startup"
+  ],
+  "sun": [
+    "light",
+    "day",
+    "weather"
+  ],
+  "moon": [
+    "dark",
+    "night"
+  ],
+  "cloud": [
+    "weather",
+    "storage"
+  ],
+  "bolt": [
+    "lightning",
+    "flash",
+    "power",
+    "energy"
+  ],
+  "droplet": [
+    "water",
+    "drop"
+  ],
+  "leaf": [
+    "eco",
+    "nature",
+    "plant"
+  ],
+  "map-pin": [
+    "location",
+    "place",
+    "marker"
+  ],
+  "compass": [
+    "explore",
+    "navigation"
+  ],
+  "phone": [
+    "mobile",
+    "smartphone",
+    "device"
+  ],
+  "monitor": [
+    "desktop",
+    "screen",
+    "display"
+  ],
+  "code": [
+    "develop",
+    "programming"
+  ],
+  "terminal": [
+    "console",
+    "shell",
+    "cli"
+  ],
+  "database": [
+    "storage",
+    "data",
+    "db"
+  ],
+  "server": [
+    "hosting",
+    "rack"
+  ],
+  "cpu": [
+    "chip",
+    "processor",
+    "hardware"
+  ],
+  "wifi": [
+    "wireless",
+    "network",
+    "signal"
+  ],
+  "lock": [
+    "secure",
+    "password",
+    "private"
+  ],
+  "unlock": [
+    "open"
+  ],
+  "key": [
+    "password",
+    "access"
+  ],
+  "shield": [
+    "security",
+    "protect"
+  ],
+  "info": [
+    "information",
+    "about"
+  ],
+  "alert-triangle": [
+    "warning",
+    "danger",
+    "error"
+  ],
+  "help-circle": [
+    "question",
+    "support"
+  ],
+  "check-circle": [
+    "success",
+    "done"
+  ],
+  "x-circle": [
+    "error",
+    "fail",
+    "cancel"
+  ]
+}

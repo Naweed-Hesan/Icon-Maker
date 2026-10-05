@@ -1,0 +1,11 @@
+{
+  "name": "icon-maker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/build.mjs && npx --yes serve .",
+    "import": "node scripts/import.mjs"
+  }
+}

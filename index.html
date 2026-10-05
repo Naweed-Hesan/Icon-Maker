@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Icon Maker</title>
+  <meta name="description" content="Browse, customise and export your own icon library." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236d5efc' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5c.5 4.5 2.5 6.5 7 7-4.5.5-6.5 2.5-7 7-.5-4.5-2.5-6.5-7-7 4.5-.5 6.5-2.5 7-7z'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn only-mobile" id="navToggle" aria-label="Categories"></button>
+    <a class="brand" href="#">
+      <span class="brand-mark" data-icon="sparkle"></span>
+      <span>Icon Maker</span>
+    </a>
+    <label class="search">
+      <span data-icon="search"></span>
+      <input id="search" type="search" placeholder="Search icons…" autocomplete="off" />
+      <kbd>/</kbd>
+    </label>
+    <button class="btn primary" id="addBtn"><span data-icon="plus"></span><span class="hide-sm">Add icon</span></button>
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle theme"></button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="sidebar" aria-label="Categories">
+      <ul id="categories"></ul>
+      <div class="sidebar-foot">
+        <button class="btn ghost small" id="exportBtn"><span data-icon="download"></span>Export my icons</button>
+        <a class="btn ghost small" href="dist/sprite.svg" download><span data-icon="layers"></span>Download sprite</a>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="controls">
+        <label class="ctl">Size <input id="size" type="range" min="16" max="64" step="2" value="32" /><output id="sizeOut">32px</output></label>
+        <label class="ctl">Stroke <input id="stroke" type="range" min="0.5" max="3" step="0.25" value="1.75" /><output id="strokeOut">1.75</output></label>
+        <div class="ctl">Corners
+          <div class="seg" id="corners">
+            <button data-v="round" class="on">Round</button><button data-v="sharp">Sharp</button>
+          </div>
+        </div>
+        <div class="ctl">Colour
+          <input id="color" type="color" value="#6d5efc" />
+          <button class="btn ghost small" id="colorReset" title="Use currentColor">Auto</button>
+        </div>
+        <span class="count" id="count"></span>
+      </div>
+      <div class="grid" id="grid" role="list"></div>
+      <div class="empty" id="empty" hidden>
+        <span data-icon="search"></span>
+        <p>No icons match that search.</p>
+        <button class="btn" id="emptyAdd"><span data-icon="plus"></span>Add one</button>
+      </div>
+    </main>
+
+    <aside class="panel" id="panel" aria-label="Icon details" hidden>
+      <button class="icon-btn panel-close" id="panelClose" aria-label="Close"></button>
+      <div class="preview" id="preview"></div>
+      <h2 id="pName"></h2>
+      <p class="meta" id="pMeta"></p>
+      <div class="tags" id="pTags"></div>
+      <div class="actions">
+        <button class="btn" data-act="svg"><span data-icon="copy"></span>Copy SVG</button>
+        <button class="btn" data-act="jsx"><span data-icon="code"></span>Copy JSX</button>
+        <button class="btn" data-act="dl-svg"><span data-icon="download"></span>SVG</button>
+        <button class="btn" data-act="dl-png"><span data-icon="image"></span>PNG</button>
+        <button class="btn" data-act="name"><span data-icon="file-text"></span>Copy name</button>
+        <button class="btn danger" data-act="delete" hidden><span data-icon="trash"></span>Delete</button>
+      </div>
+      <pre class="code" id="pCode"></pre>
+    </aside>
+  </div>
+
+  <dialog id="addDialog">
+    <form method="dialog" id="addForm">
+      <h2>Add icons</h2>
+      <p class="hint">Upload SVG files or paste SVG code. Icons are saved in this browser under <b>My icons</b>. To make them permanent, use <b>Export my icons</b> and run <code>npm run import</code> (see README).</p>
+      <label class="field">Category
+        <input name="category" list="catList" value="my-icons" required />
+        <datalist id="catList"></datalist>
+      </label>
+      <label class="drop" id="drop">
+        <input type="file" id="files" accept=".svg,image/svg+xml" multiple />
+        <span data-icon="upload"></span>
+        <span>Drop SVG files here or <u>browse</u></span>
+      </label>
+      <div class="or">or paste</div>
+      <label class="field">Name <input name="name" placeholder="e.g. rocket-launch" /></label>
+      <label class="field">SVG code <textarea name="svg" rows="5" placeholder="&lt;svg viewBox=&quot;0 0 24 24&quot;&gt;…&lt;/svg&gt;"></textarea></label>
+      <label class="field">Tags <input name="tags" placeholder="comma, separated, keywords" /></label>
+      <p class="error" id="addError"></p>
+      <div class="row">
+        <button class="btn ghost" value="cancel" formnovalidate>Cancel</button>
+        <button class="btn primary" id="addSubmit" value="add">Add</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="icons.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
