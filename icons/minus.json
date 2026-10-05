@@ -1,0 +1,40 @@
+{
+  "name": "minus",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "line",
+        "paths": [
+          {
+            "d": "M4.921 12L19.079 12",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "line",
+        "paths": [
+          {
+            "d": "M4.921 12L19.079 12",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "line",
+        "paths": [
+          {
+            "d": "M4.921 12L19.079 12",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

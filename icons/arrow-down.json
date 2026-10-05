@@ -1,0 +1,71 @@
+{
+  "name": "arrow-down",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 4.097L12 19.903",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M5.226 13.129L12 19.903L18.774 13.129",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 4.097L12 19.903",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M5.226 13.129L12 19.903L18.774 13.129",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 4.097L12 19.903",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M5.226 13.129L12 19.903L18.774 13.129",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "name": "loader",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "ray-1",
+        "paths": [
+          {
+            "d": "M12 7.5L12 3.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-2",
+        "paths": [
+          {
+            "d": "M15.182 8.818L17.834 6.166",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-3",
+        "paths": [
+          {
+            "d": "M16.5 12L20.25 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-4",
+        "paths": [
+          {
+            "d": "M15.182 15.182L17.834 17.834",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-5",
+        "paths": [
+          {
+            "d": "M12 16.5L12 20.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-6",
+        "paths": [
+          {
+            "d": "M8.818 15.182L6.166 17.834",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-7",
+        "paths": [
+          {
+            "d": "M7.5 12L3.75 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-8",
+        "paths": [
+          {
+            "d": "M8.818 8.818L6.166 6.166",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "ray-1",
+        "paths": [
+          {
+            "d": "M12 7.5L12 3.75",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "ray-2",
+        "paths": [
+          {
+            "d": "M15.182 8.818L17.834 6.166",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "ray-3",
+        "paths": [
+          {
+            "d": "M16.5 12L20.25 12",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "ray-4",
+        "paths": [
+          {
+            "d": "M15.182 15.182L17.834 17.834",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "ray-5",
+        "paths": [
+          {
+            "d": "M12 16.5L12 20.25",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "ray-6",
+        "paths": [
+          {
+            "d": "M8.818 15.182L6.166 17.834",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "ray-7",
+        "paths": [
+          {
+            "d": "M7.5 12L3.75 12",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "ray-8",
+        "paths": [
+          {
+            "d": "M8.818 8.818L6.166 6.166",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "ray-1",
+        "paths": [
+          {
+            "d": "M12 7.5L12 3.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-2",
+        "paths": [
+          {
+            "d": "M15.182 8.818L17.834 6.166",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-3",
+        "paths": [
+          {
+            "d": "M16.5 12L20.25 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-4",
+        "paths": [
+          {
+            "d": "M15.182 15.182L17.834 17.834",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-5",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M12 16.5L12 20.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-6",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M8.818 15.182L6.166 17.834",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-7",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M7.5 12L3.75 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-8",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M8.818 8.818L6.166 6.166",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

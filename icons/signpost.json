@@ -1,0 +1,171 @@
+{
+  "name": "signpost",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "sign-top",
+        "paths": [
+          {
+            "d": "M5 5L17.5 5L19.75 7.25L17.5 9.5L5 9.5Z",
+            "stroke": true,
+            "radius": 0.375,
+            "nodeRadius": {
+              "1": 0.667,
+              "2": 0.667,
+              "3": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "sign-bottom",
+        "paths": [
+          {
+            "d": "M19 12.5L6.5 12.5L4.25 14.75L6.5 17L19 17Z",
+            "stroke": true,
+            "radius": 0.375,
+            "nodeRadius": {
+              "1": 0.667,
+              "2": 0.667,
+              "3": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "pole",
+        "paths": [
+          {
+            "d": "M12 3L12 5 M12 9.5L12 12.5 M12 17L12 21",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "sign-top",
+        "paths": [
+          {
+            "d": "M5 5L17.5 5L19.75 7.25L17.5 9.5L5 9.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.375,
+            "nodeRadius": {
+              "1": 0.667,
+              "2": 0.667,
+              "3": 0.667
+            }
+          },
+          {
+            "d": "M5 5L17.5 5L19.75 7.25L17.5 9.5L5 9.5Z",
+            "stroke": true,
+            "radius": 0.375,
+            "nodeRadius": {
+              "1": 0.667,
+              "2": 0.667,
+              "3": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "sign-bottom",
+        "paths": [
+          {
+            "d": "M19 12.5L6.5 12.5L4.25 14.75L6.5 17L19 17Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.375,
+            "nodeRadius": {
+              "1": 0.667,
+              "2": 0.667,
+              "3": 0.667
+            }
+          },
+          {
+            "d": "M19 12.5L6.5 12.5L4.25 14.75L6.5 17L19 17Z",
+            "stroke": true,
+            "radius": 0.375,
+            "nodeRadius": {
+              "1": 0.667,
+              "2": 0.667,
+              "3": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "pole",
+        "paths": [
+          {
+            "d": "M12 3L12 5 M12 9.5L12 12.5 M12 17L12 21",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M5 5L17.5 5L19.75 7.25L17.5 9.5L5 9.5Z M19 12.5L6.5 12.5L4.25 14.75L6.5 17L19 17Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.375,
+            "nodeRadius": {
+              "1": 0.667,
+              "2": 0.667,
+              "3": 0.667,
+              "6": 0.667,
+              "7": 0.667,
+              "8": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "sign-top",
+        "paths": [
+          {
+            "d": "M5 5L17.5 5L19.75 7.25L17.5 9.5L5 9.5Z",
+            "stroke": true,
+            "radius": 0.375,
+            "nodeRadius": {
+              "1": 0.667,
+              "2": 0.667,
+              "3": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "sign-bottom",
+        "paths": [
+          {
+            "d": "M19 12.5L6.5 12.5L4.25 14.75L6.5 17L19 17Z",
+            "stroke": true,
+            "radius": 0.375,
+            "nodeRadius": {
+              "1": 0.667,
+              "2": 0.667,
+              "3": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "pole",
+        "paths": [
+          {
+            "d": "M12 3L12 5 M12 9.5L12 12.5 M12 17L12 21",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

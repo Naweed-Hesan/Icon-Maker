@@ -1,0 +1,188 @@
+{
+  "name": "car",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M3.5 12.001L5.999 6.5L18.001 6.5L20.5 12.001L20.5 17L3.5 17Z",
+            "stroke": true,
+            "radius": 0.75,
+            "nodeRadius": {
+              "0": 0.667,
+              "3": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "window",
+        "paths": [
+          {
+            "d": "M4.5 11.75L19.5 11.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "light-left",
+        "paths": [
+          {
+            "d": "M7.5 14.25L7.51 14.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "light-right",
+        "paths": [
+          {
+            "d": "M16.5 14.25L16.51 14.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-left",
+        "paths": [
+          {
+            "d": "M6.25 17L6.25 19.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-right",
+        "paths": [
+          {
+            "d": "M17.75 17L17.75 19.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M3.5 12.001L5.999 6.5L18.001 6.5L20.5 12.001L20.5 17L3.5 17Z M6.25 13.25L17.75 13.25A1.5 1.5 0 0 0 17.75 10.25L6.25 10.25A1.5 1.5 0 0 0 6.25 13.25Z M9 14.25A1.5 1.5 0 1 1 6 14.25A1.5 1.5 0 1 1 9 14.25Z M18 14.25A1.5 1.5 0 1 1 15 14.25A1.5 1.5 0 1 1 18 14.25Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75,
+            "nodeRadius": {
+              "0": 0.667,
+              "3": 0.667
+            }
+          },
+          {
+            "d": "M3.5 12.001L5.999 6.5L18.001 6.5L20.5 12.001L20.5 17L3.5 17Z M6.25 13.25L17.75 13.25A1.5 1.5 0 0 0 17.75 10.25L6.25 10.25A1.5 1.5 0 0 0 6.25 13.25Z M9 14.25A1.5 1.5 0 1 1 6 14.25A1.5 1.5 0 1 1 9 14.25Z M18 14.25A1.5 1.5 0 1 1 15 14.25A1.5 1.5 0 1 1 18 14.25Z",
+            "stroke": true,
+            "radius": 0.75,
+            "nodeRadius": {
+              "0": 0.667,
+              "3": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "wheel-left",
+        "paths": [
+          {
+            "d": "M6.25 17L6.25 19.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-right",
+        "paths": [
+          {
+            "d": "M17.75 17L17.75 19.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M3.5 12.001L5.999 6.5L18.001 6.5L20.5 12.001L20.5 17L3.5 17Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75,
+            "nodeRadius": {
+              "0": 0.667,
+              "3": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M3.5 12.001L5.999 6.5L18.001 6.5L20.5 12.001L20.5 17L3.5 17Z",
+            "stroke": true,
+            "radius": 0.75,
+            "nodeRadius": {
+              "0": 0.667,
+              "3": 0.667
+            }
+          }
+        ]
+      },
+      {
+        "name": "window",
+        "paths": [
+          {
+            "d": "M4.5 11.75L19.5 11.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "light-left",
+        "paths": [
+          {
+            "d": "M7.5 14.25L7.51 14.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "light-right",
+        "paths": [
+          {
+            "d": "M16.5 14.25L16.51 14.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-left",
+        "paths": [
+          {
+            "d": "M6.25 17L6.25 19.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-right",
+        "paths": [
+          {
+            "d": "M17.75 17L17.75 19.75",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

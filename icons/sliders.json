@@ -1,0 +1,200 @@
+{
+  "name": "sliders",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "track-1",
+        "paths": [
+          {
+            "d": "M4 7L12.25 7 M17.75 7L20 7",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "track-2",
+        "paths": [
+          {
+            "d": "M4 12L6.25 12 M11.75 12L20 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "track-3",
+        "paths": [
+          {
+            "d": "M4 17L11.25 17 M16.75 17L20 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "knob-1",
+        "paths": [
+          {
+            "d": "M17 7A2 2 0 1 1 13 7A2 2 0 1 1 17 7Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "knob-2",
+        "paths": [
+          {
+            "d": "M11 12A2 2 0 1 1 7 12A2 2 0 1 1 11 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "knob-3",
+        "paths": [
+          {
+            "d": "M16 17A2 2 0 1 1 12 17A2 2 0 1 1 16 17Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "track-1",
+        "paths": [
+          {
+            "d": "M4 7L12.25 7 M17.75 7L20 7",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "track-2",
+        "paths": [
+          {
+            "d": "M4 12L6.25 12 M11.75 12L20 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "track-3",
+        "paths": [
+          {
+            "d": "M4 17L11.25 17 M16.75 17L20 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "knob-1",
+        "paths": [
+          {
+            "d": "M17 7A2 2 0 1 1 13 7A2 2 0 1 1 17 7Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M17 7A2 2 0 1 1 13 7A2 2 0 1 1 17 7Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "knob-2",
+        "paths": [
+          {
+            "d": "M11 12A2 2 0 1 1 7 12A2 2 0 1 1 11 12Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M11 12A2 2 0 1 1 7 12A2 2 0 1 1 11 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "knob-3",
+        "paths": [
+          {
+            "d": "M16 17A2 2 0 1 1 12 17A2 2 0 1 1 16 17Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M16 17A2 2 0 1 1 12 17A2 2 0 1 1 16 17Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M17 7A2 2 0 1 1 13 7A2 2 0 1 1 17 7Z M11 12A2 2 0 1 1 7 12A2 2 0 1 1 11 12Z M16 17A2 2 0 1 1 12 17A2 2 0 1 1 16 17Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "track-1",
+        "paths": [
+          {
+            "d": "M4 7L12.25 7 M17.75 7L20 7",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "track-2",
+        "paths": [
+          {
+            "d": "M4 12L6.25 12 M11.75 12L20 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "track-3",
+        "paths": [
+          {
+            "d": "M4 17L11.25 17 M16.75 17L20 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "knob-1",
+        "paths": [
+          {
+            "d": "M17 7A2 2 0 1 1 13 7A2 2 0 1 1 17 7Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "knob-2",
+        "paths": [
+          {
+            "d": "M11 12A2 2 0 1 1 7 12A2 2 0 1 1 11 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "knob-3",
+        "paths": [
+          {
+            "d": "M16 17A2 2 0 1 1 12 17A2 2 0 1 1 16 17Z",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

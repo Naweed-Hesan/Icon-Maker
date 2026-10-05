@@ -1,0 +1,288 @@
+{
+  "name": "snowflake",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "arm-1",
+        "paths": [
+          {
+            "d": "M12 20.75L12 3.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "arm-2",
+        "paths": [
+          {
+            "d": "M4.422 16.375L19.578 7.625",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "arm-3",
+        "paths": [
+          {
+            "d": "M4.422 7.625L19.578 16.375",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tip-1",
+        "paths": [
+          {
+            "d": "M13.87 4.44L12.001 6.251L10.13 4.44",
+            "stroke": true,
+            "radius": 0.605
+          }
+        ]
+      },
+      {
+        "name": "tip-2",
+        "paths": [
+          {
+            "d": "M19.48 9.83L16.981 9.13L17.62 6.6",
+            "stroke": true,
+            "radius": 0.599
+          }
+        ]
+      },
+      {
+        "name": "tip-3",
+        "paths": [
+          {
+            "d": "M17.62 17.4L16.98 14.881L19.48 14.17",
+            "stroke": true,
+            "radius": 0.602
+          }
+        ]
+      },
+      {
+        "name": "tip-4",
+        "paths": [
+          {
+            "d": "M10.13 19.56L12.001 17.751L13.87 19.56",
+            "stroke": true,
+            "radius": 0.605
+          }
+        ]
+      },
+      {
+        "name": "tip-5",
+        "paths": [
+          {
+            "d": "M4.52 14.17L7.02 14.881L6.38 17.4",
+            "stroke": true,
+            "radius": 0.602
+          }
+        ]
+      },
+      {
+        "name": "tip-6",
+        "paths": [
+          {
+            "d": "M6.38 6.6L7.019 9.13L4.52 9.83",
+            "stroke": true,
+            "radius": 0.599
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "arm-1",
+        "paths": [
+          {
+            "d": "M12 20.75L12 3.25",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "arm-2",
+        "paths": [
+          {
+            "d": "M4.422 16.375L19.578 7.625",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "arm-3",
+        "paths": [
+          {
+            "d": "M4.422 7.625L19.578 16.375",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "tip-1",
+        "paths": [
+          {
+            "d": "M13.87 4.44L12.001 6.251L10.13 4.44",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.605
+          }
+        ]
+      },
+      {
+        "name": "tip-2",
+        "paths": [
+          {
+            "d": "M19.48 9.83L16.981 9.13L17.62 6.6",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.599
+          }
+        ]
+      },
+      {
+        "name": "tip-3",
+        "paths": [
+          {
+            "d": "M17.62 17.4L16.98 14.881L19.48 14.17",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.602
+          }
+        ]
+      },
+      {
+        "name": "tip-4",
+        "paths": [
+          {
+            "d": "M10.13 19.56L12.001 17.751L13.87 19.56",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.605
+          }
+        ]
+      },
+      {
+        "name": "tip-5",
+        "paths": [
+          {
+            "d": "M4.52 14.17L7.02 14.881L6.38 17.4",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.602
+          }
+        ]
+      },
+      {
+        "name": "tip-6",
+        "paths": [
+          {
+            "d": "M6.38 6.6L7.019 9.13L4.52 9.83",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.599
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "arm-1",
+        "paths": [
+          {
+            "d": "M12 20.75L12 3.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "arm-2",
+        "paths": [
+          {
+            "d": "M4.422 16.375L19.578 7.625",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "arm-3",
+        "paths": [
+          {
+            "d": "M4.422 7.625L19.578 16.375",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tip-1",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M13.87 4.44L12.001 6.251L10.13 4.44",
+            "stroke": true,
+            "radius": 0.605
+          }
+        ]
+      },
+      {
+        "name": "tip-2",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M19.48 9.83L16.981 9.13L17.62 6.6",
+            "stroke": true,
+            "radius": 0.599
+          }
+        ]
+      },
+      {
+        "name": "tip-3",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M17.62 17.4L16.98 14.881L19.48 14.17",
+            "stroke": true,
+            "radius": 0.602
+          }
+        ]
+      },
+      {
+        "name": "tip-4",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M10.13 19.56L12.001 17.751L13.87 19.56",
+            "stroke": true,
+            "radius": 0.605
+          }
+        ]
+      },
+      {
+        "name": "tip-5",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M4.52 14.17L7.02 14.881L6.38 17.4",
+            "stroke": true,
+            "radius": 0.602
+          }
+        ]
+      },
+      {
+        "name": "tip-6",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M6.38 6.6L7.019 9.13L4.52 9.83",
+            "stroke": true,
+            "radius": 0.599
+          }
+        ]
+      }
+    ]
+  }
+}

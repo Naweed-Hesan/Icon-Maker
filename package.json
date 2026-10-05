@@ -1,11 +1,13 @@
 {
-  "name": "icon-maker",
-  "version": "1.0.0",
+  "name": "dope-icons-studio",
   "private": true,
   "type": "module",
   "scripts": {
+    "studio": "node scripts/studio.mjs",
+    "lint": "node scripts/lint.mjs",
+    "fix": "node scripts/fix.mjs",
     "build": "node scripts/build.mjs",
-    "start": "node scripts/build.mjs && npx --yes serve .",
-    "import": "node scripts/import.mjs"
+    "new": "node scripts/new-icon.mjs",
+    "sheet": "node scripts/sheet.mjs"
   }
 }

@@ -1,0 +1,114 @@
+{
+  "name": "monitor",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "screen",
+        "paths": [
+          {
+            "d": "M2.75 3.5L21.25 3.5L21.25 16.5L2.75 16.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "neck",
+        "paths": [
+          {
+            "d": "M12 16.5L12 20.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "base",
+        "paths": [
+          {
+            "d": "M8 20.5L16 20.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "screen",
+        "paths": [
+          {
+            "d": "M2.75 3.5L21.25 3.5L21.25 16.5L2.75 16.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          },
+          {
+            "d": "M2.75 3.5L21.25 3.5L21.25 16.5L2.75 16.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "neck",
+        "paths": [
+          {
+            "d": "M12 16.5L12 20.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "base",
+        "paths": [
+          {
+            "d": "M8 20.5L16 20.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M2.75 3.5L21.25 3.5L21.25 16.5L2.75 16.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "screen",
+        "paths": [
+          {
+            "d": "M2.75 3.5L21.25 3.5L21.25 16.5L2.75 16.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "neck",
+        "paths": [
+          {
+            "d": "M12 16.5L12 20.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "base",
+        "paths": [
+          {
+            "d": "M8 20.5L16 20.5",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

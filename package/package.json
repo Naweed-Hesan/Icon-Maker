@@ -1,0 +1,21 @@
+{
+  "name": "dope-icons",
+  "version": "0.2.0",
+  "description": "Dope Icons: outline, solid and duotone icons with 4 corner sets and 3 stroke weights.",
+  "homepage": "https://dopeicons.com",
+  "type": "module",
+  "main": "react/index.js",
+  "types": "react/index.d.ts",
+  "exports": {
+    ".": { "types": "./react/index.d.ts", "default": "./react/index.js" },
+    "./react": { "types": "./react/index.d.ts", "default": "./react/index.js" },
+    "./svg/*": "./svg/*",
+    "./sprite/*": "./sprite/*",
+    "./json/*": "./json/*"
+  },
+  "sideEffects": false,
+  "files": ["react", "svg", "sprite", "json"],
+  "peerDependencies": { "react": ">=17" },
+  "peerDependenciesMeta": { "react": { "optional": true } },
+  "scripts": { "build": "node scripts/build.mjs" }
+}

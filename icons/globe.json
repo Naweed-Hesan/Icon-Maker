@@ -1,0 +1,106 @@
+{
+  "name": "globe",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "circle",
+        "paths": [
+          {
+            "d": "M20.75 12A8.75 8.75 0 1 1 3.25 12A8.75 8.75 0 1 1 20.75 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "meridian",
+        "paths": [
+          {
+            "d": "M12 3.25C9.5 6 8.5 9 8.5 12C8.5 15 9.5 18 12 20.75C14.5 18 15.5 15 15.5 12C15.5 9 14.5 6 12 3.25Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "equator",
+        "paths": [
+          {
+            "d": "M3.5 12L20.5 12",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "circle",
+        "paths": [
+          {
+            "d": "M20.75 12A8.75 8.75 0 1 1 3.25 12A8.75 8.75 0 1 1 20.75 12Z",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "meridian",
+        "paths": [
+          {
+            "d": "M12 3.25C9.5 6 8.5 9 8.5 12C8.5 15 9.5 18 12 20.75C14.5 18 15.5 15 15.5 12C15.5 9 14.5 6 12 3.25Z",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "equator",
+        "paths": [
+          {
+            "d": "M3.5 12L20.5 12",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M20.75 12A8.75 8.75 0 1 1 3.25 12A8.75 8.75 0 1 1 20.75 12Z",
+            "fill": true
+          }
+        ]
+      },
+      {
+        "name": "circle",
+        "paths": [
+          {
+            "d": "M20.75 12A8.75 8.75 0 1 1 3.25 12A8.75 8.75 0 1 1 20.75 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "meridian",
+        "paths": [
+          {
+            "d": "M12 3.25C9.5 6 8.5 9 8.5 12C8.5 15 9.5 18 12 20.75C14.5 18 15.5 15 15.5 12C15.5 9 14.5 6 12 3.25Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "equator",
+        "paths": [
+          {
+            "d": "M3.5 12L20.5 12",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

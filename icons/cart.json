@@ -1,0 +1,171 @@
+{
+  "name": "cart",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "basket",
+        "paths": [
+          {
+            "d": "M6 7L20.25 7L18.249 14.5L7.899 14.5Z",
+            "stroke": true,
+            "radius": 0.625,
+            "nodeRadius": {
+              "0": 0.4,
+              "3": 0.4
+            }
+          }
+        ]
+      },
+      {
+        "name": "handle",
+        "paths": [
+          {
+            "d": "M2.75 3.75L4 3.75A1.25 1.25 0 0 1 5.2 4.7L6 7",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-1",
+        "paths": [
+          {
+            "d": "M10.5 19A1.5 1.5 0 1 1 7.5 19A1.5 1.5 0 1 1 10.5 19Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-2",
+        "paths": [
+          {
+            "d": "M18.5 19A1.5 1.5 0 1 1 15.5 19A1.5 1.5 0 1 1 18.5 19Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "basket",
+        "paths": [
+          {
+            "d": "M6 7L20.25 7L18.249 14.5L7.899 14.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.625,
+            "nodeRadius": {
+              "0": 0.4,
+              "3": 0.4
+            }
+          },
+          {
+            "d": "M6 7L20.25 7L18.249 14.5L7.899 14.5Z",
+            "stroke": true,
+            "radius": 0.625,
+            "nodeRadius": {
+              "0": 0.4,
+              "3": 0.4
+            }
+          }
+        ]
+      },
+      {
+        "name": "handle",
+        "paths": [
+          {
+            "d": "M2.75 3.75L4 3.75A1.25 1.25 0 0 1 5.2 4.7L6 7",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-1",
+        "paths": [
+          {
+            "d": "M10.5 19A1.5 1.5 0 1 1 7.5 19A1.5 1.5 0 1 1 10.5 19Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M10.5 19A1.5 1.5 0 1 1 7.5 19A1.5 1.5 0 1 1 10.5 19Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-2",
+        "paths": [
+          {
+            "d": "M18.5 19A1.5 1.5 0 1 1 15.5 19A1.5 1.5 0 1 1 18.5 19Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M18.5 19A1.5 1.5 0 1 1 15.5 19A1.5 1.5 0 1 1 18.5 19Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M6 7L20.25 7L18.249 14.5L7.899 14.5Z M10.5 19A1.5 1.5 0 1 1 7.5 19A1.5 1.5 0 1 1 10.5 19Z M18.5 19A1.5 1.5 0 1 1 15.5 19A1.5 1.5 0 1 1 18.5 19Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.625,
+            "nodeRadius": {
+              "0": 0.4,
+              "3": 0.4
+            }
+          }
+        ]
+      },
+      {
+        "name": "basket",
+        "paths": [
+          {
+            "d": "M6 7L20.25 7L18.249 14.5L7.899 14.5Z",
+            "stroke": true,
+            "radius": 0.625,
+            "nodeRadius": {
+              "0": 0.4,
+              "3": 0.4
+            }
+          }
+        ]
+      },
+      {
+        "name": "handle",
+        "paths": [
+          {
+            "d": "M2.75 3.75L4 3.75A1.25 1.25 0 0 1 5.2 4.7L6 7",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-1",
+        "paths": [
+          {
+            "d": "M10.5 19A1.5 1.5 0 1 1 7.5 19A1.5 1.5 0 1 1 10.5 19Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-2",
+        "paths": [
+          {
+            "d": "M18.5 19A1.5 1.5 0 1 1 15.5 19A1.5 1.5 0 1 1 18.5 19Z",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

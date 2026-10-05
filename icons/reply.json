@@ -1,0 +1,74 @@
+{
+  "name": "reply",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M10 5.5L4.5 11L10 16.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "tail",
+        "paths": [
+          {
+            "d": "M4.5 11L19.5 11L19.5 18.5",
+            "stroke": true,
+            "radius": 2.75
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M10 5.5L4.5 11L10 16.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "tail",
+        "paths": [
+          {
+            "d": "M4.5 11L19.5 11L19.5 18.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 2.75
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M10 5.5L4.5 11L10 16.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "tail",
+        "paths": [
+          {
+            "d": "M4.5 11L19.5 11L19.5 18.5",
+            "stroke": true,
+            "radius": 2.75
+          }
+        ]
+      }
+    ]
+  }
+}

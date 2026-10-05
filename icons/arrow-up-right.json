@@ -1,0 +1,71 @@
+{
+  "name": "arrow-up-right",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M4.74 19.26L19.26 4.74",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M8.04 4.74L19.26 4.74L19.26 15.96",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M4.74 19.26L19.26 4.74",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M8.04 4.74L19.26 4.74L19.26 15.96",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M4.74 19.26L19.26 4.74",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M8.04 4.74L19.26 4.74L19.26 15.96",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

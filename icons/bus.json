@@ -1,0 +1,168 @@
+{
+  "name": "bus",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M4.5 3L19.5 3L19.5 18.5L4.5 18.5Z",
+            "stroke": true,
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "window",
+        "paths": [
+          {
+            "d": "M4.5 11L19.5 11",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "light-left",
+        "paths": [
+          {
+            "d": "M8 14.75L8.01 14.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "light-right",
+        "paths": [
+          {
+            "d": "M16 14.75L16.01 14.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-left",
+        "paths": [
+          {
+            "d": "M7.75 18.5L7.75 20.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-right",
+        "paths": [
+          {
+            "d": "M16.25 18.5L16.25 20.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M4.5 3L19.5 3L19.5 18.5L4.5 18.5Z M6.25 12.5L17.75 12.5A1.5 1.5 0 0 0 17.75 9.5L6.25 9.5A1.5 1.5 0 0 0 6.25 12.5Z M9.5 14.75A1.5 1.5 0 1 1 6.5 14.75A1.5 1.5 0 1 1 9.5 14.75Z M17.5 14.75A1.5 1.5 0 1 1 14.5 14.75A1.5 1.5 0 1 1 17.5 14.75Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.5
+          },
+          {
+            "d": "M4.5 3L19.5 3L19.5 18.5L4.5 18.5Z M6.25 12.5L17.75 12.5A1.5 1.5 0 0 0 17.75 9.5L6.25 9.5A1.5 1.5 0 0 0 6.25 12.5Z M9.5 14.75A1.5 1.5 0 1 1 6.5 14.75A1.5 1.5 0 1 1 9.5 14.75Z M17.5 14.75A1.5 1.5 0 1 1 14.5 14.75A1.5 1.5 0 1 1 17.5 14.75Z",
+            "stroke": true,
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "wheel-left",
+        "paths": [
+          {
+            "d": "M7.75 18.5L7.75 20.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-right",
+        "paths": [
+          {
+            "d": "M16.25 18.5L16.25 20.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M4.5 3L19.5 3L19.5 18.5L4.5 18.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M4.5 3L19.5 3L19.5 18.5L4.5 18.5Z",
+            "stroke": true,
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "window",
+        "paths": [
+          {
+            "d": "M4.5 11L19.5 11",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "light-left",
+        "paths": [
+          {
+            "d": "M8 14.75L8.01 14.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "light-right",
+        "paths": [
+          {
+            "d": "M16 14.75L16.01 14.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-left",
+        "paths": [
+          {
+            "d": "M7.75 18.5L7.75 20.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-right",
+        "paths": [
+          {
+            "d": "M16.25 18.5L16.25 20.75",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

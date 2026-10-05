@@ -1,0 +1,96 @@
+{
+  "name": "credit-card",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "card",
+        "paths": [
+          {
+            "d": "M2.75 5L21.25 5L21.25 19L2.75 19Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "stripe",
+        "paths": [
+          {
+            "d": "M2.75 9.5L21.25 9.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "digits",
+        "paths": [
+          {
+            "d": "M6.25 15L9.25 15",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "card",
+        "paths": [
+          {
+            "d": "M2.75 5L21.25 5L21.25 19L2.75 19Z M4.5 11.25L19.5 11.25A1.5 1.5 0 0 0 19.5 8.25L4.5 8.25A1.5 1.5 0 0 0 4.5 11.25Z M6.25 16.5L9.25 16.5A1.5 1.5 0 0 0 9.25 13.5L6.25 13.5A1.5 1.5 0 0 0 6.25 16.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          },
+          {
+            "d": "M2.75 5L21.25 5L21.25 19L2.75 19Z M4.5 11.25L19.5 11.25A1.5 1.5 0 0 0 19.5 8.25L4.5 8.25A1.5 1.5 0 0 0 4.5 11.25Z M6.25 16.5L9.25 16.5A1.5 1.5 0 0 0 9.25 13.5L6.25 13.5A1.5 1.5 0 0 0 6.25 16.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M2.75 5L21.25 5L21.25 19L2.75 19Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "card",
+        "paths": [
+          {
+            "d": "M2.75 5L21.25 5L21.25 19L2.75 19Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "stripe",
+        "paths": [
+          {
+            "d": "M2.75 9.5L21.25 9.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "digits",
+        "paths": [
+          {
+            "d": "M6.25 15L9.25 15",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

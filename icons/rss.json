@@ -1,0 +1,101 @@
+{
+  "name": "rss",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "dot",
+        "paths": [
+          {
+            "d": "M6.5 18.25A0.75 0.75 0 1 1 5 18.25A0.75 0.75 0 1 1 6.5 18.25Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "arc-1",
+        "paths": [
+          {
+            "d": "M4.5 11.5A8 8 0 0 1 12.5 19.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "arc-2",
+        "paths": [
+          {
+            "d": "M4.5 4.5A15 15 0 0 1 19.5 19.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "dot",
+        "paths": [
+          {
+            "d": "M6.5 18.25A0.75 0.75 0 1 1 5 18.25A0.75 0.75 0 1 1 6.5 18.25Z",
+            "fill": true
+          },
+          {
+            "d": "M6.5 18.25A0.75 0.75 0 1 1 5 18.25A0.75 0.75 0 1 1 6.5 18.25Z",
+            "stroke": true,
+            "strokeWidth": 2
+          }
+        ]
+      },
+      {
+        "name": "arc-1",
+        "paths": [
+          {
+            "d": "M4.5 11.5A8 8 0 0 1 12.5 19.5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "arc-2",
+        "paths": [
+          {
+            "d": "M4.5 4.5A15 15 0 0 1 19.5 19.5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "dot",
+        "paths": [
+          {
+            "d": "M6.5 18.25A0.75 0.75 0 1 1 5 18.25A0.75 0.75 0 1 1 6.5 18.25Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "arc-1",
+        "paths": [
+          {
+            "d": "M4.5 11.5A8 8 0 0 1 12.5 19.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "arc-2",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M4.5 4.5A15 15 0 0 1 19.5 19.5",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "name": "laptop",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "screen",
+        "paths": [
+          {
+            "d": "M4.5 4.5L19.5 4.5L19.5 15.5L4.5 15.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "base",
+        "paths": [
+          {
+            "d": "M2.5 18.75L21.5 18.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "screen",
+        "paths": [
+          {
+            "d": "M4.5 4.5L19.5 4.5L19.5 15.5L4.5 15.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M4.5 4.5L19.5 4.5L19.5 15.5L4.5 15.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "base",
+        "paths": [
+          {
+            "d": "M2.5 18.75L21.5 18.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M4.5 4.5L19.5 4.5L19.5 15.5L4.5 15.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "screen",
+        "paths": [
+          {
+            "d": "M4.5 4.5L19.5 4.5L19.5 15.5L4.5 15.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "base",
+        "paths": [
+          {
+            "d": "M2.5 18.75L21.5 18.75",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

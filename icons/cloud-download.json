@@ -1,0 +1,103 @@
+{
+  "name": "cloud-download",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "cloud",
+        "paths": [
+          {
+            "d": "M7 18L17 18A3.75 3.75 0 0 0 17.9 10.6A6 6 0 0 0 6.4 10.1A4 4 0 0 0 7 18Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 10L12 14.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M9.75 12.25L12 14.5L14.25 12.25",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "cloud",
+        "paths": [
+          {
+            "d": "M7 18L17 18A3.75 3.75 0 0 0 17.9 10.6A6 6 0 0 0 6.4 10.1A4 4 0 0 0 7 18Z M12 15.751L9 12.5L10.5 12.5L10.5 9.75L13.5 9.75L13.5 12.5L15 12.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.625,
+            "nodeRadius": {
+              "7": 0.54,
+              "10": 0.54
+            }
+          },
+          {
+            "d": "M7 18L17 18A3.75 3.75 0 0 0 17.9 10.6A6 6 0 0 0 6.4 10.1A4 4 0 0 0 7 18Z M12 15.751L9 12.5L10.5 12.5L10.5 9.75L13.5 9.75L13.5 12.5L15 12.5Z",
+            "stroke": true,
+            "radius": 0.625,
+            "nodeRadius": {
+              "7": 0.54,
+              "10": 0.54
+            }
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M7 18L17 18A3.75 3.75 0 0 0 17.9 10.6A6 6 0 0 0 6.4 10.1A4 4 0 0 0 7 18Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "cloud",
+        "paths": [
+          {
+            "d": "M7 18L17 18A3.75 3.75 0 0 0 17.9 10.6A6 6 0 0 0 6.4 10.1A4 4 0 0 0 7 18Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 10L12 14.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M9.75 12.25L12 14.5L14.25 12.25",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

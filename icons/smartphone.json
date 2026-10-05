@@ -1,0 +1,78 @@
+{
+  "name": "smartphone",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M6 2.5L18 2.5L18 21.5L6 21.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "home-bar",
+        "paths": [
+          {
+            "d": "M10.5 18.5L13.5 18.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M6 2.5L18 2.5L18 21.5L6 21.5Z M10.5 20L13.5 20A1.5 1.5 0 0 0 13.5 17L10.5 17A1.5 1.5 0 0 0 10.5 20Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          },
+          {
+            "d": "M6 2.5L18 2.5L18 21.5L6 21.5Z M10.5 20L13.5 20A1.5 1.5 0 0 0 13.5 17L10.5 17A1.5 1.5 0 0 0 10.5 20Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M6 2.5L18 2.5L18 21.5L6 21.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M6 2.5L18 2.5L18 21.5L6 21.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "home-bar",
+        "paths": [
+          {
+            "d": "M10.5 18.5L13.5 18.5",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

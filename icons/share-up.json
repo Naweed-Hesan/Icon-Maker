@@ -1,0 +1,103 @@
+{
+  "name": "share-up",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "box",
+        "paths": [
+          {
+            "d": "M8.75 10.5L5 10.5L5 20.5L19 20.5L19 10.5L15.25 10.5",
+            "stroke": true,
+            "radius": 1.125
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 3.5L12 14.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M8.5 7L12 3.5L15.5 7",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "box",
+        "paths": [
+          {
+            "d": "M8.25 10.5L5 10.5L5 20.5L19 20.5L19 10.5L15.75 10.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 1.125
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 3.5L12 14.5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M8.5 7L12 3.5L15.5 7",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "box",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M8.75 10.5L5 10.5L5 20.5L19 20.5L19 10.5L15.25 10.5",
+            "stroke": true,
+            "radius": 1.125
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 3.5L12 14.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M8.5 7L12 3.5L15.5 7",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

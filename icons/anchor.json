@@ -1,0 +1,124 @@
+{
+  "name": "anchor",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "ring",
+        "paths": [
+          {
+            "d": "M13.75 4.75A1.75 1.75 0 1 1 10.25 4.75A1.75 1.75 0 1 1 13.75 4.75Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 6.5L12 20.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M8.5 9.5L15.5 9.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "arms",
+        "paths": [
+          {
+            "d": "M4.5 13A7.5 7.5 0 0 0 19.5 13",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "ring",
+        "paths": [
+          {
+            "d": "M13.75 4.75A1.75 1.75 0 1 1 10.25 4.75A1.75 1.75 0 1 1 13.75 4.75Z",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 6.5L12 20.5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M8.5 10.25L15.5 10.25",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "arms",
+        "paths": [
+          {
+            "d": "M4.5 13A7.5 7.5 0 0 0 19.5 13",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "ring",
+        "paths": [
+          {
+            "d": "M13.75 4.75A1.75 1.75 0 1 1 10.25 4.75A1.75 1.75 0 1 1 13.75 4.75Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 6.5L12 20.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M8.5 9.5L15.5 9.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "arms",
+        "paths": [
+          {
+            "d": "M4.5 13A7.5 7.5 0 0 0 19.5 13",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

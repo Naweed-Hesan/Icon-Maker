@@ -1,0 +1,133 @@
+{
+  "name": "alarm",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "face",
+        "paths": [
+          {
+            "d": "M19.75 13A7.75 7.75 0 1 1 4.25 13A7.75 7.75 0 1 1 19.75 13Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "hands",
+        "paths": [
+          {
+            "d": "M12 9.5L12 13L14.5 14.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "bell-left",
+        "paths": [
+          {
+            "d": "M3.5 6L6.5 3.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "bell-right",
+        "paths": [
+          {
+            "d": "M20.5 6L17.5 3.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "face",
+        "paths": [
+          {
+            "d": "M19.75 13A7.75 7.75 0 1 1 4.25 13A7.75 7.75 0 1 1 19.75 13Z M10.5 9.5L10.5 13.849L13.728 15.786A1.5 1.5 0 0 0 15.272 13.214L13.5 12.151L13.5 9.5A1.5 1.5 0 0 0 10.5 9.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.625
+          },
+          {
+            "d": "M19.75 13A7.75 7.75 0 1 1 4.25 13A7.75 7.75 0 1 1 19.75 13Z M10.5 9.5L10.5 13.849L13.728 15.786A1.5 1.5 0 0 0 15.272 13.214L13.5 12.151L13.5 9.5A1.5 1.5 0 0 0 10.5 9.5Z",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "bell-left",
+        "paths": [
+          {
+            "d": "M3.5 6L6.5 3.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "bell-right",
+        "paths": [
+          {
+            "d": "M20.5 6L17.5 3.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M19.75 13A7.75 7.75 0 1 1 4.25 13A7.75 7.75 0 1 1 19.75 13Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "face",
+        "paths": [
+          {
+            "d": "M19.75 13A7.75 7.75 0 1 1 4.25 13A7.75 7.75 0 1 1 19.75 13Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "hands",
+        "paths": [
+          {
+            "d": "M12 9.5L12 13L14.5 14.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "bell-left",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M3.5 6L6.5 3.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "bell-right",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M20.5 6L17.5 3.5",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

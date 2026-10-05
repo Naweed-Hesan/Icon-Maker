@@ -1,0 +1,182 @@
+{
+  "name": "train",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M5 3L19 3L19 17.5L5 17.5Z",
+            "stroke": true,
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "window",
+        "paths": [
+          {
+            "d": "M8 6L16 6L16 10.5L8 10.5Z",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "light-left",
+        "paths": [
+          {
+            "d": "M9 13.75L9.01 13.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "light-right",
+        "paths": [
+          {
+            "d": "M15 13.75L15.01 13.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "rail-left",
+        "paths": [
+          {
+            "d": "M8.5 17.5L6.5 21",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "rail-right",
+        "paths": [
+          {
+            "d": "M15.5 17.5L17.5 21",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M5 3L19 3L19 17.5L5 17.5Z M7.25 5.25L16.75 5.25L16.75 11.25L7.25 11.25Z M10.5 13.75A1.5 1.5 0 1 1 7.5 13.75A1.5 1.5 0 1 1 10.5 13.75Z M16.5 13.75A1.5 1.5 0 1 1 13.5 13.75A1.5 1.5 0 1 1 16.5 13.75Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 2,
+            "nodeRadius": {
+              "4": 0.438,
+              "5": 0.438,
+              "6": 0.438,
+              "7": 0.438
+            }
+          },
+          {
+            "d": "M5 3L19 3L19 17.5L5 17.5Z M7.25 5.25L16.75 5.25L16.75 11.25L7.25 11.25Z M10.5 13.75A1.5 1.5 0 1 1 7.5 13.75A1.5 1.5 0 1 1 10.5 13.75Z M16.5 13.75A1.5 1.5 0 1 1 13.5 13.75A1.5 1.5 0 1 1 16.5 13.75Z",
+            "stroke": true,
+            "radius": 2,
+            "nodeRadius": {
+              "4": 0.438,
+              "5": 0.438,
+              "6": 0.438,
+              "7": 0.438
+            }
+          }
+        ]
+      },
+      {
+        "name": "rail-left",
+        "paths": [
+          {
+            "d": "M8.5 17.5L6.5 21",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "rail-right",
+        "paths": [
+          {
+            "d": "M15.5 17.5L17.5 21",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M5 3L19 3L19 17.5L5 17.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M5 3L19 3L19 17.5L5 17.5Z",
+            "stroke": true,
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "window",
+        "paths": [
+          {
+            "d": "M8 6L16 6L16 10.5L8 10.5Z",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "light-left",
+        "paths": [
+          {
+            "d": "M9 13.75L9.01 13.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "light-right",
+        "paths": [
+          {
+            "d": "M15 13.75L15.01 13.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "rail-left",
+        "paths": [
+          {
+            "d": "M8.5 17.5L6.5 21",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "rail-right",
+        "paths": [
+          {
+            "d": "M15.5 17.5L17.5 21",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

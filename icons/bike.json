@@ -1,0 +1,113 @@
+{
+  "name": "bike",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "wheel-rear",
+        "paths": [
+          {
+            "d": "M9.5 16A3.5 3.5 0 1 1 2.5 16A3.5 3.5 0 1 1 9.5 16Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-front",
+        "paths": [
+          {
+            "d": "M21.5 16A3.5 3.5 0 1 1 14.5 16A3.5 3.5 0 1 1 21.5 16Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "frame",
+        "paths": [
+          {
+            "d": "M6 16L12 16L15.25 9L9.25 9L12 16 M18 16L15.25 9L14.401 6.75L16.75 6.75 M9.25 9L8.5 6 M7.25 6L9.75 6",
+            "stroke": true,
+            "radius": 0.875,
+            "nodeRadius": {
+              "1": 0.714,
+              "7": 0.418
+            }
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "wheel-rear",
+        "paths": [
+          {
+            "d": "M9.5 16A3.5 3.5 0 1 1 2.5 16A3.5 3.5 0 1 1 9.5 16Z",
+            "stroke": true,
+            "strokeWidth": 2
+          }
+        ]
+      },
+      {
+        "name": "wheel-front",
+        "paths": [
+          {
+            "d": "M21.5 16A3.5 3.5 0 1 1 14.5 16A3.5 3.5 0 1 1 21.5 16Z",
+            "stroke": true,
+            "strokeWidth": 2
+          }
+        ]
+      },
+      {
+        "name": "frame",
+        "paths": [
+          {
+            "d": "M6 16L12 16L15.25 9L9.25 9L12 16 M18 16L15.25 9L14.401 6.75L16.75 6.75 M9.25 9L8.5 6 M7.25 6L9.75 6",
+            "stroke": true,
+            "strokeWidth": 2,
+            "radius": 0.875,
+            "nodeRadius": {
+              "1": 0.714,
+              "7": 0.418
+            }
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "wheel-rear",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M9.5 16A3.5 3.5 0 1 1 2.5 16A3.5 3.5 0 1 1 9.5 16Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wheel-front",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M21.5 16A3.5 3.5 0 1 1 14.5 16A3.5 3.5 0 1 1 21.5 16Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "frame",
+        "paths": [
+          {
+            "d": "M6 16L12 16L15.25 9L9.25 9L12 16 M18 16L15.25 9L14.401 6.75L16.75 6.75 M9.25 9L8.5 6 M7.25 6L9.75 6",
+            "stroke": true,
+            "radius": 0.875,
+            "nodeRadius": {
+              "1": 0.714,
+              "7": 0.418
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dope Icons Studio</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="/studio/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Dope Icons <span>Studio</span></div>
+    <input id="q" type="search" placeholder="Search icons  /" autocomplete="off" />
+    <select id="filter" title="Filter by issue"></select>
+    <div class="seg" id="segStyle"></div>
+    <div class="seg" id="segCorner"></div>
+    <div class="seg" id="segWeight"></div>
+    <div class="spacer"></div>
+    <button class="btn" id="btnCorners" title="Tune corner radii">Corners</button>
+    <button class="btn" id="btnRequests">Claude requests <b id="reqCount">0</b></button>
+    <button class="btn primary" id="btnNew">New icon</button>
+    <button class="btn icon" id="btnTheme" title="Toggle theme">◐</button>
+  </header>
+
+  <div class="banner" id="banner" hidden></div>
+
+  <div class="layout">
+    <section class="list">
+      <div class="summary" id="summary"></div>
+      <div class="tiles" id="tiles"></div>
+    </section>
+
+    <section class="detail" id="detail">
+      <div class="empty">Select an icon.</div>
+    </section>
+  </div>
+
+  <aside class="drawer" id="drawer" hidden>
+    <div class="drawer-head"><h2>Claude requests</h2><button class="btn icon" id="drawerClose">✕</button></div>
+    <p class="hint">Write what you want changed. Then, in a Claude Code session on this repo, say <b>“process the studio requests”</b>. Claude edits the icons, runs the checks, and marks each request done with a note. This page updates live.</p>
+    <form id="reqForm" class="req-form">
+      <input name="icon" placeholder="Icon (optional), e.g. bell" list="iconNames" />
+      <select name="type"><option value="fix">Fix</option><option value="edit">Change</option><option value="new">New icon</option><option value="review">Review / opinion</option></select>
+      <textarea name="text" rows="3" placeholder="e.g. Clapper looks too small next to the body — make it match other icons." required></textarea>
+      <button class="btn primary">Add request</button>
+    </form>
+    <div id="reqList"></div>
+  </aside>
+
+  <dialog id="dlgNew">
+    <form method="dialog" id="newForm">
+      <h2>New icon</h2>
+      <label>Name (kebab-case) <input name="name" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="e.g. rocket" list="iconNames" /></label>
+      <label class="radio"><input type="radio" name="mode" value="claude" checked /> Ask Claude to design it</label>
+      <label class="radio"><input type="radio" name="mode" value="blank" /> Start a blank master I'll edit myself</label>
+      <label>What should it show? <textarea name="text" rows="3" placeholder="e.g. A rocket launching diagonally up-right, with a small flame. Should match the plane and send icons."></textarea></label>
+      <p class="error" id="newError"></p>
+      <div class="row"><button class="btn" value="cancel" formnovalidate>Cancel</button><button class="btn primary" value="ok">Create</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="dlgCorners">
+    <form method="dialog" id="cornerForm">
+      <h2>Corner radii</h2>
+      <p class="hint">Base radius for each corner set, in px. Each path scales it by its own <code>radius</code>, and radii shrink automatically where corners are close together. Changes apply to every icon.</p>
+      <div class="corner-inputs" id="cornerInputs"></div>
+      <div class="corner-preview" id="cornerPreview"></div>
+      <div class="row"><button class="btn" value="cancel" formnovalidate>Cancel</button><button class="btn primary" value="ok">Save to config.json</button></div>
+    </form>
+  </dialog>
+
+  <datalist id="iconNames"></datalist>
+  <div class="toast" id="toast"></div>
+  <script type="module" src="/studio/app.js"></script>
+</body>
+</html>

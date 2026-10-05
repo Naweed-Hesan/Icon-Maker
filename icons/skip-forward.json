@@ -1,0 +1,87 @@
+{
+  "name": "skip-forward",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "triangle",
+        "paths": [
+          {
+            "d": "M4.75 5.501L15.501 12L4.75 18.499Z",
+            "stroke": true,
+            "radius": 0.875
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M19.25 5.5L19.25 18.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "triangle",
+        "paths": [
+          {
+            "d": "M4.75 5.501L15.501 12L4.75 18.499Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.875
+          },
+          {
+            "d": "M4.75 5.501L15.501 12L4.75 18.499Z",
+            "stroke": true,
+            "radius": 0.875
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M19.25 5.5L19.25 18.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M4.75 5.501L15.501 12L4.75 18.499Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.875
+          }
+        ]
+      },
+      {
+        "name": "triangle",
+        "paths": [
+          {
+            "d": "M4.75 5.501L15.501 12L4.75 18.499Z",
+            "stroke": true,
+            "radius": 0.875
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M19.25 5.5L19.25 18.5",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

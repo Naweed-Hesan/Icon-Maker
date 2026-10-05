@@ -1,0 +1,126 @@
+{
+  "name": "suitcase",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "case",
+        "paths": [
+          {
+            "d": "M4 7L20 7L20 20L4 20Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "handle",
+        "paths": [
+          {
+            "d": "M9 7L9 4L15 4L15 7",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "strap-left",
+        "paths": [
+          {
+            "d": "M8.5 7L8.5 20",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "strap-right",
+        "paths": [
+          {
+            "d": "M15.5 7L15.5 20",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "case",
+        "paths": [
+          {
+            "d": "M4 7L20 7L20 20L4 20Z M7 8.75L7 18.25A1.5 1.5 0 0 0 10 18.25L10 8.75A1.5 1.5 0 0 0 7 8.75Z M14 8.75L14 18.25A1.5 1.5 0 0 0 17 18.25L17 8.75A1.5 1.5 0 0 0 14 8.75Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          },
+          {
+            "d": "M4 7L20 7L20 20L4 20Z M7 8.75L7 18.25A1.5 1.5 0 0 0 10 18.25L10 8.75A1.5 1.5 0 0 0 7 8.75Z M14 8.75L14 18.25A1.5 1.5 0 0 0 17 18.25L17 8.75A1.5 1.5 0 0 0 14 8.75Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "handle",
+        "paths": [
+          {
+            "d": "M9 7L9 4L15 4L15 7",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M4 7L20 7L20 20L4 20Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "case",
+        "paths": [
+          {
+            "d": "M4 7L20 7L20 20L4 20Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "handle",
+        "paths": [
+          {
+            "d": "M9 7L9 4L15 4L15 7",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "strap-left",
+        "paths": [
+          {
+            "d": "M8.5 7L8.5 20",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "strap-right",
+        "paths": [
+          {
+            "d": "M15.5 7L15.5 20",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "name": "package",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "box",
+        "paths": [
+          {
+            "d": "M12 2.75L20.25 7L20.25 17L12 21.25L3.75 17L3.75 7Z",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "seam",
+        "paths": [
+          {
+            "d": "M3.75 7L12 11.25L20.25 7",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "spine",
+        "paths": [
+          {
+            "d": "M12 11.25L12 21.25",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "box",
+        "paths": [
+          {
+            "d": "M12 2.75L20.25 7L20.25 17L12 21.25L3.75 17L3.75 7Z M5.058 9.581L12 13.191L18.942 9.581A1.5 1.5 0 0 0 17.558 6.919L12 9.809L6.442 6.919A1.5 1.5 0 0 0 5.058 9.581Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.625
+          },
+          {
+            "d": "M12 2.75L20.25 7L20.25 17L12 21.25L3.75 17L3.75 7Z M5.058 9.581L12 13.191L18.942 9.581A1.5 1.5 0 0 0 17.558 6.919L12 9.809L6.442 6.919A1.5 1.5 0 0 0 5.058 9.581Z",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M12 2.75L20.25 7L20.25 17L12 21.25L3.75 17L3.75 7Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "box",
+        "paths": [
+          {
+            "d": "M12 2.75L20.25 7L20.25 17L12 21.25L3.75 17L3.75 7Z",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "seam",
+        "paths": [
+          {
+            "d": "M3.75 7L12 11.25L20.25 7",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "spine",
+        "paths": [
+          {
+            "d": "M12 11.25L12 21.25",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

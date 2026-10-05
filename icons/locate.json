@@ -1,0 +1,181 @@
+{
+  "name": "locate",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "ring",
+        "paths": [
+          {
+            "d": "M19 12A7 7 0 1 1 5 12A7 7 0 1 1 19 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "center",
+        "paths": [
+          {
+            "d": "M14.5 12A2.5 2.5 0 1 1 9.5 12A2.5 2.5 0 1 1 14.5 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-top",
+        "paths": [
+          {
+            "d": "M12 2.75L12 5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-bottom",
+        "paths": [
+          {
+            "d": "M12 19L12 21.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-left",
+        "paths": [
+          {
+            "d": "M2.75 12L5 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-right",
+        "paths": [
+          {
+            "d": "M19 12L21.25 12",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "ring",
+        "paths": [
+          {
+            "d": "M19 12A7 7 0 1 1 5 12A7 7 0 1 1 19 12Z M16.25 12A4.25 4.25 0 1 1 7.75 12A4.25 4.25 0 1 1 16.25 12Z M14.5 12A2.5 2.5 0 1 1 9.5 12A2.5 2.5 0 1 1 14.5 12Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M19 12A7 7 0 1 1 5 12A7 7 0 1 1 19 12Z M16.25 12A4.25 4.25 0 1 1 7.75 12A4.25 4.25 0 1 1 16.25 12Z M14.5 12A2.5 2.5 0 1 1 9.5 12A2.5 2.5 0 1 1 14.5 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-top",
+        "paths": [
+          {
+            "d": "M12 2.75L12 5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-bottom",
+        "paths": [
+          {
+            "d": "M12 19L12 21.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-left",
+        "paths": [
+          {
+            "d": "M2.75 12L5 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-right",
+        "paths": [
+          {
+            "d": "M19 12L21.25 12",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M19 12A7 7 0 1 1 5 12A7 7 0 1 1 19 12Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "ring",
+        "paths": [
+          {
+            "d": "M19 12A7 7 0 1 1 5 12A7 7 0 1 1 19 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "center",
+        "paths": [
+          {
+            "d": "M14.5 12A2.5 2.5 0 1 1 9.5 12A2.5 2.5 0 1 1 14.5 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-top",
+        "paths": [
+          {
+            "d": "M12 2.75L12 5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-bottom",
+        "paths": [
+          {
+            "d": "M12 19L12 21.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-left",
+        "paths": [
+          {
+            "d": "M2.75 12L5 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tick-right",
+        "paths": [
+          {
+            "d": "M19 12L21.25 12",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "stop",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "square",
+        "paths": [
+          {
+            "d": "M4.745 4.745L19.255 4.745L19.255 19.255L4.745 19.255Z",
+            "stroke": true,
+            "radius": 1.555
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "square",
+        "paths": [
+          {
+            "d": "M4.745 4.745L19.255 4.745L19.255 19.255L4.745 19.255Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.555
+          },
+          {
+            "d": "M4.745 4.745L19.255 4.745L19.255 19.255L4.745 19.255Z",
+            "stroke": true,
+            "radius": 1.555
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M4.745 4.745L19.255 4.745L19.255 19.255L4.745 19.255Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.555
+          }
+        ]
+      },
+      {
+        "name": "square",
+        "paths": [
+          {
+            "d": "M4.745 4.745L19.255 4.745L19.255 19.255L4.745 19.255Z",
+            "stroke": true,
+            "radius": 1.555
+          }
+        ]
+      }
+    ]
+  }
+}

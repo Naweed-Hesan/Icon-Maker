@@ -1,0 +1,43 @@
+{
+  "name": "check",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "mark",
+        "paths": [
+          {
+            "d": "M4.497 12.67L9.321 17.494L19.504 6.508",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "mark",
+        "paths": [
+          {
+            "d": "M4.497 12.67L9.321 17.494L19.504 6.508",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "mark",
+        "paths": [
+          {
+            "d": "M4.497 12.67L9.321 17.494L19.504 6.508",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

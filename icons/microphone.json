@@ -1,0 +1,110 @@
+{
+  "name": "microphone",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "capsule",
+        "paths": [
+          {
+            "d": "M12 3.25A3 3 0 0 1 15 6.25L15 11.5A3 3 0 0 1 12 14.5A3 3 0 0 1 9 11.5L9 6.25A3 3 0 0 1 12 3.25Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cradle",
+        "paths": [
+          {
+            "d": "M5.5 11A6.5 6.5 0 0 0 18.5 11",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "stem",
+        "paths": [
+          {
+            "d": "M12 17.5L12 20.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "capsule",
+        "paths": [
+          {
+            "d": "M12 3.25A3 3 0 0 1 15 6.25L15 11.5A3 3 0 0 1 12 14.5A3 3 0 0 1 9 11.5L9 6.25A3 3 0 0 1 12 3.25Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M12 3.25A3 3 0 0 1 15 6.25L15 11.5A3 3 0 0 1 12 14.5A3 3 0 0 1 9 11.5L9 6.25A3 3 0 0 1 12 3.25Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cradle",
+        "paths": [
+          {
+            "d": "M5.5 11A6.5 6.5 0 0 0 18.5 11",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "stem",
+        "paths": [
+          {
+            "d": "M12 17.5L12 20.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M12 3.25A3 3 0 0 1 15 6.25L15 11.5A3 3 0 0 1 12 14.5A3 3 0 0 1 9 11.5L9 6.25A3 3 0 0 1 12 3.25Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "capsule",
+        "paths": [
+          {
+            "d": "M12 3.25A3 3 0 0 1 15 6.25L15 11.5A3 3 0 0 1 12 14.5A3 3 0 0 1 9 11.5L9 6.25A3 3 0 0 1 12 3.25Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cradle",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M5.5 11A6.5 6.5 0 0 0 18.5 11",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "stem",
+        "paths": [
+          {
+            "d": "M12 17.5L12 20.75",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

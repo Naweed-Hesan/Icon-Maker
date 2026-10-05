@@ -1,0 +1,151 @@
+{
+  "name": "grid",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "cell-1",
+        "paths": [
+          {
+            "d": "M4.5 4.5L10.5 4.5L10.5 10.5L4.5 10.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cell-2",
+        "paths": [
+          {
+            "d": "M13.5 4.5L19.5 4.5L19.5 10.5L13.5 10.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cell-3",
+        "paths": [
+          {
+            "d": "M4.5 13.5L10.5 13.5L10.5 19.5L4.5 19.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cell-4",
+        "paths": [
+          {
+            "d": "M13.5 13.5L19.5 13.5L19.5 19.5L13.5 19.5Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "cell-1",
+        "paths": [
+          {
+            "d": "M4.5 4.5L10.5 4.5L10.5 10.5L4.5 10.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M4.5 4.5L10.5 4.5L10.5 10.5L4.5 10.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cell-2",
+        "paths": [
+          {
+            "d": "M13.5 4.5L19.5 4.5L19.5 10.5L13.5 10.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M13.5 4.5L19.5 4.5L19.5 10.5L13.5 10.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cell-3",
+        "paths": [
+          {
+            "d": "M4.5 13.5L10.5 13.5L10.5 19.5L4.5 19.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M4.5 13.5L10.5 13.5L10.5 19.5L4.5 19.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cell-4",
+        "paths": [
+          {
+            "d": "M13.5 13.5L19.5 13.5L19.5 19.5L13.5 19.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M13.5 13.5L19.5 13.5L19.5 19.5L13.5 19.5Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M4.5 4.5L10.5 4.5L10.5 10.5L4.5 10.5Z M13.5 13.5L19.5 13.5L19.5 19.5L13.5 19.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "cell-1",
+        "paths": [
+          {
+            "d": "M4.5 4.5L10.5 4.5L10.5 10.5L4.5 10.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cell-2",
+        "paths": [
+          {
+            "d": "M13.5 4.5L19.5 4.5L19.5 10.5L13.5 10.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cell-3",
+        "paths": [
+          {
+            "d": "M4.5 13.5L10.5 13.5L10.5 19.5L4.5 19.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "cell-4",
+        "paths": [
+          {
+            "d": "M13.5 13.5L19.5 13.5L19.5 19.5L13.5 19.5Z",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

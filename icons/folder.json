@@ -1,0 +1,80 @@
+{
+  "name": "folder",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "folder",
+        "paths": [
+          {
+            "d": "M2.75 4.75L9.249 4.75L11.251 7L21.25 7L21.25 19.25L2.75 19.25Z",
+            "stroke": true,
+            "radius": 1.125,
+            "nodeRadius": {
+              "1": 0.556,
+              "2": 0.556
+            }
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "folder",
+        "paths": [
+          {
+            "d": "M2.75 4.75L9.249 4.75L11.251 7L21.25 7L21.25 19.25L2.75 19.25Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.125,
+            "nodeRadius": {
+              "1": 0.556,
+              "2": 0.556
+            }
+          },
+          {
+            "d": "M2.75 4.75L9.249 4.75L11.251 7L21.25 7L21.25 19.25L2.75 19.25Z",
+            "stroke": true,
+            "radius": 1.125,
+            "nodeRadius": {
+              "1": 0.556,
+              "2": 0.556
+            }
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M2.75 4.75L9.249 4.75L11.251 7L21.25 7L21.25 19.25L2.75 19.25Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.125,
+            "nodeRadius": {
+              "1": 0.556,
+              "2": 0.556
+            }
+          }
+        ]
+      },
+      {
+        "name": "folder",
+        "paths": [
+          {
+            "d": "M2.75 4.75L9.249 4.75L11.251 7L21.25 7L21.25 19.25L2.75 19.25Z",
+            "stroke": true,
+            "radius": 1.125,
+            "nodeRadius": {
+              "1": 0.556,
+              "2": 0.556
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

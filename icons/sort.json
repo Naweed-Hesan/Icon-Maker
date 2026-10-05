@@ -1,0 +1,130 @@
+{
+  "name": "sort",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "shaft-up",
+        "paths": [
+          {
+            "d": "M8 19L8 5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head-up",
+        "paths": [
+          {
+            "d": "M4.464 8.536L8 5L11.536 8.536",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "shaft-down",
+        "paths": [
+          {
+            "d": "M16 5L16 19",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head-down",
+        "paths": [
+          {
+            "d": "M19.536 15.464L16 19L12.464 15.464",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "shaft-up",
+        "paths": [
+          {
+            "d": "M8 19L8 5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head-up",
+        "paths": [
+          {
+            "d": "M4.464 8.536L8 5L11.536 8.536",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "shaft-down",
+        "paths": [
+          {
+            "d": "M16 5L16 19",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head-down",
+        "paths": [
+          {
+            "d": "M19.536 15.464L16 19L12.464 15.464",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "shaft-up",
+        "paths": [
+          {
+            "d": "M8 19L8 5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head-up",
+        "paths": [
+          {
+            "d": "M4.464 8.536L8 5L11.536 8.536",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "shaft-down",
+        "paths": [
+          {
+            "d": "M16 5L16 19",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head-down",
+        "paths": [
+          {
+            "d": "M19.536 15.464L16 19L12.464 15.464",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

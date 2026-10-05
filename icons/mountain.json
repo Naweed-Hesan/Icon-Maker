@@ -1,0 +1,75 @@
+{
+  "name": "mountain",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "range",
+        "paths": [
+          {
+            "d": "M2.75 19.5L9 8.001L12.5 13.25L15 10L21.251 19.5Z",
+            "stroke": true,
+            "radius": 0.5,
+            "nodeRadius": {
+              "2": 0.5
+            }
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "range",
+        "paths": [
+          {
+            "d": "M2.75 19.5L9 8.001L12.5 13.25L15 10L21.251 19.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.5,
+            "nodeRadius": {
+              "2": 0.5
+            }
+          },
+          {
+            "d": "M2.75 19.5L9 8.001L12.5 13.25L15 10L21.251 19.5Z",
+            "stroke": true,
+            "radius": 0.5,
+            "nodeRadius": {
+              "2": 0.5
+            }
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M2.75 19.5L9 8.001L12.5 13.25L15 10L21.251 19.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.5,
+            "nodeRadius": {
+              "2": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "name": "range",
+        "paths": [
+          {
+            "d": "M2.75 19.5L9 8.001L12.5 13.25L15 10L21.251 19.5Z",
+            "stroke": true,
+            "radius": 0.5,
+            "nodeRadius": {
+              "2": 0.5
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

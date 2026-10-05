@@ -1,0 +1,106 @@
+{
+  "name": "reply-all",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "head-1",
+        "paths": [
+          {
+            "d": "M8.5 5.5L3 11L8.5 16.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-2",
+        "paths": [
+          {
+            "d": "M13 5.5L7.5 11L13 16.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "tail",
+        "paths": [
+          {
+            "d": "M7.5 11L19.5 11L19.5 18.5",
+            "stroke": true,
+            "radius": 2.5
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "head-1",
+        "paths": [
+          {
+            "d": "M8.5 5.5L3 11L8.5 16.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-2",
+        "paths": [
+          {
+            "d": "M13.75 5.5L8.25 11L13.75 16.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "tail",
+        "paths": [
+          {
+            "d": "M8.25 11L19.5 11L19.5 18.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 2.5
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "head-1",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M8.5 5.5L3 11L8.5 16.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-2",
+        "paths": [
+          {
+            "d": "M13 5.5L7.5 11L13 16.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "tail",
+        "paths": [
+          {
+            "d": "M7.5 11L19.5 11L19.5 18.5",
+            "stroke": true,
+            "radius": 2.5
+          }
+        ]
+      }
+    ]
+  }
+}

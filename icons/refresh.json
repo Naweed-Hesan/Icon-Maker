@@ -1,0 +1,71 @@
+{
+  "name": "refresh",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "arc",
+        "paths": [
+          {
+            "d": "M18.784 16.239A8 8 0 1 1 19.064 8.244",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M19.25 3.5L19.25 8.5L14.25 8.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "arc",
+        "paths": [
+          {
+            "d": "M18.784 16.239A8 8 0 1 1 19.064 8.244",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M19.25 3.5L19.25 8.5L14.25 8.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "arc",
+        "paths": [
+          {
+            "d": "M18.784 16.239A8 8 0 1 1 19.064 8.244",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M19.25 3.5L19.25 8.5L14.25 8.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

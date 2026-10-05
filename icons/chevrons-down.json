@@ -1,0 +1,75 @@
+{
+  "name": "chevrons-down",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "chevron-1",
+        "paths": [
+          {
+            "d": "M5.891 5.382L12 11.491L18.109 5.382",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "chevron-2",
+        "paths": [
+          {
+            "d": "M5.891 12.509L12 18.618L18.109 12.509",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "chevron-1",
+        "paths": [
+          {
+            "d": "M5.891 5.382L12 11.491L18.109 5.382",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "chevron-2",
+        "paths": [
+          {
+            "d": "M5.891 12.509L12 18.618L18.109 12.509",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "chevron-1",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M5.891 5.382L12 11.491L18.109 5.382",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "chevron-2",
+        "paths": [
+          {
+            "d": "M5.891 12.509L12 18.618L18.109 12.509",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

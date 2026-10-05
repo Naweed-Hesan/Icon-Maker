@@ -1,0 +1,105 @@
+{
+  "name": "lock",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "shackle",
+        "paths": [
+          {
+            "d": "M8 10.5L8 8A4 4 0 0 1 16 8L16 10.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M4.5 10.5L19.5 10.5L19.5 20.5L4.5 20.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "keyhole",
+        "paths": [
+          {
+            "d": "M12 14.5L12 16.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "shackle",
+        "paths": [
+          {
+            "d": "M8 10.5L8 8A4 4 0 0 1 16 8L16 10.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M4.5 10.5L19.5 10.5L19.5 20.5L4.5 20.5Z M12 13.5A1.5 1.5 0 0 1 13.5 15L13.5 16A1.5 1.5 0 0 1 12 17.5A1.5 1.5 0 0 1 10.5 16L10.5 15A1.5 1.5 0 0 1 12 13.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          },
+          {
+            "d": "M4.5 10.5L19.5 10.5L19.5 20.5L4.5 20.5Z M12 13.5A1.5 1.5 0 0 1 13.5 15L13.5 16A1.5 1.5 0 0 1 12 17.5A1.5 1.5 0 0 1 10.5 16L10.5 15A1.5 1.5 0 0 1 12 13.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M4.5 10.5L19.5 10.5L19.5 20.5L4.5 20.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "shackle",
+        "paths": [
+          {
+            "d": "M8 10.5L8 8A4 4 0 0 1 16 8L16 10.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M4.5 10.5L19.5 10.5L19.5 20.5L4.5 20.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "keyhole",
+        "paths": [
+          {
+            "d": "M12 14.5L12 16.5",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

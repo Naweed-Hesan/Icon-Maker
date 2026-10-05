@@ -1,0 +1,96 @@
+{
+  "name": "map",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "map",
+        "paths": [
+          {
+            "d": "M3.5 6L8.999 4L15.001 6L20.5 4L20.5 18L15.001 20L8.999 18L3.5 20Z",
+            "stroke": true,
+            "radius": 0.375
+          }
+        ]
+      },
+      {
+        "name": "fold-1",
+        "paths": [
+          {
+            "d": "M9 4L9 18",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "fold-2",
+        "paths": [
+          {
+            "d": "M15 6L15 20",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "map",
+        "paths": [
+          {
+            "d": "M3.5 6L8.999 4L15.001 6L20.5 4L20.5 18L15.001 20L8.999 18L3.5 20Z M7.5 6L7.5 16A1.5 1.5 0 0 0 10.5 16L10.5 6A1.5 1.5 0 0 0 7.5 6Z M13.5 8L13.5 18A1.5 1.5 0 0 0 16.5 18L16.5 8A1.5 1.5 0 0 0 13.5 8Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.375
+          },
+          {
+            "d": "M3.5 6L8.999 4L15.001 6L20.5 4L20.5 18L15.001 20L8.999 18L3.5 20Z M7.5 6L7.5 16A1.5 1.5 0 0 0 10.5 16L10.5 6A1.5 1.5 0 0 0 7.5 6Z M13.5 8L13.5 18A1.5 1.5 0 0 0 16.5 18L16.5 8A1.5 1.5 0 0 0 13.5 8Z",
+            "stroke": true,
+            "radius": 0.375
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M3.5 6L8.999 4L15.001 6L20.5 4L20.5 18L15.001 20L8.999 18L3.5 20Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.375
+          }
+        ]
+      },
+      {
+        "name": "map",
+        "paths": [
+          {
+            "d": "M3.5 6L8.999 4L15.001 6L20.5 4L20.5 18L15.001 20L8.999 18L3.5 20Z",
+            "stroke": true,
+            "radius": 0.375
+          }
+        ]
+      },
+      {
+        "name": "fold-1",
+        "paths": [
+          {
+            "d": "M9 4L9 18",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "fold-2",
+        "paths": [
+          {
+            "d": "M15 6L15 20",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

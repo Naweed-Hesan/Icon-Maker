@@ -1,0 +1,97 @@
+{
+  "name": "rewind",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "triangle-1",
+        "paths": [
+          {
+            "d": "M21.25 6.75L13.499 12L21.25 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "triangle-2",
+        "paths": [
+          {
+            "d": "M10.5 6.75L2.749 12L10.5 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "triangle-1",
+        "paths": [
+          {
+            "d": "M21.25 6.75L13.499 12L21.25 17.25Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          },
+          {
+            "d": "M21.25 6.75L13.499 12L21.25 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "triangle-2",
+        "paths": [
+          {
+            "d": "M10.5 6.75L2.749 12L10.5 17.25Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          },
+          {
+            "d": "M10.5 6.75L2.749 12L10.5 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M21.25 6.75L13.499 12L21.25 17.25Z M10.5 6.75L2.749 12L10.5 17.25Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "triangle-1",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M21.25 6.75L13.499 12L21.25 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "triangle-2",
+        "paths": [
+          {
+            "d": "M10.5 6.75L2.749 12L10.5 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ]
+  }
+}

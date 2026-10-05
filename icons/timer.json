@@ -1,0 +1,127 @@
+{
+  "name": "timer",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "face",
+        "paths": [
+          {
+            "d": "M19.5 13.5A7.5 7.5 0 1 1 4.5 13.5A7.5 7.5 0 1 1 19.5 13.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "hand",
+        "paths": [
+          {
+            "d": "M12 13.5L12 10",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "button",
+        "paths": [
+          {
+            "d": "M10 2.75L14 2.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "stem",
+        "paths": [
+          {
+            "d": "M12 2.75L12 6",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "face",
+        "paths": [
+          {
+            "d": "M19.5 13.5A7.5 7.5 0 1 1 4.5 13.5A7.5 7.5 0 1 1 19.5 13.5Z M13.5 13.5L13.5 10A1.5 1.5 0 0 0 10.5 10L10.5 13.5A1.5 1.5 0 0 0 13.5 13.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M19.5 13.5A7.5 7.5 0 1 1 4.5 13.5A7.5 7.5 0 1 1 19.5 13.5Z M13.5 13.5L13.5 10A1.5 1.5 0 0 0 10.5 10L10.5 13.5A1.5 1.5 0 0 0 13.5 13.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "button",
+        "paths": [
+          {
+            "d": "M10 2.75L14 2.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "stem",
+        "paths": [
+          {
+            "d": "M12 2.75L12 6",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M19.5 13.5A7.5 7.5 0 1 1 4.5 13.5A7.5 7.5 0 1 1 19.5 13.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "face",
+        "paths": [
+          {
+            "d": "M19.5 13.5A7.5 7.5 0 1 1 4.5 13.5A7.5 7.5 0 1 1 19.5 13.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "hand",
+        "paths": [
+          {
+            "d": "M12 13.5L12 10",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "button",
+        "paths": [
+          {
+            "d": "M10 2.75L14 2.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "stem",
+        "paths": [
+          {
+            "d": "M12 2.75L12 6",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

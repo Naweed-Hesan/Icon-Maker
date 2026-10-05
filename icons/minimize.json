@@ -1,0 +1,136 @@
+{
+  "name": "minimize",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "corner-1",
+        "paths": [
+          {
+            "d": "M9 4.5L9 9L4.5 9",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "corner-2",
+        "paths": [
+          {
+            "d": "M15 4.5L15 9L19.5 9",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "corner-3",
+        "paths": [
+          {
+            "d": "M19.5 15L15 15L15 19.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "corner-4",
+        "paths": [
+          {
+            "d": "M4.5 15L9 15L9 19.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "corner-1",
+        "paths": [
+          {
+            "d": "M9 4.5L9 9L4.5 9",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "corner-2",
+        "paths": [
+          {
+            "d": "M15 4.5L15 9L19.5 9",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "corner-3",
+        "paths": [
+          {
+            "d": "M19.5 15L15 15L15 19.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "corner-4",
+        "paths": [
+          {
+            "d": "M4.5 15L9 15L9 19.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "corner-1",
+        "paths": [
+          {
+            "d": "M9 4.5L9 9L4.5 9",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "corner-2",
+        "paths": [
+          {
+            "d": "M15 4.5L15 9L19.5 9",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "corner-3",
+        "paths": [
+          {
+            "d": "M19.5 15L15 15L15 19.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "corner-4",
+        "paths": [
+          {
+            "d": "M4.5 15L9 15L9 19.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}
