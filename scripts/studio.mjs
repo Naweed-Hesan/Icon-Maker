@@ -4,7 +4,7 @@
 //   PORT=5000 npm run studio
 import { createServer } from "node:http";
 import { readFileSync, writeFileSync, existsSync, watch, unlinkSync, statSync } from "node:fs";
-import { join, extname, normalize } from "node:path";
+import { join, extname } from "node:path";
 import { ROOT, ICON_DIR, config, loadIcons } from "./load.mjs";
 
 const PORT = +process.env.PORT || 4321;
@@ -89,9 +89,9 @@ createServer(async (req, res) => {
       }
     }
     // Static files
-    let rel = path === "/" ? "studio/index.html" : path.slice(1);
-    rel = normalize(rel);
-    if (!PUBLIC.some((d) => rel === d || rel.startsWith(d + "/"))) return send(res, 404, "Not found", "text/plain");
+    // Check the URL path with forward slashes (works on Windows too), and refuse anything with "..".
+    const rel = path === "/" ? "studio/index.html" : path.slice(1);
+    if (rel.split("/").includes("..") || !PUBLIC.some((d) => rel === d || rel.startsWith(d + "/"))) return send(res, 404, "Not found", "text/plain");
     const file = join(ROOT, rel);
     if (!existsSync(file) || !statSync(file).isFile()) return send(res, 404, "Not found", "text/plain");
     return send(res, 200, readFileSync(file), TYPES[extname(file)] || "application/octet-stream");

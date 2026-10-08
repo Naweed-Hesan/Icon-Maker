@@ -4,10 +4,11 @@
 //
 //   node scripts/import-legacy.mjs reference/dope-icons-0.1.0.json [--force]
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 import { join } from "node:path";
 import { parse, serialize, clean, corners, nodes, dist, deviation, roundCorners, round, fixStarts } from "../lib/path.js";
 
-const ROOT = new URL("..", import.meta.url).pathname;
+const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const src = process.argv.slice(2).find((a) => !a.startsWith("--")) || join(ROOT, "reference", "dope-icons-0.1.0.json");
 const force = process.argv.includes("--force");
 const config = JSON.parse(readFileSync(join(ROOT, "config.json"), "utf8"));
