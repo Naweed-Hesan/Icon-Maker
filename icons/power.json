@@ -1,0 +1,68 @@
+{
+  "name": "power",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "arc",
+        "paths": [
+          {
+            "d": "M16.66 7.446A7.25 7.25 0 1 1 7.34 7.446",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "line",
+        "paths": [
+          {
+            "d": "M12 3.75L12 11.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "arc",
+        "paths": [
+          {
+            "d": "M16.66 7.446A7.25 7.25 0 1 1 7.34 7.446",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "line",
+        "paths": [
+          {
+            "d": "M12 3.75L12 11.5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "arc",
+        "paths": [
+          {
+            "d": "M16.66 7.446A7.25 7.25 0 1 1 7.34 7.446",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "line",
+        "paths": [
+          {
+            "d": "M12 3.75L12 11.5",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

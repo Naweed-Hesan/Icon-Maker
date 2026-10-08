@@ -1,0 +1,215 @@
+{
+  "name": "bank",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "roof",
+        "paths": [
+          {
+            "d": "M2.999 8.75L12 3.5L21.001 8.75Z",
+            "stroke": true,
+            "radius": 0.5,
+            "nodeRadius": {
+              "0": 0.75,
+              "2": 0.75
+            }
+          }
+        ]
+      },
+      {
+        "name": "column-1",
+        "paths": [
+          {
+            "d": "M6 11.75L6 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "column-2",
+        "paths": [
+          {
+            "d": "M10 11.75L10 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "column-3",
+        "paths": [
+          {
+            "d": "M14 11.75L14 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "column-4",
+        "paths": [
+          {
+            "d": "M18 11.75L18 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "base",
+        "paths": [
+          {
+            "d": "M3 20.25L21 20.25",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "roof",
+        "paths": [
+          {
+            "d": "M2.999 8.75L12 3.5L21.001 8.75Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.5,
+            "nodeRadius": {
+              "0": 0.75,
+              "2": 0.75
+            }
+          },
+          {
+            "d": "M2.999 8.75L12 3.5L21.001 8.75Z",
+            "stroke": true,
+            "radius": 0.5,
+            "nodeRadius": {
+              "0": 0.75,
+              "2": 0.75
+            }
+          }
+        ]
+      },
+      {
+        "name": "column-1",
+        "paths": [
+          {
+            "d": "M6 11.75L6 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "column-2",
+        "paths": [
+          {
+            "d": "M10 11.75L10 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "column-3",
+        "paths": [
+          {
+            "d": "M14 11.75L14 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "column-4",
+        "paths": [
+          {
+            "d": "M18 11.75L18 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "base",
+        "paths": [
+          {
+            "d": "M3 20.25L21 20.25",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M2.999 8.75L12 3.5L21.001 8.75Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.5,
+            "nodeRadius": {
+              "0": 0.75,
+              "2": 0.75
+            }
+          }
+        ]
+      },
+      {
+        "name": "roof",
+        "paths": [
+          {
+            "d": "M2.999 8.75L12 3.5L21.001 8.75Z",
+            "stroke": true,
+            "radius": 0.5,
+            "nodeRadius": {
+              "0": 0.75,
+              "2": 0.75
+            }
+          }
+        ]
+      },
+      {
+        "name": "column-1",
+        "paths": [
+          {
+            "d": "M6 11.75L6 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "column-2",
+        "paths": [
+          {
+            "d": "M10 11.75L10 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "column-3",
+        "paths": [
+          {
+            "d": "M14 11.75L14 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "column-4",
+        "paths": [
+          {
+            "d": "M18 11.75L18 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "base",
+        "paths": [
+          {
+            "d": "M3 20.25L21 20.25",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

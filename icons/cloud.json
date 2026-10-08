@@ -1,0 +1,55 @@
+{
+  "name": "cloud",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "cloud",
+        "paths": [
+          {
+            "d": "M7 18L17 18A3.75 3.75 0 0 0 17.9 10.6A6 6 0 0 0 6.4 10.1A4 4 0 0 0 7 18Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "cloud",
+        "paths": [
+          {
+            "d": "M7 18L17 18A3.75 3.75 0 0 0 17.9 10.6A6 6 0 0 0 6.4 10.1A4 4 0 0 0 7 18Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M7 18L17 18A3.75 3.75 0 0 0 17.9 10.6A6 6 0 0 0 6.4 10.1A4 4 0 0 0 7 18Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M7 18L17 18A3.75 3.75 0 0 0 17.9 10.6A6 6 0 0 0 6.4 10.1A4 4 0 0 0 7 18Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "cloud",
+        "paths": [
+          {
+            "d": "M7 18L17 18A3.75 3.75 0 0 0 17.9 10.6A6 6 0 0 0 6.4 10.1A4 4 0 0 0 7 18Z",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

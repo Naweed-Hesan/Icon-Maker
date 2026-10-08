@@ -1,0 +1,28 @@
+{
+  "name": "dope-icons",
+  "grid": 24,
+  "padding": 2,
+  "baseStroke": 1.5,
+  "weights": {
+    "light": 1,
+    "regular": 1.5,
+    "bold": 2
+  },
+  "corners": {
+    "sharp": 0,
+    "subtle": 1.25,
+    "round": 2.5,
+    "soft": 4
+  },
+  "styles": [
+    "outline",
+    "solid",
+    "duotone"
+  ],
+  "defaults": {
+    "style": "outline",
+    "corner": "round",
+    "weight": "regular"
+  },
+  "duotoneOpacity": 0.2
+}

@@ -1,0 +1,111 @@
+{
+  "name": "chats",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "back",
+        "paths": [
+          {
+            "d": "M15.5 6.25L15.5 3.5L3.5 3.5L3.5 11A2.5 2.5 0 0 0 4.75 13.15",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "front",
+        "paths": [
+          {
+            "d": "M7.5 9L20.5 9L20.5 15.5A2.5 2.5 0 0 1 18 18L18 20.499L14.5 18L7.5 18Z",
+            "stroke": true,
+            "radius": 1.25,
+            "nodeRadius": {
+              "4": 0.232,
+              "5": 0.5
+            }
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "back",
+        "paths": [
+          {
+            "d": "M15.5 6.25L15.5 3.5L3.5 3.5L3.5 11A2.5 2.5 0 0 0 4.75 13.15",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "front",
+        "paths": [
+          {
+            "d": "M7.5 9L20.5 9L20.5 15.5A2.5 2.5 0 0 1 18 18L18 20.499L14.5 18L7.5 18Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25,
+            "nodeRadius": {
+              "4": 0.232,
+              "5": 0.5
+            }
+          },
+          {
+            "d": "M7.5 9L20.5 9L20.5 15.5A2.5 2.5 0 0 1 18 18L18 20.499L14.5 18L7.5 18Z",
+            "stroke": true,
+            "radius": 1.25,
+            "nodeRadius": {
+              "4": 0.232,
+              "5": 0.5
+            }
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M7.5 9L20.5 9L20.5 15.5A2.5 2.5 0 0 1 18 18L18 20.499L14.5 18L7.5 18Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25,
+            "nodeRadius": {
+              "4": 0.232,
+              "5": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "name": "back",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M15.5 6.25L15.5 3.5L3.5 3.5L3.5 11A2.5 2.5 0 0 0 4.75 13.15",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "front",
+        "paths": [
+          {
+            "d": "M7.5 9L20.5 9L20.5 15.5A2.5 2.5 0 0 1 18 18L18 20.499L14.5 18L7.5 18Z",
+            "stroke": true,
+            "radius": 1.25,
+            "nodeRadius": {
+              "4": 0.232,
+              "5": 0.5
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

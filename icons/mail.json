@@ -1,0 +1,88 @@
+{
+  "name": "mail",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "envelope",
+        "paths": [
+          {
+            "d": "M3 5L21 5L21 19L3 19Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "flap",
+        "paths": [
+          {
+            "d": "M3.5 7.25L12 12.75L20.5 7.25",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "envelope",
+        "paths": [
+          {
+            "d": "M3 5L21 5L21 19L3 19Z M4.978 10.036L12 14.249L19.022 10.036A1.5 1.5 0 0 0 17.478 7.464L12 10.751L6.522 7.464A1.5 1.5 0 0 0 4.978 10.036Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25,
+            "nodeRadius": {
+              "5": 0.5,
+              "8": 0.5
+            }
+          },
+          {
+            "d": "M3 5L21 5L21 19L3 19Z M4.978 10.036L12 14.249L19.022 10.036A1.5 1.5 0 0 0 17.478 7.464L12 10.751L6.522 7.464A1.5 1.5 0 0 0 4.978 10.036Z",
+            "stroke": true,
+            "radius": 1.25,
+            "nodeRadius": {
+              "5": 0.5,
+              "8": 0.5
+            }
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M3 5L21 5L21 19L3 19Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "envelope",
+        "paths": [
+          {
+            "d": "M3 5L21 5L21 19L3 19Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "flap",
+        "paths": [
+          {
+            "d": "M3.5 7.25L12 12.75L20.5 7.25",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

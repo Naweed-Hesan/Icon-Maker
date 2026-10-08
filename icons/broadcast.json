@@ -1,0 +1,158 @@
+{
+  "name": "broadcast",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "dot",
+        "paths": [
+          {
+            "d": "M12.75 12A0.75 0.75 0 1 1 11.25 12A0.75 0.75 0 1 1 12.75 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "inner-left",
+        "paths": [
+          {
+            "d": "M8.1 8.1A5.5 5.5 0 0 0 8.1 15.9",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "inner-right",
+        "paths": [
+          {
+            "d": "M15.9 8.1A5.5 5.5 0 0 1 15.9 15.9",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "outer-left",
+        "paths": [
+          {
+            "d": "M5.3 5.3A9.5 9.5 0 0 0 5.3 18.7",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "outer-right",
+        "paths": [
+          {
+            "d": "M18.7 5.3A9.5 9.5 0 0 1 18.7 18.7",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "dot",
+        "paths": [
+          {
+            "d": "M12.75 12A0.75 0.75 0 1 1 11.25 12A0.75 0.75 0 1 1 12.75 12Z",
+            "fill": true
+          },
+          {
+            "d": "M12.75 12A0.75 0.75 0 1 1 11.25 12A0.75 0.75 0 1 1 12.75 12Z",
+            "stroke": true,
+            "strokeWidth": 2
+          }
+        ]
+      },
+      {
+        "name": "inner-left",
+        "paths": [
+          {
+            "d": "M8.1 8.1A5.5 5.5 0 0 0 8.1 15.9",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "inner-right",
+        "paths": [
+          {
+            "d": "M15.9 8.1A5.5 5.5 0 0 1 15.9 15.9",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "outer-left",
+        "paths": [
+          {
+            "d": "M5.3 5.3A9.5 9.5 0 0 0 5.3 18.7",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "outer-right",
+        "paths": [
+          {
+            "d": "M18.7 5.3A9.5 9.5 0 0 1 18.7 18.7",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "dot",
+        "paths": [
+          {
+            "d": "M12.75 12A0.75 0.75 0 1 1 11.25 12A0.75 0.75 0 1 1 12.75 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "inner-left",
+        "paths": [
+          {
+            "d": "M8.1 8.1A5.5 5.5 0 0 0 8.1 15.9",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "inner-right",
+        "paths": [
+          {
+            "d": "M15.9 8.1A5.5 5.5 0 0 1 15.9 15.9",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "outer-left",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M5.3 5.3A9.5 9.5 0 0 0 5.3 18.7",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "outer-right",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M18.7 5.3A9.5 9.5 0 0 1 18.7 18.7",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

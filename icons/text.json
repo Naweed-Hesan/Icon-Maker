@@ -1,0 +1,99 @@
+{
+  "name": "text",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M5 6.75L5 4.75L19 4.75L19 6.75",
+            "stroke": true,
+            "radius": 0.45
+          }
+        ]
+      },
+      {
+        "name": "stem",
+        "paths": [
+          {
+            "d": "M12 4.75L12 19.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "foot",
+        "paths": [
+          {
+            "d": "M9.25 19.25L14.75 19.25",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M5 6.75L5 4.75L19 4.75L19 6.75",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.45
+          }
+        ]
+      },
+      {
+        "name": "stem",
+        "paths": [
+          {
+            "d": "M12 4.75L12 19.25",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "foot",
+        "paths": [
+          {
+            "d": "M9.25 19.25L14.75 19.25",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M5 6.75L5 4.75L19 4.75L19 6.75",
+            "stroke": true,
+            "radius": 0.45
+          }
+        ]
+      },
+      {
+        "name": "stem",
+        "paths": [
+          {
+            "d": "M12 4.75L12 19.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "foot",
+        "paths": [
+          {
+            "d": "M9.25 19.25L14.75 19.25",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

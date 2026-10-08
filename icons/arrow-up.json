@@ -1,0 +1,112 @@
+{
+  "name": "arrow-up",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 19.903L12 4.097",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M5.226 10.871L12 4.097L18.774 10.871",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 19.903L12 4.097",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M5.226 10.871L12 4.097L18.774 10.871",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 19.903L12 4.097",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M5.226 10.871L12 4.097L18.774 10.871",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  },
+  "animations": {
+    "nudge": {
+      "duration": 500,
+      "easing": "ease-in-out",
+      "iterations": 1,
+      "parts": {
+        "shaft": {
+          "keyframes": [
+            {
+              "t": 0,
+              "y": 0
+            },
+            {
+              "t": 0.45,
+              "y": -2.5
+            },
+            {
+              "t": 1,
+              "y": 0
+            }
+          ]
+        },
+        "head": {
+          "keyframes": [
+            {
+              "t": 0,
+              "y": 0
+            },
+            {
+              "t": 0.45,
+              "y": -2.5
+            },
+            {
+              "t": 1,
+              "y": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

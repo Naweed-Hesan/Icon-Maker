@@ -1,0 +1,192 @@
+{
+  "name": "cloud-drizzle",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "cloud",
+        "paths": [
+          {
+            "d": "M7.75 13.35L16.25 13.35A3.188 3.188 0 0 0 17.015 7.06A5.1 5.1 0 0 0 7.24 6.635A3.4 3.4 0 0 0 7.75 13.35Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-1",
+        "paths": [
+          {
+            "d": "M8 16.75L8.01 16.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-2",
+        "paths": [
+          {
+            "d": "M12 16.75L12.01 16.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-3",
+        "paths": [
+          {
+            "d": "M16 16.75L16.01 16.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-4",
+        "paths": [
+          {
+            "d": "M10 19.75L10.01 19.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-5",
+        "paths": [
+          {
+            "d": "M14 19.75L14.01 19.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "cloud",
+        "paths": [
+          {
+            "d": "M7.75 13.35L16.25 13.35A3.188 3.188 0 0 0 17.015 7.06A5.1 5.1 0 0 0 7.24 6.635A3.4 3.4 0 0 0 7.75 13.35Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M7.75 13.35L16.25 13.35A3.188 3.188 0 0 0 17.015 7.06A5.1 5.1 0 0 0 7.24 6.635A3.4 3.4 0 0 0 7.75 13.35Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-1",
+        "paths": [
+          {
+            "d": "M8 16.75L8.01 16.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-2",
+        "paths": [
+          {
+            "d": "M12 16.75L12.01 16.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-3",
+        "paths": [
+          {
+            "d": "M16 16.75L16.01 16.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-4",
+        "paths": [
+          {
+            "d": "M10 19.75L10.01 19.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-5",
+        "paths": [
+          {
+            "d": "M14 19.75L14.01 19.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M7.75 13.35L16.25 13.35A3.188 3.188 0 0 0 17.015 7.06A5.1 5.1 0 0 0 7.24 6.635A3.4 3.4 0 0 0 7.75 13.35Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "cloud",
+        "paths": [
+          {
+            "d": "M7.75 13.35L16.25 13.35A3.188 3.188 0 0 0 17.015 7.06A5.1 5.1 0 0 0 7.24 6.635A3.4 3.4 0 0 0 7.75 13.35Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-1",
+        "paths": [
+          {
+            "d": "M8 16.75L8.01 16.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-2",
+        "paths": [
+          {
+            "d": "M12 16.75L12.01 16.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-3",
+        "paths": [
+          {
+            "d": "M16 16.75L16.01 16.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-4",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M10 19.75L10.01 19.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "drop-5",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M14 19.75L14.01 19.75",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "name": "plus",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "line-v",
+        "paths": [
+          {
+            "d": "M12 4.921L12 19.079",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "line-h",
+        "paths": [
+          {
+            "d": "M4.921 12L19.079 12",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "line-v",
+        "paths": [
+          {
+            "d": "M12 4.921L12 19.079",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "line-h",
+        "paths": [
+          {
+            "d": "M4.921 12L19.079 12",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "line-v",
+        "paths": [
+          {
+            "d": "M12 4.921L12 19.079",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "line-h",
+        "paths": [
+          {
+            "d": "M4.921 12L19.079 12",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

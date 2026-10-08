@@ -1,0 +1,97 @@
+{
+  "name": "wind",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "gust-1",
+        "paths": [
+          {
+            "d": "M3 9L14.5 9A2.75 2.75 0 1 0 11.75 6.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "gust-2",
+        "paths": [
+          {
+            "d": "M3 13L18.25 13A2.75 2.75 0 1 1 15.5 15.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "gust-3",
+        "paths": [
+          {
+            "d": "M3 17L10 17",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "gust-1",
+        "paths": [
+          {
+            "d": "M3 9L14.5 9A2.75 2.75 0 1 0 11.75 6.25",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "gust-2",
+        "paths": [
+          {
+            "d": "M3 13L18.25 13A2.75 2.75 0 1 1 15.5 15.75",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "gust-3",
+        "paths": [
+          {
+            "d": "M3 17L10 17",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "gust-1",
+        "paths": [
+          {
+            "d": "M3 9L14.5 9A2.75 2.75 0 1 0 11.75 6.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "gust-2",
+        "paths": [
+          {
+            "d": "M3 13L18.25 13A2.75 2.75 0 1 1 15.5 15.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "gust-3",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M3 17L10 17",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

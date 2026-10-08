@@ -1,0 +1,97 @@
+{
+  "name": "fast-forward",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "triangle-1",
+        "paths": [
+          {
+            "d": "M2.75 6.75L10.501 12L2.75 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "triangle-2",
+        "paths": [
+          {
+            "d": "M13.5 6.75L21.251 12L13.5 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "triangle-1",
+        "paths": [
+          {
+            "d": "M2.75 6.75L10.501 12L2.75 17.25Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          },
+          {
+            "d": "M2.75 6.75L10.501 12L2.75 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "triangle-2",
+        "paths": [
+          {
+            "d": "M13.5 6.75L21.251 12L13.5 17.25Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          },
+          {
+            "d": "M13.5 6.75L21.251 12L13.5 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M2.75 6.75L10.501 12L2.75 17.25Z M13.5 6.75L21.251 12L13.5 17.25Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "triangle-1",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M2.75 6.75L10.501 12L2.75 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "triangle-2",
+        "paths": [
+          {
+            "d": "M13.5 6.75L21.251 12L13.5 17.25Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ]
+  }
+}

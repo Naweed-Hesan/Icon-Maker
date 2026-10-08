@@ -1,0 +1,60 @@
+{
+  "name": "chat-circle",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "bubble",
+        "paths": [
+          {
+            "d": "M12 3.75A8.25 8.25 0 1 1 7.9 19.15L3.75 20.25L4.85 16.1A8.25 8.25 0 0 1 12 3.75Z",
+            "stroke": true,
+            "radius": 0.561
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "bubble",
+        "paths": [
+          {
+            "d": "M12 3.75A8.25 8.25 0 1 1 7.9 19.15L3.75 20.25L4.85 16.1A8.25 8.25 0 0 1 12 3.75Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.561
+          },
+          {
+            "d": "M12 3.75A8.25 8.25 0 1 1 7.9 19.15L3.75 20.25L4.85 16.1A8.25 8.25 0 0 1 12 3.75Z",
+            "stroke": true,
+            "radius": 0.561
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M12 3.75A8.25 8.25 0 1 1 7.9 19.15L3.75 20.25L4.85 16.1A8.25 8.25 0 0 1 12 3.75Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.561
+          }
+        ]
+      },
+      {
+        "name": "bubble",
+        "paths": [
+          {
+            "d": "M12 3.75A8.25 8.25 0 1 1 7.9 19.15L3.75 20.25L4.85 16.1A8.25 8.25 0 0 1 12 3.75Z",
+            "stroke": true,
+            "radius": 0.561
+          }
+        ]
+      }
+    ]
+  }
+}

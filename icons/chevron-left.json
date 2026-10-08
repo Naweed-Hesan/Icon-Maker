@@ -1,0 +1,43 @@
+{
+  "name": "chevron-left",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "chevron",
+        "paths": [
+          {
+            "d": "M15.194 5.612L8.806 12L15.194 18.388",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "chevron",
+        "paths": [
+          {
+            "d": "M15.194 5.612L8.806 12L15.194 18.388",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "chevron",
+        "paths": [
+          {
+            "d": "M15.194 5.612L8.806 12L15.194 18.388",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "name": "thermometer",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "tube",
+        "paths": [
+          {
+            "d": "M9 13.5L9 5.75A3 3 0 0 1 15 5.75L15 13.5A4.25 4.25 0 1 1 9 13.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "mercury",
+        "paths": [
+          {
+            "d": "M12 16.5L12 8.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "tube",
+        "paths": [
+          {
+            "d": "M9 13.5L9 5.75A3 3 0 0 1 15 5.75L15 13.5A4.25 4.25 0 1 1 9 13.5Z M13.5 16.5L13.5 8.5A1.5 1.5 0 0 0 10.5 8.5L10.5 16.5A1.5 1.5 0 0 0 13.5 16.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M9 13.5L9 5.75A3 3 0 0 1 15 5.75L15 13.5A4.25 4.25 0 1 1 9 13.5Z M13.5 16.5L13.5 8.5A1.5 1.5 0 0 0 10.5 8.5L10.5 16.5A1.5 1.5 0 0 0 13.5 16.5Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M9 13.5L9 5.75A3 3 0 0 1 15 5.75L15 13.5A4.25 4.25 0 1 1 9 13.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "tube",
+        "paths": [
+          {
+            "d": "M9 13.5L9 5.75A3 3 0 0 1 15 5.75L15 13.5A4.25 4.25 0 1 1 9 13.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "mercury",
+        "paths": [
+          {
+            "d": "M12 16.5L12 8.5",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

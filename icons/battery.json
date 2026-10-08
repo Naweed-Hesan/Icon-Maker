@@ -1,0 +1,123 @@
+{
+  "name": "battery",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M2.5 7L18.5 7L18.5 17L2.5 17Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "cap",
+        "paths": [
+          {
+            "d": "M21.5 10.5L21.5 13.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "level-1",
+        "paths": [
+          {
+            "d": "M6 10L6 14",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "level-2",
+        "paths": [
+          {
+            "d": "M9.25 10L9.25 14",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M2.5 7L18.5 7L18.5 17L2.5 17Z M4.5 10L4.5 14A1.5 1.5 0 0 0 7.5 14L7.5 10A1.5 1.5 0 0 0 4.5 10Z M7.75 10L7.75 14A1.5 1.5 0 0 0 10.75 14L10.75 10A1.5 1.5 0 0 0 7.75 10Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          },
+          {
+            "d": "M2.5 7L18.5 7L18.5 17L2.5 17Z M4.5 10L4.5 14A1.5 1.5 0 0 0 7.5 14L7.5 10A1.5 1.5 0 0 0 4.5 10Z M7.75 10L7.75 14A1.5 1.5 0 0 0 10.75 14L10.75 10A1.5 1.5 0 0 0 7.75 10Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "cap",
+        "paths": [
+          {
+            "d": "M21.5 10.5L21.5 13.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M2.5 7L18.5 7L18.5 17L2.5 17Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M2.5 7L18.5 7L18.5 17L2.5 17Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "cap",
+        "paths": [
+          {
+            "d": "M21.5 10.5L21.5 13.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "level-1",
+        "paths": [
+          {
+            "d": "M6 10L6 14",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "level-2",
+        "paths": [
+          {
+            "d": "M9.25 10L9.25 14",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

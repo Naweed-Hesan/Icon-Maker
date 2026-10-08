@@ -1,0 +1,114 @@
+{
+  "name": "voicemail",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "tape-left",
+        "paths": [
+          {
+            "d": "M10 12A3.25 3.25 0 1 1 3.5 12A3.25 3.25 0 1 1 10 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tape-right",
+        "paths": [
+          {
+            "d": "M20.5 12A3.25 3.25 0 1 1 14 12A3.25 3.25 0 1 1 20.5 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M6.75 15.25L17.25 15.25",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "tape-left",
+        "paths": [
+          {
+            "d": "M10 12A3.25 3.25 0 1 1 3.5 12A3.25 3.25 0 1 1 10 12Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M10 12A3.25 3.25 0 1 1 3.5 12A3.25 3.25 0 1 1 10 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tape-right",
+        "paths": [
+          {
+            "d": "M20.5 12A3.25 3.25 0 1 1 14 12A3.25 3.25 0 1 1 20.5 12Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M20.5 12A3.25 3.25 0 1 1 14 12A3.25 3.25 0 1 1 20.5 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M6.75 15.25L17.25 15.25",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M10 12A3.25 3.25 0 1 1 3.5 12A3.25 3.25 0 1 1 10 12Z M20.5 12A3.25 3.25 0 1 1 14 12A3.25 3.25 0 1 1 20.5 12Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "tape-left",
+        "paths": [
+          {
+            "d": "M10 12A3.25 3.25 0 1 1 3.5 12A3.25 3.25 0 1 1 10 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "tape-right",
+        "paths": [
+          {
+            "d": "M20.5 12A3.25 3.25 0 1 1 14 12A3.25 3.25 0 1 1 20.5 12Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M6.75 15.25L17.25 15.25",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

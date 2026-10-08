@@ -1,0 +1,74 @@
+{
+  "name": "forward",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M14 5.5L19.5 11L14 16.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "tail",
+        "paths": [
+          {
+            "d": "M19.5 11L4.5 11L4.5 18.5",
+            "stroke": true,
+            "radius": 2.75
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M14 5.5L19.5 11L14 16.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "tail",
+        "paths": [
+          {
+            "d": "M19.5 11L4.5 11L4.5 18.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 2.75
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M14 5.5L19.5 11L14 16.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "tail",
+        "paths": [
+          {
+            "d": "M19.5 11L4.5 11L4.5 18.5",
+            "stroke": true,
+            "radius": 2.75
+          }
+        ]
+      }
+    ]
+  }
+}

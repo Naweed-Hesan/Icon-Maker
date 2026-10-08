@@ -1,0 +1,214 @@
+{
+  "name": "sunrise",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "sun",
+        "paths": [
+          {
+            "d": "M7 17A5 5 0 0 1 17 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "horizon",
+        "paths": [
+          {
+            "d": "M3 17L21 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ground",
+        "paths": [
+          {
+            "d": "M7.5 20.5L16.5 20.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 3L12 8.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M9.5 5.5L12 3L14.5 5.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "ray-left",
+        "paths": [
+          {
+            "d": "M4.5 10.5L5.75 11.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-right",
+        "paths": [
+          {
+            "d": "M19.5 10.5L18.25 11.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "sun",
+        "paths": [
+          {
+            "d": "M7 17A5 5 0 0 1 17 17",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "horizon",
+        "paths": [
+          {
+            "d": "M3 17L21 17",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "ground",
+        "paths": [
+          {
+            "d": "M7.5 20.5L16.5 20.5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 3L12 8.5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M9.5 5.5L12 3L14.5 5.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "ray-left",
+        "paths": [
+          {
+            "d": "M4.5 10.5L5.75 11.75",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "ray-right",
+        "paths": [
+          {
+            "d": "M19.5 10.5L18.25 11.75",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "sun",
+        "paths": [
+          {
+            "d": "M7 17A5 5 0 0 1 17 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "horizon",
+        "paths": [
+          {
+            "d": "M3 17L21 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ground",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M7.5 20.5L16.5 20.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M12 3L12 8.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M9.5 5.5L12 3L14.5 5.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "ray-left",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M4.5 10.5L5.75 11.75",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "ray-right",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M19.5 10.5L18.25 11.75",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

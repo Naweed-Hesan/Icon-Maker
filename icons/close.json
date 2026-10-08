@@ -1,0 +1,68 @@
+{
+  "name": "close",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "line-1",
+        "paths": [
+          {
+            "d": "M4.921 4.921L19.079 19.079",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "line-2",
+        "paths": [
+          {
+            "d": "M19.079 4.921L4.921 19.079",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "line-1",
+        "paths": [
+          {
+            "d": "M4.921 4.921L19.079 19.079",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "line-2",
+        "paths": [
+          {
+            "d": "M19.079 4.921L4.921 19.079",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "line-1",
+        "paths": [
+          {
+            "d": "M4.921 4.921L19.079 19.079",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "line-2",
+        "paths": [
+          {
+            "d": "M19.079 4.921L4.921 19.079",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

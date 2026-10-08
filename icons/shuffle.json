@@ -1,0 +1,122 @@
+{
+  "name": "shuffle",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "path-1",
+        "paths": [
+          {
+            "d": "M3.5 7L6.5 7C10.5 7 13.5 17 17.5 17L20 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "path-2",
+        "paths": [
+          {
+            "d": "M3.5 17L6.5 17C10.5 17 13.5 7 17.5 7L20 7",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head-1",
+        "paths": [
+          {
+            "d": "M18.025 4.525L20.5 7L18.025 9.475",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-2",
+        "paths": [
+          {
+            "d": "M18.025 14.525L20.5 17L18.025 19.475",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "path-1",
+        "paths": [
+          {
+            "d": "M3.5 7L6.5 7C10.5 7 13.5 17 17.5 17L20 17",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "path-2",
+        "paths": [
+          {
+            "d": "M3.5 17L6.5 17C10.5 17 13.5 7 17.5 7L20 7",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head-1",
+        "paths": [
+          {
+            "d": "M18.025 4.525L20.5 7L18.025 9.475",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-2",
+        "paths": [
+          {
+            "d": "M18.025 14.525L20.5 17L18.025 19.475",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "path-1",
+        "paths": [
+          {
+            "d": "M3.5 7L6.5 7C10.5 7 13.5 17 17.5 17L20 17",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "path-2+head-1",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M3.5 17L6.5 17C10.5 17 13.5 7 17.5 7L20 7 M18.025 4.525L20.5 7L18.025 9.475",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-2",
+        "paths": [
+          {
+            "d": "M18.025 14.525L20.5 17L18.025 19.475",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

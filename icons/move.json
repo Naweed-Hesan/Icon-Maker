@@ -1,0 +1,192 @@
+{
+  "name": "move",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "vertical",
+        "paths": [
+          {
+            "d": "M12 4L12 20",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "horizontal",
+        "paths": [
+          {
+            "d": "M4 12L20 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head-up",
+        "paths": [
+          {
+            "d": "M9.172 6.828L12 4L14.828 6.828",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-down",
+        "paths": [
+          {
+            "d": "M14.828 17.172L12 20L9.172 17.172",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-left",
+        "paths": [
+          {
+            "d": "M6.828 14.828L4 12L6.828 9.172",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-right",
+        "paths": [
+          {
+            "d": "M17.172 9.172L20 12L17.172 14.828",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "vertical",
+        "paths": [
+          {
+            "d": "M12 4L12 20",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "horizontal",
+        "paths": [
+          {
+            "d": "M4 12L20 12",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head-up",
+        "paths": [
+          {
+            "d": "M9.172 6.828L12 4L14.828 6.828",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-down",
+        "paths": [
+          {
+            "d": "M14.828 17.172L12 20L9.172 17.172",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-left",
+        "paths": [
+          {
+            "d": "M6.828 14.828L4 12L6.828 9.172",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-right",
+        "paths": [
+          {
+            "d": "M17.172 9.172L20 12L17.172 14.828",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "vertical",
+        "paths": [
+          {
+            "d": "M12 4L12 20",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "horizontal",
+        "paths": [
+          {
+            "d": "M4 12L20 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head-up",
+        "paths": [
+          {
+            "d": "M9.172 6.828L12 4L14.828 6.828",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-down",
+        "paths": [
+          {
+            "d": "M14.828 17.172L12 20L9.172 17.172",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-left",
+        "paths": [
+          {
+            "d": "M6.828 14.828L4 12L6.828 9.172",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head-right",
+        "paths": [
+          {
+            "d": "M17.172 9.172L20 12L17.172 14.828",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

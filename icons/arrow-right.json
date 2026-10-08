@@ -1,0 +1,112 @@
+{
+  "name": "arrow-right",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M4.097 12L19.903 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M13.129 5.226L19.903 12L13.129 18.774",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M4.097 12L19.903 12",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M13.129 5.226L19.903 12L13.129 18.774",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "shaft",
+        "paths": [
+          {
+            "d": "M4.097 12L19.903 12",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M13.129 5.226L19.903 12L13.129 18.774",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  },
+  "animations": {
+    "nudge": {
+      "duration": 500,
+      "easing": "ease-in-out",
+      "iterations": 1,
+      "parts": {
+        "shaft": {
+          "keyframes": [
+            {
+              "t": 0,
+              "x": 0
+            },
+            {
+              "t": 0.45,
+              "x": 2.5
+            },
+            {
+              "t": 1,
+              "x": 0
+            }
+          ]
+        },
+        "head": {
+          "keyframes": [
+            {
+              "t": 0,
+              "x": 0
+            },
+            {
+              "t": 0.45,
+              "x": 2.5
+            },
+            {
+              "t": 1,
+              "x": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "name": "repeat",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "path-top",
+        "paths": [
+          {
+            "d": "M4 12L4 7L19.5 7",
+            "stroke": true,
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "head-top",
+        "paths": [
+          {
+            "d": "M17.025 4.525L19.5 7L17.025 9.475",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "path-bottom",
+        "paths": [
+          {
+            "d": "M20 12L20 17L4.5 17",
+            "stroke": true,
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "head-bottom",
+        "paths": [
+          {
+            "d": "M6.975 19.475L4.5 17L6.975 14.525",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "path-top",
+        "paths": [
+          {
+            "d": "M4 12L4 7L19.5 7",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "head-top",
+        "paths": [
+          {
+            "d": "M17.025 4.525L19.5 7L17.025 9.475",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "path-bottom",
+        "paths": [
+          {
+            "d": "M20 12L20 17L4.5 17",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "head-bottom",
+        "paths": [
+          {
+            "d": "M6.975 19.475L4.5 17L6.975 14.525",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "path-top",
+        "paths": [
+          {
+            "d": "M4 12L4 7L19.5 7",
+            "stroke": true,
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "head-top",
+        "paths": [
+          {
+            "d": "M17.025 4.525L19.5 7L17.025 9.475",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "path-bottom+head-bottom",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M20 12L20 17L4.5 17 M6.975 19.475L4.5 17L6.975 14.525",
+            "stroke": true,
+            "radius": 1.5,
+            "nodeRadius": {
+              "4": 0.417
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "name": "megaphone",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "horn",
+        "paths": [
+          {
+            "d": "M4 8L8.499 8L17.5 4L17.5 19L8.499 15L4 15Z",
+            "stroke": true,
+            "radius": 0.875,
+            "nodeRadius": {
+              "0": 0.857,
+              "1": 0.714,
+              "4": 0.714,
+              "5": 0.857
+            }
+          }
+        ]
+      },
+      {
+        "name": "handle",
+        "paths": [
+          {
+            "d": "M7.5 15L8.75 19.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "sound",
+        "paths": [
+          {
+            "d": "M20.5 9.75L20.5 13.25",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "horn",
+        "paths": [
+          {
+            "d": "M4 8L8.499 8L17.5 4L17.5 19L8.499 15L4 15Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.875,
+            "nodeRadius": {
+              "0": 0.857,
+              "1": 0.714,
+              "4": 0.714,
+              "5": 0.857
+            }
+          },
+          {
+            "d": "M4 8L8.499 8L17.5 4L17.5 19L8.499 15L4 15Z",
+            "stroke": true,
+            "radius": 0.875,
+            "nodeRadius": {
+              "0": 0.857,
+              "1": 0.714,
+              "4": 0.714,
+              "5": 0.857
+            }
+          }
+        ]
+      },
+      {
+        "name": "handle",
+        "paths": [
+          {
+            "d": "M7.5 15L8.75 19.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "sound",
+        "paths": [
+          {
+            "d": "M20.5 9.75L20.5 13.25",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M4 8L8.499 8L17.5 4L17.5 19L8.499 15L4 15Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.875,
+            "nodeRadius": {
+              "0": 0.857,
+              "1": 0.714,
+              "4": 0.714,
+              "5": 0.857
+            }
+          }
+        ]
+      },
+      {
+        "name": "horn",
+        "paths": [
+          {
+            "d": "M4 8L8.499 8L17.5 4L17.5 19L8.499 15L4 15Z",
+            "stroke": true,
+            "radius": 0.875,
+            "nodeRadius": {
+              "0": 0.857,
+              "1": 0.714,
+              "4": 0.714,
+              "5": 0.857
+            }
+          }
+        ]
+      },
+      {
+        "name": "handle",
+        "paths": [
+          {
+            "d": "M7.5 15L8.75 19.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "sound",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M20.5 9.75L20.5 13.25",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

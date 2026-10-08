@@ -1,0 +1,74 @@
+{
+  "name": "chevron-selector",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "chevron-up",
+        "paths": [
+          {
+            "d": "M7.5 9L12 4.5L16.5 9",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "chevron-down",
+        "paths": [
+          {
+            "d": "M7.5 15L12 19.5L16.5 15",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "chevron-up",
+        "paths": [
+          {
+            "d": "M7.5 9L12 4.5L16.5 9",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "chevron-down",
+        "paths": [
+          {
+            "d": "M7.5 15L12 19.5L16.5 15",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "chevron-up",
+        "paths": [
+          {
+            "d": "M7.5 9L12 4.5L16.5 9",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "chevron-down",
+        "paths": [
+          {
+            "d": "M7.5 15L12 19.5L16.5 15",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "name": "user-check",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M12.75 7.25A3.25 3.25 0 1 1 6.25 7.25A3.25 3.25 0 1 1 12.75 7.25Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M3 20C3 16.4 6 14 9.5 14C13 14 16 16.4 16 20",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "check",
+        "paths": [
+          {
+            "d": "M16.25 10.25L18.001 12.001L21.25 8.75",
+            "stroke": true,
+            "radius": 0.557
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M12.75 7.25A3.25 3.25 0 1 1 6.25 7.25A3.25 3.25 0 1 1 12.75 7.25Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M12.75 7.25A3.25 3.25 0 1 1 6.25 7.25A3.25 3.25 0 1 1 12.75 7.25Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M3 20C3 16.4 6 14 9.5 14C13 14 16 16.4 16 20Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M3 20C3 16.4 6 14 9.5 14C13 14 16 16.4 16 20Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "check",
+        "paths": [
+          {
+            "d": "M16.25 10.25L18.001 12.001L21.25 8.75",
+            "stroke": true,
+            "radius": 0.557
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M12.75 7.25A3.25 3.25 0 1 1 6.25 7.25A3.25 3.25 0 1 1 12.75 7.25Z M3 20C3 16.4 6 14 9.5 14C13 14 16 16.4 16 20Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M12.75 7.25A3.25 3.25 0 1 1 6.25 7.25A3.25 3.25 0 1 1 12.75 7.25Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M3 20C3 16.4 6 14 9.5 14C13 14 16 16.4 16 20",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "check",
+        "paths": [
+          {
+            "d": "M16.25 10.25L18.001 12.001L21.25 8.75",
+            "stroke": true,
+            "radius": 0.557
+          }
+        ]
+      }
+    ]
+  }
+}

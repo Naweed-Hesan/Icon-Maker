@@ -1,0 +1,55 @@
+{
+  "name": "moon",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "moon",
+        "paths": [
+          {
+            "d": "M20 14.5A8.5 8.5 0 1 1 9.5 4A8 8 0 0 0 20 14.5Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "moon",
+        "paths": [
+          {
+            "d": "M20 14.5A8.5 8.5 0 1 1 9.5 4A8 8 0 0 0 20 14.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          },
+          {
+            "d": "M20 14.5A8.5 8.5 0 1 1 9.5 4A8 8 0 0 0 20 14.5Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M20 14.5A8.5 8.5 0 1 1 9.5 4A8 8 0 0 0 20 14.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "moon",
+        "paths": [
+          {
+            "d": "M20 14.5A8.5 8.5 0 1 1 9.5 4A8 8 0 0 0 20 14.5Z",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

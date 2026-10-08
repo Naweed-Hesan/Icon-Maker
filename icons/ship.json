@@ -1,0 +1,148 @@
+{
+  "name": "ship",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "hull",
+        "paths": [
+          {
+            "d": "M3.5 14L20.5 14L18.119 20.25L5.881 20.25Z",
+            "stroke": true,
+            "radius": 0.871,
+            "nodeRadius": {
+              "2": 0.861,
+              "3": 0.861
+            }
+          }
+        ]
+      },
+      {
+        "name": "cabin",
+        "paths": [
+          {
+            "d": "M7 9L17 9L17 14L7 14Z",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "mast",
+        "paths": [
+          {
+            "d": "M12 4L12 9",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "hull",
+        "paths": [
+          {
+            "d": "M3.5 14L20.5 14L18.119 20.25L5.881 20.25Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.871,
+            "nodeRadius": {
+              "2": 0.861,
+              "3": 0.861
+            }
+          },
+          {
+            "d": "M3.5 14L20.5 14L18.119 20.25L5.881 20.25Z",
+            "stroke": true,
+            "radius": 0.871,
+            "nodeRadius": {
+              "2": 0.861,
+              "3": 0.861
+            }
+          }
+        ]
+      },
+      {
+        "name": "cabin",
+        "paths": [
+          {
+            "d": "M7 9L17 9L17 14L7 14Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.5
+          },
+          {
+            "d": "M7 9L17 9L17 14L7 14Z",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "mast",
+        "paths": [
+          {
+            "d": "M12 4L12 9",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M3.5 14L20.5 14L18.119 20.25L5.881 20.25Z M7 9L17 9L17 14L7 14Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.871,
+            "nodeRadius": {
+              "2": 0.861,
+              "3": 0.861,
+              "4": 0.574,
+              "5": 0.574,
+              "6": 0.574,
+              "7": 0.574
+            }
+          }
+        ]
+      },
+      {
+        "name": "hull",
+        "paths": [
+          {
+            "d": "M3.5 14L20.5 14L18.119 20.25L5.881 20.25Z",
+            "stroke": true,
+            "radius": 0.871,
+            "nodeRadius": {
+              "2": 0.861,
+              "3": 0.861
+            }
+          }
+        ]
+      },
+      {
+        "name": "cabin",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M7 9L17 9L17 14L7 14Z",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "mast",
+        "paths": [
+          {
+            "d": "M12 4L12 9",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

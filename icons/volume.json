@@ -1,0 +1,145 @@
+{
+  "name": "volume",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "speaker",
+        "paths": [
+          {
+            "d": "M4 8L8.001 8L12.5 4.499L12.5 19.501L8.001 16L4 16Z",
+            "stroke": true,
+            "radius": 0.75,
+            "nodeRadius": {
+              "1": 0.833,
+              "2": 0.837,
+              "3": 0.837,
+              "4": 0.833
+            }
+          }
+        ]
+      },
+      {
+        "name": "wave-1",
+        "paths": [
+          {
+            "d": "M15.5 9A4 4 0 0 1 15.5 15",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wave-2",
+        "paths": [
+          {
+            "d": "M18 6.5A7.5 7.5 0 0 1 18 17.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "speaker",
+        "paths": [
+          {
+            "d": "M4 8L8.001 8L12.5 4.499L12.5 19.501L8.001 16L4 16Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75,
+            "nodeRadius": {
+              "1": 0.833,
+              "2": 0.837,
+              "3": 0.837,
+              "4": 0.833
+            }
+          },
+          {
+            "d": "M4 8L8.001 8L12.5 4.499L12.5 19.501L8.001 16L4 16Z",
+            "stroke": true,
+            "radius": 0.75,
+            "nodeRadius": {
+              "1": 0.833,
+              "2": 0.837,
+              "3": 0.837,
+              "4": 0.833
+            }
+          }
+        ]
+      },
+      {
+        "name": "wave-1",
+        "paths": [
+          {
+            "d": "M15.5 9A4 4 0 0 1 15.5 15",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wave-2",
+        "paths": [
+          {
+            "d": "M18 6.5A7.5 7.5 0 0 1 18 17.5",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M4 8L8.001 8L12.5 4.499L12.5 19.501L8.001 16L4 16Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75,
+            "nodeRadius": {
+              "1": 0.833,
+              "2": 0.837,
+              "3": 0.837,
+              "4": 0.833
+            }
+          }
+        ]
+      },
+      {
+        "name": "speaker",
+        "paths": [
+          {
+            "d": "M4 8L8.001 8L12.5 4.499L12.5 19.501L8.001 16L4 16Z",
+            "stroke": true,
+            "radius": 0.75,
+            "nodeRadius": {
+              "1": 0.833,
+              "2": 0.837,
+              "3": 0.837,
+              "4": 0.833
+            }
+          }
+        ]
+      },
+      {
+        "name": "wave-1",
+        "paths": [
+          {
+            "d": "M15.5 9A4 4 0 0 1 15.5 15",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wave-2",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M18 6.5A7.5 7.5 0 0 1 18 17.5",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

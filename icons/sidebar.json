@@ -1,0 +1,78 @@
+{
+  "name": "sidebar",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "frame",
+        "paths": [
+          {
+            "d": "M3.5 4.5L20.5 4.5L20.5 19.5L3.5 19.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "divider",
+        "paths": [
+          {
+            "d": "M9.5 5.25L9.5 18.75",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "frame",
+        "paths": [
+          {
+            "d": "M3.5 4.5L20.5 4.5L20.5 19.5L3.5 19.5Z M8 6.75L8 17.25A1.5 1.5 0 0 0 11 17.25L11 6.75A1.5 1.5 0 0 0 8 6.75Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          },
+          {
+            "d": "M3.5 4.5L20.5 4.5L20.5 19.5L3.5 19.5Z M8 6.75L8 17.25A1.5 1.5 0 0 0 11 17.25L11 6.75A1.5 1.5 0 0 0 8 6.75Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M3.5 4.5L20.5 4.5L20.5 19.5L3.5 19.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "frame",
+        "paths": [
+          {
+            "d": "M3.5 4.5L20.5 4.5L20.5 19.5L3.5 19.5Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "divider",
+        "paths": [
+          {
+            "d": "M9.5 5.25L9.5 18.75",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

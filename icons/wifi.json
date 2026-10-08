@@ -1,0 +1,129 @@
+{
+  "name": "wifi",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "wave-3",
+        "paths": [
+          {
+            "d": "M2.5 9.5A13.5 13.5 0 0 1 21.5 9.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wave-2",
+        "paths": [
+          {
+            "d": "M5.5 13A9 9 0 0 1 18.5 13",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wave-1",
+        "paths": [
+          {
+            "d": "M8.75 16.25A4.5 4.5 0 0 1 15.25 16.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "dot",
+        "paths": [
+          {
+            "d": "M12.75 19.5A0.75 0.75 0 1 1 11.25 19.5A0.75 0.75 0 1 1 12.75 19.5Z",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "wave-3",
+        "paths": [
+          {
+            "d": "M2.5 9.5A13.5 13.5 0 0 1 21.5 9.5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "wave-2",
+        "paths": [
+          {
+            "d": "M5.5 13A9 9 0 0 1 18.5 13",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "wave-1",
+        "paths": [
+          {
+            "d": "M8.75 16.25A4.5 4.5 0 0 1 15.25 16.25",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "dot",
+        "paths": [
+          {
+            "d": "M12.75 19.5A0.75 0.75 0 1 1 11.25 19.5A0.75 0.75 0 1 1 12.75 19.5Z",
+            "fill": true
+          },
+          {
+            "d": "M12.75 19.5A0.75 0.75 0 1 1 11.25 19.5A0.75 0.75 0 1 1 12.75 19.5Z",
+            "stroke": true,
+            "strokeWidth": 2
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "wave-3",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M2.5 9.5A13.5 13.5 0 0 1 21.5 9.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wave-2",
+        "paths": [
+          {
+            "d": "M5.5 13A9 9 0 0 1 18.5 13",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "wave-1",
+        "paths": [
+          {
+            "d": "M8.75 16.25A4.5 4.5 0 0 1 15.25 16.25",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "dot",
+        "paths": [
+          {
+            "d": "M12.75 19.5A0.75 0.75 0 1 1 11.25 19.5A0.75 0.75 0 1 1 12.75 19.5Z",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

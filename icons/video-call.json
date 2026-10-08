@@ -1,0 +1,118 @@
+{
+  "name": "video-call",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M2.75 6L15.25 6L15.25 18L2.75 18Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "lens",
+        "paths": [
+          {
+            "d": "M15.25 10.25L20.25 7.501L20.25 16.501L15.25 13.749Z",
+            "stroke": true,
+            "radius": 0.759,
+            "nodeRadius": {
+              "0": 0.823,
+              "3": 0.823
+            }
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M2.75 6L15.25 6L15.25 18L2.75 18Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          },
+          {
+            "d": "M2.75 6L15.25 6L15.25 18L2.75 18Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "lens",
+        "paths": [
+          {
+            "d": "M15.25 10.25L20.25 7.501L20.25 16.501L15.25 13.749Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.759,
+            "nodeRadius": {
+              "0": 0.823,
+              "3": 0.823
+            }
+          },
+          {
+            "d": "M15.25 10.25L20.25 7.501L20.25 16.501L15.25 13.749Z",
+            "stroke": true,
+            "radius": 0.759,
+            "nodeRadius": {
+              "0": 0.823,
+              "3": 0.823
+            }
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M2.75 6L15.25 6L15.25 18L2.75 18Z M15.25 10.25L20.25 7.501L20.25 16.501L15.25 13.749Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25,
+            "nodeRadius": {
+              "4": 0.5,
+              "5": 0.607,
+              "6": 0.607,
+              "7": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M2.75 6L15.25 6L15.25 18L2.75 18Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "lens",
+        "paths": [
+          {
+            "d": "M15.25 10.25L20.25 7.501L20.25 16.501L15.25 13.749Z",
+            "stroke": true,
+            "radius": 0.759,
+            "nodeRadius": {
+              "0": 0.823,
+              "3": 0.823
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

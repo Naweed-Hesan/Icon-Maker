@@ -1,0 +1,168 @@
+{
+  "name": "layout",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "panel-1",
+        "paths": [
+          {
+            "d": "M3.5 3.5L11 3.5L11 13.5L3.5 13.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "panel-2",
+        "paths": [
+          {
+            "d": "M14 3.5L20.5 3.5L20.5 9.5L14 9.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "panel-3",
+        "paths": [
+          {
+            "d": "M14 12.5L20.5 12.5L20.5 20.5L14 20.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "panel-4",
+        "paths": [
+          {
+            "d": "M3.5 16.5L11 16.5L11 20.5L3.5 20.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "panel-1",
+        "paths": [
+          {
+            "d": "M3.5 3.5L11 3.5L11 13.5L3.5 13.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          },
+          {
+            "d": "M3.5 3.5L11 3.5L11 13.5L3.5 13.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "panel-2",
+        "paths": [
+          {
+            "d": "M14 3.5L20.5 3.5L20.5 9.5L14 9.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          },
+          {
+            "d": "M14 3.5L20.5 3.5L20.5 9.5L14 9.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "panel-3",
+        "paths": [
+          {
+            "d": "M14 12.5L20.5 12.5L20.5 20.5L14 20.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          },
+          {
+            "d": "M14 12.5L20.5 12.5L20.5 20.5L14 20.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "panel-4",
+        "paths": [
+          {
+            "d": "M3.5 16.5L11 16.5L11 20.5L3.5 20.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          },
+          {
+            "d": "M3.5 16.5L11 16.5L11 20.5L3.5 20.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M3.5 3.5L11 3.5L11 13.5L3.5 13.5Z M14 3.5L20.5 3.5L20.5 9.5L14 9.5Z M14 12.5L20.5 12.5L20.5 20.5L14 20.5Z M3.5 16.5L11 16.5L11 20.5L3.5 20.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "panel-1",
+        "paths": [
+          {
+            "d": "M3.5 3.5L11 3.5L11 13.5L3.5 13.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "panel-2",
+        "paths": [
+          {
+            "d": "M14 3.5L20.5 3.5L20.5 9.5L14 9.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "panel-3",
+        "paths": [
+          {
+            "d": "M14 12.5L20.5 12.5L20.5 20.5L14 20.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      },
+      {
+        "name": "panel-4",
+        "paths": [
+          {
+            "d": "M3.5 16.5L11 16.5L11 20.5L3.5 20.5Z",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ]
+  }
+}

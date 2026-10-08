@@ -1,0 +1,134 @@
+{
+  "name": "printer",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M7 17.5L3 17.5L3 9L21 9L21 17.5L17 17.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "paper-in",
+        "paths": [
+          {
+            "d": "M7 9L7 3.5L17 3.5L17 9",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "paper-out",
+        "paths": [
+          {
+            "d": "M7 14L17 14L17 20.75L7 20.75Z",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M3 9L21 9L21 17.5L3 17.5Z M5.5 12.5L18.5 12.5L18.5 17.5L5.5 17.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "nodeRadius": {
+              "4": 0.75,
+              "5": 0.75,
+              "6": 0.75,
+              "7": 0.75
+            }
+          },
+          {
+            "d": "M3 9L21 9L21 17.5L3 17.5Z M5.5 12.5L18.5 12.5L18.5 17.5L5.5 17.5Z",
+            "stroke": true,
+            "nodeRadius": {
+              "4": 0.75,
+              "5": 0.75,
+              "6": 0.75,
+              "7": 0.75
+            }
+          }
+        ]
+      },
+      {
+        "name": "paper-in",
+        "paths": [
+          {
+            "d": "M7 9L7 3.5L17 3.5L17 9",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "paper-out",
+        "paths": [
+          {
+            "d": "M7.75 14.75L16.25 14.75L16.25 20.75L7.75 20.75Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 0.5
+          },
+          {
+            "d": "M7.75 14.75L16.25 14.75L16.25 20.75L7.75 20.75Z",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M3 9L21 9L21 17.5L3 17.5Z",
+            "fill": true,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M7 17.5L3 17.5L3 9L21 9L21 17.5L17 17.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "paper-in",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M7 9L7 3.5L17 3.5L17 9",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "paper-out",
+        "paths": [
+          {
+            "d": "M7 14L17 14L17 20.75L7 20.75Z",
+            "stroke": true,
+            "radius": 0.5
+          }
+        ]
+      }
+    ]
+  }
+}

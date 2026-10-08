@@ -1,0 +1,91 @@
+{
+  "name": "tv",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "screen",
+        "paths": [
+          {
+            "d": "M2.5 6.5L21.5 6.5L21.5 20L2.5 20Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "antenna",
+        "paths": [
+          {
+            "d": "M8 2.75L12 6.501L16 2.75",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "screen",
+        "paths": [
+          {
+            "d": "M2.5 6.5L21.5 6.5L21.5 20L2.5 20Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          },
+          {
+            "d": "M2.5 6.5L21.5 6.5L21.5 20L2.5 20Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "antenna",
+        "paths": [
+          {
+            "d": "M8 2.75L12 6.501L16 2.75",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M2.5 6.5L21.5 6.5L21.5 20L2.5 20Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "screen",
+        "paths": [
+          {
+            "d": "M2.5 6.5L21.5 6.5L21.5 20L2.5 20Z",
+            "stroke": true,
+            "radius": 1.25
+          }
+        ]
+      },
+      {
+        "name": "antenna",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M8 2.75L12 6.501L16 2.75",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

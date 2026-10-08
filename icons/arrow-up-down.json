@@ -1,0 +1,122 @@
+{
+  "name": "arrow-up-down",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "shaft-left",
+        "paths": [
+          {
+            "d": "M8 19.5L8 4.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head-left",
+        "paths": [
+          {
+            "d": "M5.172 7.328L8 4.5L10.828 7.328",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "shaft-right",
+        "paths": [
+          {
+            "d": "M16 4.5L16 19.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head-right",
+        "paths": [
+          {
+            "d": "M18.828 16.672L16 19.5L13.172 16.672",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "shaft-left",
+        "paths": [
+          {
+            "d": "M8 19.5L8 4.5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head-left",
+        "paths": [
+          {
+            "d": "M5.172 7.328L8 4.5L10.828 7.328",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "shaft-right",
+        "paths": [
+          {
+            "d": "M16 4.5L16 19.5",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "head-right",
+        "paths": [
+          {
+            "d": "M18.828 16.672L16 19.5L13.172 16.672",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "shaft-left",
+        "paths": [
+          {
+            "d": "M8 19.5L8 4.5",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "head-left",
+        "paths": [
+          {
+            "d": "M5.172 7.328L8 4.5L10.828 7.328",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "shaft-right+head-right",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M16 4.5L16 19.5 M18.828 16.672L16 19.5L13.172 16.672",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

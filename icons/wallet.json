@@ -1,0 +1,139 @@
+{
+  "name": "wallet",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M2.75 6L21.25 6L21.25 20L2.75 20Z",
+            "stroke": true,
+            "radius": 1.375
+          }
+        ]
+      },
+      {
+        "name": "pocket",
+        "paths": [
+          {
+            "d": "M14 9.5L21.25 9.5L21.25 16.5L14 16.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "clasp",
+        "paths": [
+          {
+            "d": "M17.5 13L17.51 13",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "card",
+        "paths": [
+          {
+            "d": "M5.5 6L17.4 2.728L17.4 6",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M2.75 6L21.25 6L21.25 20L2.75 20Z M14 9.5L21 9.5L21 16.5L14 16.5Z M18 13A0.5 0.5 0 1 1 17 13A0.5 0.5 0 1 1 18 13Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.375,
+            "nodeRadius": {
+              "4": 0.727,
+              "5": 0.727,
+              "6": 0.727,
+              "7": 0.727
+            }
+          },
+          {
+            "d": "M2.75 6L21.25 6L21.25 20L2.75 20Z M14 9.5L21 9.5L21 16.5L14 16.5Z M18 13A0.5 0.5 0 1 1 17 13A0.5 0.5 0 1 1 18 13Z",
+            "stroke": true,
+            "radius": 1.375,
+            "nodeRadius": {
+              "4": 0.727,
+              "5": 0.727,
+              "6": 0.727,
+              "7": 0.727
+            }
+          }
+        ]
+      },
+      {
+        "name": "card",
+        "paths": [
+          {
+            "d": "M5.5 6L17.4 2.728L17.4 6",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M2.75 6L21.25 6L21.25 20L2.75 20Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.375
+          }
+        ]
+      },
+      {
+        "name": "body",
+        "paths": [
+          {
+            "d": "M2.75 6L21.25 6L21.25 20L2.75 20Z",
+            "stroke": true,
+            "radius": 1.375
+          }
+        ]
+      },
+      {
+        "name": "pocket",
+        "paths": [
+          {
+            "d": "M14 9.5L21.25 9.5L21.25 16.5L14 16.5Z",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "clasp",
+        "paths": [
+          {
+            "d": "M17.5 13L17.51 13",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "card",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M5.5 6L17.4 2.728L17.4 6",
+            "stroke": true,
+            "radius": 0.75
+          }
+        ]
+      }
+    ]
+  }
+}

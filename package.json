@@ -1,0 +1,14 @@
+{
+  "name": "dope-icons-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "node scripts/studio.mjs",
+    "lint": "node scripts/lint.mjs",
+    "fix": "node scripts/fix.mjs",
+    "build": "node scripts/build.mjs",
+    "new": "node scripts/new-icon.mjs",
+    "sheet": "node scripts/sheet.mjs",
+    "batch": "node scripts/batch.mjs"
+  }
+}

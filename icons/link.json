@@ -1,0 +1,97 @@
+{
+  "name": "link",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "link-a",
+        "paths": [
+          {
+            "d": "M9.5 8L7 8A4 4 0 0 0 7 16L9.5 16",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "link-b",
+        "paths": [
+          {
+            "d": "M14.5 8L17 8A4 4 0 0 1 17 16L14.5 16",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M8.5 12L15.5 12",
+            "stroke": true
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "link-a",
+        "paths": [
+          {
+            "d": "M9.5 8L7 8A4 4 0 0 0 7 16L9.5 16",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "link-b",
+        "paths": [
+          {
+            "d": "M14.5 8L17 8A4 4 0 0 1 17 16L14.5 16",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "paths": [
+          {
+            "d": "M8.5 12L15.5 12",
+            "stroke": true,
+            "strokeWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "link-a",
+        "paths": [
+          {
+            "d": "M9.5 8L7 8A4 4 0 0 0 7 16L9.5 16",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "link-b",
+        "paths": [
+          {
+            "d": "M14.5 8L17 8A4 4 0 0 1 17 16L14.5 16",
+            "stroke": true
+          }
+        ]
+      },
+      {
+        "name": "bar",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M8.5 12L15.5 12",
+            "stroke": true
+          }
+        ]
+      }
+    ]
+  }
+}

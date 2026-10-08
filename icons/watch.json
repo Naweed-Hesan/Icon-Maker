@@ -1,0 +1,150 @@
+{
+  "name": "watch",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "face",
+        "paths": [
+          {
+            "d": "M6 6.5L18 6.5L18 17.5L6 17.5Z",
+            "stroke": true,
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "strap-top",
+        "paths": [
+          {
+            "d": "M8.5 6.5L9.25 3L14.75 3L15.5 6.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "strap-bottom",
+        "paths": [
+          {
+            "d": "M8.5 17.5L9.25 21L14.75 21L15.5 17.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "hands",
+        "paths": [
+          {
+            "d": "M12 9.5L12 11.999L13.75 13.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "face",
+        "paths": [
+          {
+            "d": "M6 6.5L18 6.5L18 17.5L6 17.5Z M10.5 9.5L10.5 12.689L12.774 14.639A1.5 1.5 0 0 0 14.726 12.361L13.5 11.31L13.5 9.5A1.5 1.5 0 0 0 10.5 9.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.5,
+            "nodeRadius": {
+              "5": 0.417,
+              "8": 0.417
+            }
+          },
+          {
+            "d": "M6 6.5L18 6.5L18 17.5L6 17.5Z M10.5 9.5L10.5 12.689L12.774 14.639A1.5 1.5 0 0 0 14.726 12.361L13.5 11.31L13.5 9.5A1.5 1.5 0 0 0 10.5 9.5Z",
+            "stroke": true,
+            "radius": 1.5,
+            "nodeRadius": {
+              "5": 0.417,
+              "8": 0.417
+            }
+          }
+        ]
+      },
+      {
+        "name": "strap-top",
+        "paths": [
+          {
+            "d": "M8.5 6.5L9.25 3L14.75 3L15.5 6.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "strap-bottom",
+        "paths": [
+          {
+            "d": "M8.5 17.5L9.25 21L14.75 21L15.5 17.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "tint",
+        "opacity": 0.2,
+        "paths": [
+          {
+            "d": "M6 6.5L18 6.5L18 17.5L6 17.5Z",
+            "fill": true,
+            "fillRule": "evenodd",
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "face",
+        "paths": [
+          {
+            "d": "M6 6.5L18 6.5L18 17.5L6 17.5Z",
+            "stroke": true,
+            "radius": 1.5
+          }
+        ]
+      },
+      {
+        "name": "strap-top",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M8.5 6.5L9.25 3L14.75 3L15.5 6.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "strap-bottom",
+        "opacity": 0.45,
+        "paths": [
+          {
+            "d": "M8.5 17.5L9.25 21L14.75 21L15.5 17.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "hands",
+        "paths": [
+          {
+            "d": "M12 9.5L12 11.999L13.75 13.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}

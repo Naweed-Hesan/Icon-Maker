@@ -1,0 +1,74 @@
+{
+  "name": "trending-up",
+  "tags": [],
+  "styles": {
+    "outline": [
+      {
+        "name": "line",
+        "paths": [
+          {
+            "d": "M3 17L9 11L13 15L21 7",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M15.5 7L21 7L21 12.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "solid": [
+      {
+        "name": "line",
+        "paths": [
+          {
+            "d": "M3 17L9 11L13 15L21 7",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M15.5 7L21 7L21 12.5",
+            "stroke": true,
+            "strokeWidth": 2.25,
+            "radius": 0.625
+          }
+        ]
+      }
+    ],
+    "duotone": [
+      {
+        "name": "line",
+        "paths": [
+          {
+            "d": "M3 17L9 11L13 15L21 7",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      },
+      {
+        "name": "head",
+        "paths": [
+          {
+            "d": "M15.5 7L21 7L21 12.5",
+            "stroke": true,
+            "radius": 0.625
+          }
+        ]
+      }
+    ]
+  }
+}
